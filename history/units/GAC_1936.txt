@@ -1,0 +1,112 @@
+     division_template = {
+	name = "Gachi Division"			# Rifle Division
+	division_names_group = GAC_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
+		artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+	}
+}
+
+units = {
+
+		division= {			
+		name = "1 гачи дивизия"		
+		location = 11225
+		division_template = "Gachi Division"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
+		start_experience_factor = 1
+		}
+		
+		division= {			
+		name = "2 гачи дивизия"		
+		location = 6275
+		division_template = "Gachi Division"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
+		start_experience_factor = 1
+		}
+		
+		division= {			
+		name = "3 гачи дивизия"		
+		location = 9243
+		division_template = "Gachi Division"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
+		start_experience_factor = 1
+		}
+		
+		division= {			
+		name = "4 гачи дивизия"		
+		location = 6502
+		division_template = "Gachi Division"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
+		start_experience_factor = 0.8
+		}
+		
+		division= {			
+		name = "5 гачи дивизия"		
+		location = 6502
+		division_template = "Gachi Division"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
+		start_experience_factor = 0.8
+		}
+		
+		division= {			
+		name = "6 гачи дивизия"		
+		location = 452
+		division_template = "Gachi Division"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
+		start_experience_factor = 0.7
+		}
+		
+		division= {			
+		name = "7 гачи дивизия"		
+		location = 452
+		division_template = "Gachi Division"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
+		start_experience_factor = 0.7
+		}
+		
+		division= {			
+		name = "8 гачи дивизия"		
+		location = 9473
+		division_template = "Gachi Division"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
+		start_experience_factor = 0.7
+		}
+		
+		division= {			
+		name = "9 гачи дивизия"		
+		location = 9473
+		division_template = "Gachi Division"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
+		start_experience_factor = 0.7
+		}
+		
+		division= {			
+		name = "10 гачи дивизия"		
+		location = 6574
+		division_template = "Gachi Division"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
+		start_experience_factor = 0.7
+		}
+		
+		division= {			
+		name = "11 гачи дивизия"		
+		location = 6574
+		division_template = "Gachi Division"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
+		start_experience_factor = 0.7
+		}
+		
+		}

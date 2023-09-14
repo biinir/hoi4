@@ -1,0 +1,11 @@
+
+
+### Air Wings
+air_wings = {
+	454 = {
+		fighter_equipment_0 = {		
+			owner = "KRP" 
+			amount = 60
+		}
+	}
+}

@@ -1,0 +1,11 @@
+
+
+### Air Wings
+air_wings = {
+	251 = {
+		fighter_equipment_0 = {		
+			owner = "GAC" 
+			amount = 60
+		}
+	}
+}

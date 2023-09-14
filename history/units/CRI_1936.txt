@@ -1,0 +1,173 @@
+##### Division Templates #####
+division_template = {
+	name = "Strelkovaya Diviziya"			# Rifle Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		#recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+		#engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
+		artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+	}
+}
+
+
+division_template = {
+	name = "Gornostrelkovaya Diviziya"		# Motor Rifle Division
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }	
+		mountaineers = { x = 2 y = 1 }	
+		mountaineers = { x = 2 y = 2 }	
+		mountaineers = { x = 3 y = 0 }	
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 		# Engineer bn
+		artillery = { x = 0 y = 1 } 	# Heavy Arty Regiment had 2x 122mm bn
+	}
+}
+
+division_template = {
+	name = "Kazachya Diviziya" 	# Kavaleriyskaya Diviziya
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Udarnaya diviziya"	
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 
+		artillery = { x = 0 y = 1 } 	
+	}
+}
+
+units = {
+
+division= {			
+		name = "1 Ударная дивизия "		
+		location = 9680
+		division_template = "Udarnaya diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CRI" } }
+		start_experience_factor = 1
+		}
+
+division= {			
+		name = "2 Ударная дивизия "		
+		location = 9680
+		division_template = "Udarnaya diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CRI" } }
+		start_experience_factor = 1
+		}
+
+division= {			
+		name = "14ya Otdelnaya Krinmskaya Konnaya Brigada"		
+		location = 9680
+		division_template = "Kazachya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CRI" } }
+		start_experience_factor = 0.3
+		}
+
+division= {			
+		name = "1ya Krinmskaya Diviziya"		
+		location = 3686
+		division_template = "Strelkovaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CRI" } }
+		start_experience_factor = 0.3
+		}		
+
+division= {			
+		name = "4ya Krinmskaya Konnaya Brigada"		
+		location = 9680
+		division_template = "Kazachya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CRI" } }
+		start_experience_factor = 0.3
+		}		
+		
+division= {			
+		name = "7ya Krinmskaya Diviziya"		
+		location = 3686
+		division_template = "Strelkovaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CRI" } }
+		start_experience_factor = 0.3
+		}
+		
+
+division= {			
+		name = "5ya Krinmskaya Plastynskaya Brigada" 		
+		location = 3686
+		division_template = "Strelkovaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CRI" } }
+		start_experience_factor = 0.3
+		}				
+
+division= {			
+		name = "8ya Krinmskaya Diviziya" 		
+		location = 3686
+		division_template = "Strelkovaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CRI" } }
+		start_experience_factor = 0.3
+		}	
+
+
+
+    ### Black Sea Fleet -- Sevastopol
+	
+	fleet = {
+		name = "Черноморская флотилия Белой Армии"
+		naval_base = 3686
+		task_force = {
+		    location = 3686
+			name = "Ударное соединение"
+		ship = { name = "Святой Алексий" definition = battleship equipment = { battleship_1 = { amount = 1 owner = CRI } } }
+		ship = { name = "Королева Витория" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+		ship = { name = "Император Николай" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = CRI  } } }
+		ship = { name = "Верный" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = CRI } } }
+		ship = { name = "Севастополь" definition = battleship equipment = { battleship_1 = { amount = 1 owner = CRI } } }
+		ship = { name = "Белый Крым" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = CRI } } }
+	    ship = { name = "Петр Врангель" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CRI } } }		
+		ship = { name = "Николай Юденич" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CRI } } }		
+		ship = { name = "Петр Столыпин" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CRI } } }	
+		
+		}
+		
+		task_force = {
+		    location = 3686
+			name = "Подводное соединение"
+        ship = { name = "Тип Меченосец - 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRI } } }			
+		ship = { name = "Тип Меченосец - 2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRI } } }			
+		ship = { name = "Тип Меченосец - 3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRI } } }				
+        ship = { name = "Тип Меченосец - 4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRI } } }			}			
+		ship = { name = "Тип Меченосец - 5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRI } } }			
+		ship = { name = "Тип Меченосец - 6" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRI } } }					
+		}
+	}
+	
+	}
