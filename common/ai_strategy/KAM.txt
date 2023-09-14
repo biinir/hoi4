@@ -1,0 +1,15 @@
+KA_PROXY_STRAT = {
+	allowed = {
+		original_tag = KAM
+	}
+	enable = {
+		has_completed_focus = KAM_vostoc_sosed
+		country_exists = KAZ
+
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = KAZ
+		value = 1000
+	}

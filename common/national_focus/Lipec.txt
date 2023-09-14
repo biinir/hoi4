@@ -1,0 +1,2007 @@
+focus_tree = {
+	id = LIP_igor_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LIP
+		}
+	}
+	default = no
+        continuous_focus_position = { x = 900 y = 3500 }
+
+	focus = {
+		id = LIP_novii_god
+		icon = GFX_focus_generic_royal_wedding
+		x = 8
+		y = 0
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+
+        focus = {
+		id = LIP_soziv_parlamenta
+		icon = GFX_Generic_Parliamentary_LIP
+
+                relative_position_id = LIP_novii_god
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = LIP_novii_god
+
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 10
+                         mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+ focus = {
+		id = LIP_sozvat_tocho
+		icon = GFX_LIP_speak_to_parliament
+
+                relative_position_id = LIP_soziv_parlamenta
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = LIP_soziv_parlamenta
+
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         country_event = {
+			id = kamish.1
+			hours = 6
+
+                        }
+			add_political_power = 10
+                        mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+focus = {
+		id = LIP_vostoc_sosed
+		icon = GFX_KAM_Kazakh_Consulate
+                cost = 1
+                prerequisite = { focus = LIP_sosii_hiuuu } 
+		x = 0
+		y = 1
+                allow_branch = { has_completed_focus = LIP_sosii_hiuuu }
+                relative_position_id = LIP_sosii_hiuuu
+		ai_will_do = {
+			factor = 4
+                        modifier = {
+				factor = 0
+				has_civil_war = yes
+			}	
+		}
+		
+		mutually_exclusive = { focus = LIP_demand_balkan_submission }
+		
+		available = {
+			NOT = { has_country_flag = LIP_paranoia_system_active_flag }
+			any_other_country = {
+				BUL_is_balkan_nation = yes
+			}
+			is_subject = no
+		}
+		
+		search_filters = {}
+
+		completion_reward = {
+			 country_event = {
+			id = kamish.6
+			hours = 6
+			}
+			custom_effect_tooltip = LIP_seek_balkan_cooperation_decisions_tt
+
+			}
+		}
+
+
+focus = {
+		id = LIP_voen_sovet
+		icon = GFX_Voen_sovet
+
+                relative_position_id = LIP_vostoc_sosed
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = LIP_vostoc_sosed
+
+	        }
+		cost = 4
+
+		ai_will_do = {
+			factor = 4
+                        modifier = {
+				factor = 0
+				has_civil_war = yes
+			}	
+		}
+		
+		mutually_exclusive = { focus = LIP_demand_balkan_submission }
+		
+		available = {
+			NOT = { has_country_flag = LIP_paranoia_system_active_flag }
+			any_other_country = {
+				BUL_is_balkan_nation = yes
+			}
+			is_subject = no
+		}
+		
+		search_filters = {}
+
+		completion_reward = {
+			KZZ = {
+			add_timed_idea = { idea =  LIP_voeni_sovet days = 820 }
+                                }
+
+			}
+		}
+
+
+focus = {
+		id = LIP_otpravk_oficer
+		icon = GFX_focus_generic_military_academy
+
+                relative_position_id =  LIP_voen_sovet
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus =  LIP_voen_sovet
+
+	        }
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+                        modifier = {
+				factor = 0
+				has_civil_war = yes
+			}	
+		}
+		
+		mutually_exclusive = { focus = LIP_demand_balkan_submission }
+		
+		available = {
+			NOT = { has_country_flag = LIP_paranoia_system_active_flag }
+			any_other_country = {
+				BUL_is_balkan_nation = yes
+			}
+			is_subject = no
+		}
+		
+		search_filters = {}
+
+		completion_reward = {
+			KZZ = {
+			add_timed_idea = { idea =  LIP_whampoa_military_academy days = 750 }
+                                }
+
+			}
+		}
+
+            
+focus = {
+		id = LIP_otpravk_pilot
+		icon = GFX_goal_generic_air_fighter
+
+                relative_position_id =  LIP_otpravk_oficer
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus =  LIP_otpravk_oficer
+
+	        }
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+                        modifier = {
+				factor = 0
+				has_civil_war = yes
+			}	
+		}
+		
+		mutually_exclusive = { focus = LIP_demand_balkan_submission }
+		
+		available = {
+			NOT = { has_country_flag = LIP_paranoia_system_active_flag }
+			any_other_country = {
+				BUL_is_balkan_nation = yes
+			}
+			is_subject = no
+		}
+		
+		search_filters = {}
+
+		completion_reward = {
+			KZZ = {
+			add_timed_idea = { idea =  LIP_voen_avia days = 750 }
+                                }
+
+			}
+		}
+
+focus = {
+		id = LIP_grazdan_sovett
+		icon = GFX_focus_generic_military_mission
+
+                relative_position_id =   LIP_otpravk_pilot
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus =   LIP_otpravk_pilot
+
+	        }
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+                        modifier = {
+				factor = 0
+				has_civil_war = yes
+			}	
+		}
+		
+		mutually_exclusive = { focus = LIP_demand_balkan_submission }
+		
+		available = {
+			NOT = { has_country_flag = LIP_paranoia_system_active_flag }
+			any_other_country = {
+				BUL_is_balkan_nation = yes
+			}
+			is_subject = no
+		}
+		
+		search_filters = {}
+
+		completion_reward = {
+			KZZ = {
+			add_timed_idea = { idea =  LIP_grazdan_sovet days = 360 }
+                                }
+
+			}
+		}
+
+
+focus = {
+		id = LIP_otpavit_soldat
+		icon = GFX_focus_ITA_comandante_diavolo
+
+                relative_position_id =   LIP_grazdan_sovett
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus =   LIP_grazdan_sovett
+	        }
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+                        modifier = {
+				factor = 0
+				has_civil_war = yes
+			}	
+		}
+		
+		mutually_exclusive = { focus = LIP_demand_balkan_submission }
+		
+		available = {
+			NOT = { has_country_flag = LIP_paranoia_system_active_flag }
+			any_other_country = {
+				BUL_is_balkan_nation = yes
+			}
+			is_subject = no
+		}
+		
+		search_filters = {}
+
+		completion_reward = {
+			KZZ = {
+			add_manpower = 5000
+                                }
+
+			}
+		}
+
+
+ focus = {
+		id = LIP_pizda_parlamenty
+		icon = GFX_focus_generic_annex_country_2
+                mutually_exclusive = { focus = LIP_kent_parlament }
+
+                relative_position_id = LIP_sozvat_tocho
+		x = 4
+		y = 1
+              
+                prerequisite = {
+		focus = LIP_sozvat_tocho
+
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         country_event = {
+			id = kamish.1
+			hours = 6
+
+                        }
+			add_political_power = 1
+                        mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+ focus = {
+		id = LIP_army_par
+		icon = GFX_focus_generic_combined_arms
+
+                relative_position_id = LIP_pizda_parlamenty
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = LIP_pizda_parlamenty
+
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         country_event = {
+			id = kamish.1
+			hours = 6
+
+                        }
+			add_political_power = 1
+                        mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+ focus = {
+		id = LIP_prav_par
+		icon = GFX_focus_POL_complete_april_constitution
+
+                relative_position_id = LIP_army_par
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = LIP_army_par
+
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         country_event = {
+			id = kamish.1
+			hours = 6
+
+                        }
+			add_political_power = 10
+                        mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+ focus = {
+		id = LIP_spec_par
+		icon = GFX_focus_SOV_penal_battalions
+
+                relative_position_id = LIP_prav_par
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = LIP_prav_par
+
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         country_event = {
+			id = lipppp.66
+			hours = 6
+
+                        }
+			add_political_power = 1
+                        mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+ focus = {
+		id = LIP_spec_police
+		icon = GFX_Lipec_deploy_the_police
+
+                relative_position_id = LIP_spec_par
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = LIP_spec_par
+
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         country_event = {
+			id = kamish.1
+			hours = 6
+
+                        }
+			add_political_power = 1
+                        mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+      focus = {
+		id = LIP_par_komp
+		icon = GFX_focus_fra_devalue_the_franc
+
+                relative_position_id = LIP_spec_police
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = LIP_spec_police
+
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         country_event = {
+			id = kamish.1
+			hours = 6
+
+                        }
+			add_political_power = 1
+                        mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+         focus = {
+		id = LIP_par_konec
+		icon = GFX_focus_generic_annex_country
+
+                relative_position_id = LIP_par_komp
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = LIP_par_komp
+
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                          set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+                             }
+
+                        add_popularity = {
+				ideology = paternal_autocrat
+		 		popularity = 0.30
+
+			   }
+			add_political_power = 1
+                        mark_focus_tree_layout_dirty = yes
+		}
+	}
+                          
+        focus = {
+		id = LIP_kent_parlament
+		icon = GFX_focus_generic_improve_the_administration
+                mutually_exclusive = { focus = LIP_pizda_parlamenty }
+
+                relative_position_id = LIP_sozvat_tocho
+		x = -4
+		y = 1
+              
+                prerequisite = {
+		focus = LIP_sozvat_tocho
+
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         country_event = {
+			id = kamish.1
+			hours = 6
+
+                        }
+			add_political_power = 10
+                        mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+        focus = {
+		id = LIP_dogovor_part
+		icon = GFX_focus_generic_diplomatic_treaty
+
+                relative_position_id = LIP_kent_parlament
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = LIP_kent_parlament
+
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+                
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         country_event = {
+			id = kamish.1
+			hours = 6
+
+                        }
+			add_political_power = 20
+                        mark_focus_tree_layout_dirty = yes
+                        add_stability = 0.08
+		}
+	}
+        
+        focus = {
+		id = LIP_nuzn_zakon
+		icon = GFX_focus_generic_self_management
+
+                relative_position_id = LIP_dogovor_part
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = LIP_dogovor_part
+
+	        }
+		cost = 2
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+                
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         country_event = {
+			id = kamish.1
+			hours = 6
+
+                        }
+			add_political_power = 30
+                        mark_focus_tree_layout_dirty = yes
+                        add_stability = 0.01
+                        add_ideas = LIP_zakon_igor 
+
+		}
+	}
+
+         focus = {
+		id = LIP_edin_parlament
+		icon = GFX_LIP_edin_par
+
+                relative_position_id = LIP_nuzn_zakon
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = LIP_nuzn_zakon
+
+	        }
+		cost = 2
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+                
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         country_event = {
+			id = kamish.1
+			hours = 6
+
+                        }
+			add_political_power = 2
+                        mark_focus_tree_layout_dirty = yes
+                        add_stability = 0.01
+                        add_ideas = 362е
+
+		}
+	}
+
+        
+ focus = {
+		id = LIP_sosii_hiuuu
+		icon = GFX_LIP_speak_to_parliament
+                available = {
+		has_idea = LIP_ebal_hoi
+
+                }
+                   
+                relative_position_id = LIP_sozvat_tocho
+		x = 8
+		y = 6              
+                prerequisite = {
+		focus = LIP_sozvat_tocho
+
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         country_event = {
+			id = kamish.1
+			hours = 6
+
+                        }
+			add_political_power = 10
+                        mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+        focus = {
+		id = LIP_dvig_dalh
+		icon = GFX_LIP_observations_of_outside
+                cost = 2 
+                prerequisite = {
+			focus = LIP_par_konec
+			focus = LIP_edin_parlament               
+                }
+		x = 4
+		y = 4
+                relative_position_id = LIP_par_konec 
+                relative_position_id = LIP_edin_parlament                 
+		ai_will_do = {
+			factor = 4
+		}
+		completion_reward = {
+                         country_event = {
+			id = kamish.1
+			hours = 6
+
+                        }
+			add_political_power = 10
+                        mark_focus_tree_layout_dirty = yes
+                        add_stability = 0.01
+
+		}
+	}
+
+        focus = {
+		id = LIP_obzor_army
+		icon = GFX_LIP_An_Army_of_Nightmares
+
+                relative_position_id = LIP_dvig_dalh
+		x = -2
+		y = 2
+              
+                prerequisite = {
+		focus = LIP_dvig_dalh
+
+	        }
+		cost = 2
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         country_event = {
+			id = kamish.1
+			hours = 6
+
+                        }
+			army_experience = 25
+		}
+	}
+
+      
+	focus = {
+		id = army_effort_LIP
+		icon = GFX_goal_generic_allies_build_infantry              
+
+                relative_position_id = LIP_obzor_army
+		x = 0
+		y = 1
+
+                prerequisite = {
+		focus = LIP_obzor_army
+               
+                }     
+                             
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = equipment_effort_LIP
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = army_effort_LIP }
+		x = -1
+		y = 1
+		relative_position_id = army_effort_LIP
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = motorization_effort_LIP
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = army_effort_LIP }
+		bypass = { has_tech = motorised_infantry }
+		x = 1
+		y = 1
+		relative_position_id = army_effort_LIP
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 3.0
+				technology = motorised_infantry
+			}
+		}
+	}
+
+	focus = {
+		id = doctrine_effort_LIP
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = army_effort_LIP }
+		x = 0
+		y = 2
+		relative_position_id = army_effort_LIP
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = equipment_effort_2_LIP
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = equipment_effort_LIP }
+		x = 0
+		y = 2
+		relative_position_id = equipment_effort_LIP
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = mechanization_effort_LIP
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = motorization_effort_LIP }
+		x = 0
+		y = 2
+		relative_position_id = motorization_effort_LIP
+		cost = 10
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = doctrine_effort_2_LIP
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = doctrine_effort_LIP }
+		x = 0
+		y = 2
+		relative_position_id = doctrine_effort_LIP
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = equipment_effort_3_LIP
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = equipment_effort_2_LIP }
+		x = 0
+		y = 2
+		relative_position_id = equipment_effort_2_LIP
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = armor_effort_LIP
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = mechanization_effort_LIP }
+		x = 0
+		y = 2
+		relative_position_id = mechanization_effort_LIP
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = special_forces_LIP
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = equipment_effort_3_LIP }
+		prerequisite = { focus = doctrine_effort_2_LIP }
+		prerequisite = { focus = armor_effort_LIP }
+		x = 1
+		y = 1
+		relative_position_id = equipment_effort_3_LIP
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+		}
+	}
+
+
+         focus = {
+		id = LIP_lin_lap
+		icon =  GFX_goal_generic_construct_military
+
+                relative_position_id = special_forces_LIP
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = special_forces_LIP
+
+	        }
+		cost = 12
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+                           has_war = no
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+                 257 = {
+		        add_building_construction = {
+					type = bunker
+					province = 3332
+					level = 7
+					instant_build = yes
+			}
+			add_building_construction = {
+					type = bunker
+					province = 313
+					level = 7
+					instant_build = yes
+                        }
+			add_building_construction = {
+					type = bunker
+					province = 9422
+					level = 7
+					instant_build = yes
+                                }
+			}
+			260 = {
+				add_building_construction = {
+					type = bunker
+					province = 6587
+					level = 7
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 3566
+					level = 7
+					instant_build = yes
+                                
+                                }
+				add_building_construction = {
+					type = bunker
+					province = 9529
+					level = 7
+					instant_build = yes
+                                 }
+				add_building_construction = {
+					type = bunker
+					province = 3504
+					level = 7
+					instant_build = yes
+                                }
+				add_building_construction = {
+					type = bunker
+					province = 437
+					level = 7
+					instant_build = yes
+
+                                }
+				add_building_construction = {
+					type = bunker
+					province = 6591
+					level = 7
+				 	instant_build = yes
+                               
+                                }
+				add_building_construction = {
+					type = bunker
+					province = 3567
+					level = 7
+					instant_build = yes
+
+                                      }
+			}
+			228 = {
+				add_building_construction = {
+					type = bunker
+					province = 547
+					level = 7
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 9476
+					level = 7
+					instant_build = yes
+                                
+                                }
+				add_building_construction = {
+					type = bunker
+					province = 9461
+					level = 7
+					instant_build = yes
+                                 }
+				add_building_construction = {
+					type = bunker
+					province = 9446
+					level = 7
+					instant_build = yes
+                                }
+				add_building_construction = {
+					type = bunker
+					province = 6505
+					level = 7
+					instant_build = yes
+
+                                }
+				add_building_construction = {
+					type = bunker
+					province = 6519
+					level = 7
+				 	instant_build = yes
+                               
+                                }
+				add_building_construction = {
+					type = bunker
+					province = 11487
+					level = 7
+					instant_build = yes
+
+                                  }
+			}
+		}
+	}               
+        focus = {
+		id = LIP_pvo_gac
+		icon = GFX_anti_air_towed
+
+                relative_position_id = LIP_lin_lap
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = LIP_lin_lap
+
+	        }
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+		completion_reward = {
+                         257 = { add_building_construction = {
+				type = anti_air_building
+				level = 1
+				instant_build = yes
+                           }
+                           260 = { add_building_construction = {
+				type = anti_air_building
+				level = 1
+				instant_build = yes
+                          }
+		}
+	}
+}
+}
+	focus = {
+		id = aviation_effort_LIP
+		icon = GFX_goal_generic_build_airforce
+               
+                relative_position_id = LIP_obzor_army
+		x = 4
+		y = 1
+
+                prerequisite = {
+		focus = LIP_obzor_army
+
+                }
+		cost = 10
+ 
+                
+               ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+                  
+                }
+
+		completion_reward = { 
+			air_experience = 25
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+			}			
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}			
+			air_experience = 25
+
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = {
+							free_building_slots = {
+								building = air_base
+								size > 1
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = fighter_focus_LIP
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = aviation_effort_LIP }
+		mutually_exclusive = { focus = bomber_focus }
+		x = -1
+		y = 1
+		relative_position_id = aviation_effort_LIP
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = bomber_focus_LIP
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = aviation_effort_LIP }
+		mutually_exclusive = { focus = fighter_focus_LIP }
+		x = 1
+		y = 1
+		relative_position_id = aviation_effort_LIP
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				category = cat_strategic_bomber
+				category = tactical_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = aviation_effort_2_LIP
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = bomber_focus_LIP focus = fighter_focus_LIP }
+		x = -1
+		y = 1
+		relative_position_id = bomber_focus_LIP
+		cost = 10
+
+		search_filters = {   FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+
+		complete_tooltip = {
+			air_experience = 25
+			if = { limit = { has_country_flag = aviation_effort_2_AB }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_doctrine_cost_reduction = {
+				name =  air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+		completion_reward = {
+			air_experience = 25
+			if = {
+				limit = {
+					capital_scope = {
+						OR = {
+							NOT = { is_controlled_by = ROOT }
+							NOT = {
+								free_building_slots = {
+									building = air_base
+									size > 1
+								}
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_2_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}				
+					ROOT = { set_country_flag = aviation_effort_2_AB }
+				}
+			}
+			add_doctrine_cost_reduction = {
+				name =  air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = CAS_effort_LIP
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = aviation_effort_2_LIP }
+		prerequisite = { focus = motorization_effort_LIP }
+		x = -1
+		y = 1
+		relative_position_id = aviation_effort_2_LIP
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = rocket_effort
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = aviation_effort_2_LIP }
+		prerequisite = { focus = infrastructure_effort_LIP }
+		x = 0
+		y = 2
+		relative_position_id = aviation_effort_2_LIP
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				ahead_reduction = 2
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.25
+				always = yes
+			}
+		}
+	}
+
+	focus = {
+		id = NAV_effort
+		icon = GFX_goal_generic_air_naval_bomber_LIP
+		prerequisite = { focus = aviation_effort_2_LIP }
+		prerequisite = { focus = flexible_navy }
+		x = 1
+		y = 1
+		relative_position_id = aviation_effort_2_LIP
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = naval_bomber
+			}
+		}
+
+        }
+        focus = {
+		id = LIP_dict_igor
+		icon = GFX_LIP_acquire_subjects_urban
+
+                relative_position_id = LIP_par_konec
+		x = 2
+		y = 2
+              
+                prerequisite = {
+		focus = LIP_par_konec
+
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         country_event = {
+			id = kamish.1
+			hours = 6
+
+                        }
+			add_political_power = 20
+                        mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+        focus = {
+		id = LIP_zakon_igor
+		icon = GFX_LIP_Crippling_the_Army
+
+                relative_position_id = LIP_dict_igor
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = LIP_dict_igor
+
+	        }
+		cost = 2
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+                
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         country_event = {
+			id = kamish.1
+			hours = 6
+
+                        }
+			add_political_power = -30
+                        mark_focus_tree_layout_dirty = yes
+                        add_stability = -0.08
+                        add_ideas = LIP_zakon_igor 
+
+                     	}
+	}
+
+        focus = {
+		id = LIP_gestapo
+		icon = GFX_LIP_vision_for_the_army
+
+                relative_position_id = LIP_zakon_igor
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = LIP_zakon_igor
+
+	        }
+		cost = 3
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+                
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         country_event = {
+			id = kamish.1
+			hours = 6
+
+                        }
+                        mark_focus_tree_layout_dirty = yes
+                        add_stability = 0.05
+                        add_war_support = 0.09
+
+                       	}
+	}
+
+         focus = {
+		id = LIP_nazi_vlast
+		icon = GFX_Reinforce_Nazism
+
+                relative_position_id = LIP_gestapo
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = LIP_gestapo
+
+	        }
+		cost = 3
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                          set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+                             }
+
+                        add_popularity = {
+				ideology = paternal_autocrat
+		 		popularity = -0.30
+
+                          }
+
+                        add_popularity = {
+				ideology = fascism
+		 		popularity = 0.30
+
+			   }
+			add_political_power = -20
+                        country_event = {
+			id = lip.2
+			hours = 6
+                            
+                        mark_focus_tree_layout_dirty = yes
+		}
+	}

@@ -1,0 +1,287 @@
+###################this is the political option composition when you can see all buying option using your political power(not used)###########
+
+political_option = {
+	
+	
+	buy_research_slot = {
+		#icon = decision_eng_blackshirt_march
+		
+		ai_will_do = { factor = 0 }
+		
+		allowed ={}
+		
+		visible ={}
+		
+		available ={}
+		
+		complete_effect = { add_research_slot = 1 }
+		
+		modifier = { } 
+		
+		fire_only_once = yes
+		days_remove = 30
+		days_re_enable = 0
+		cost = 500
+		
+		remove_effect = {}
+	}
+	
+	buy_militar_slot = {
+		#icon = decision_eng_blackshirt_march
+		
+		ai_will_do = { factor = 0 }
+		
+		allowed ={}
+		
+		visible ={}
+		
+		available ={}
+		
+		complete_effect = { random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+								include_locked = yes
+							}
+							}
+							add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+							}
+						} 
+						
+						}
+		
+		modifier = { } 
+		
+		fire_only_once = no
+		days_remove = 20
+		days_re_enable = 10
+		cost = 100
+		
+		remove_effect = {}
+	}
+	buy_civil_slot = {
+		#icon = decision_eng_blackshirt_march
+		
+		ai_will_do = { factor = 0 }
+		
+		allowed ={}
+		
+		visible ={}
+		
+		available ={}
+		
+		complete_effect = {
+		random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+								include_locked = yes
+							}
+						}
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+					}
+		
+		modifier = { } 
+		
+		fire_only_once = no
+		days_remove = 20
+		days_re_enable = 1
+		cost = 100
+		
+		remove_effect = {}
+	}
+	buy_dockyard_slot = {
+		#icon = decision_eng_blackshirt_march
+		
+		ai_will_do = { factor = 0 }
+		
+		allowed ={}
+		
+		visible ={}
+		
+		available ={any_owned_state = {
+								is_coastal = yes	
+							}
+							}
+		
+		complete_effect = {
+		if = {
+						limit = {
+							any_owned_state = {
+								is_coastal = yes
+								free_building_slots = {
+									building = dockyard
+									size > 0
+									include_locked = yes
+								}	
+							}
+						}
+						random_owned_controlled_state = {
+							limit = {
+								free_building_slots = {
+									building = dockyard
+									size > 0
+									include_locked = yes
+								}	
+								is_coastal = yes
+							}
+							add_building_construction = {
+								type = dockyard
+								level = 1
+								instant_build = yes
+							}
+							
+						}
+					}
+		}
+		
+		modifier = {} 
+		
+		fire_only_once = no
+		days_remove = 20
+		days_re_enable = 10
+		cost = 100
+		
+		remove_effect = {}
+	}
+	
+	buy_militaryexp = {
+		#icon = decision_eng_blackshirt_march
+		
+		ai_will_do = { factor = 0 }
+		
+		allowed ={}
+		
+		visible ={}
+		
+		available ={}
+		
+		complete_effect = { army_experience = 50 }
+		
+		modifier = { } 
+		
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 0
+		cost = 50
+		
+		remove_effect = {}
+	}
+	buy_airexp = {
+		#icon = decision_eng_blackshirt_march
+		
+		ai_will_do = { factor = 0 }
+		
+		allowed ={}
+		
+		visible ={}
+		
+		available ={}
+		
+		complete_effect = { air_experience = 50 }
+		
+		modifier = { } 
+		
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 0
+		cost = 50
+		
+		remove_effect = {}
+	}
+	buy_navyexp = {
+		#icon = decision_eng_blackshirt_march
+		
+		ai_will_do = { factor = 0 }
+		
+		allowed ={}
+		
+		visible ={}
+		
+		available ={}
+		
+		complete_effect = { navy_experience = 50 }
+		
+		modifier = { } 
+		
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 0
+		cost = 50
+		
+		remove_effect = {}
+	}
+	buy_steel2 = {
+		#icon = decision_eng_blackshirt_march
+		
+		ai_will_do = { factor = 0 }
+		
+		allowed ={}
+		
+		visible ={}
+		
+		available ={}
+		
+		complete_effect = {
+					random_owned_state = {
+						add_resource = {
+							type = steel
+							amount = 2
+						}
+		
+					}
+			
+			}
+		
+		modifier = { } 
+		
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 1
+		cost = 20
+		
+		remove_effect = {}
+	}
+	buy_oil5 = {
+		#icon = decision_eng_blackshirt_march
+		
+		ai_will_do = { factor = 0 }
+		
+		allowed ={}
+		
+		visible ={}
+		
+		available ={}
+		
+		complete_effect = {
+					random_owned_state = {
+		
+						add_resource = {
+							type = oil
+							amount = 5
+						}
+		
+					}
+					}
+		
+		modifier = { } 
+		
+		fire_only_once = no
+		days_remove = 60
+		days_re_enable = 1
+		cost = 50
+		
+		remove_effect = {}
+	}
+	
+}

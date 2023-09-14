@@ -1,0 +1,91 @@
+LIP_igor_krol_category  = {
+       
+	LIP_izmerit_nos = {
+
+		icon = GFX_decision_generic_political_action
+                 
+                available = {
+			has_full_control_of_state = 258
+		}
+		allowed = {
+
+			tag = LIP
+		}
+		visible = {
+		NOT = {
+				has_country_flag = LIP_pro_anc
+			}
+		}
+		cost = 50
+		fire_only_once = ye
+		ai_will_do = {
+			factor = 25
+		}
+		days_remove = 40
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision decision_generic_prepare_civil_war"
+			  add_stability = -0.05
+
+                   }
+	}  
+
+        LIP_poezdka_gazenvagen = {
+
+		icon = GFX_decision_generic_motorized
+                 
+                available = {
+			has_full_control_of_state = 258
+		}
+		allowed = {
+
+			tag = LIP
+		}
+		visible = {
+		NOT = {
+				has_country_flag = LIP_pro_anc
+			}
+		}
+		cost = 60
+		fire_only_once = ye
+		ai_will_do = {
+			factor = 25
+		}
+		days_remove = 40
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision decision_generic_prepare_civil_war"
+			  add_stability = 0.04
+	             
+                       }
+	}  
+         
+        LIP_remont_gazenvagen = {
+
+		icon = GFX_decision_generic_motorized
+                 
+                available = {
+			has_full_control_of_state = 258
+		}
+		allowed = {
+
+			tag = LIP
+		}
+		visible = {
+		NOT = {
+				has_country_flag = LIP_pro_anc
+			}
+		}
+		cost = 60
+		fire_only_once = ye
+		ai_will_do = {
+			factor = 25
+		}
+		days_remove = 40
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision decision_generic_prepare_civil_war"
+			   add_timed_idea =  { idea = LIP_gazen   days = 30 }
+	             
+                       }
+	}                             

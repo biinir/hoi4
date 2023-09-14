@@ -1,0 +1,334 @@
+ideas = {
+
+	country = {
+		CAM_busy_ports = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
+			picture = FRA_factory_strikes
+			modifier = {
+				industrial_capacity_factory = 0.1
+	
+			}
+		}
+
+                  CHI_army_corruption_1 = {
+
+			picture = chi_army_corruption
+
+			name = CHI_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				mobilization_speed = -0.1
+			}
+
+		}
+
+                CAM_weak_government = {
+
+			picture = generic_disjointed_gov
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+				political_power_cost = 0.5
+				stability_factor = -0.10
+			}
+		}
+
+                CAM_ubit_vseh = {
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+                                justify_war_goal_time = -0.25
+				generate_wargoal_tension = -0.7
+
+			}
+
+		}
+                 
+                CAM_inspect_army = {
+
+			picture = tur_kemalist_officers
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+                                army_attack_factor = 0.1
+				army_defence_factor = 0.1
+                                command_power_gain_mult = -0.1
+                                 
+                               
+			       }
+
+                        }
+
+                        CAM_bomb_udar = {
+
+			picture = idea_WEST_AFRICA_terror_bombing
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+                                war_support_factor = -0.05
+				army_org_factor = -0.1
+				army_morale_factor = -0.1
+				max_dig_in = -2
+				 war_support_factor = -0.03
+				 army_org_factor = -0.05
+				 army_morale_factor = -0.05
+				 max_dig_in = -1
+                                 industrial_capacity_factory = -0.1
+                                 
+                               
+			       }
+
+                        }
+
+                        
+                        CAM_voeni_sovet = {
+
+			picture = idea_CAM_voeni_sovet
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+                army_org_factor = 0.02
+				planning_speed = 0.1
+				command_power_gain = 0.5
+				training_time_army_factor = -0.1
+                army_attack_factor = 0.1
+				army_defence_factor = 0.1
+                               
+			       }
+
+                        }
+                        
+                        
+		KAM_whampoa_military_academy = {
+
+			picture = chi_whampoa_military_academy		
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_leader_cost_factor = -0.3
+				army_leader_start_planning_level = 1
+                command_power_gain = 0.5
+                experience_gain_army_factor = 0.1
+
+                                }
+
+                        }
+                           
+
+             KAM_dobr_military = {
+
+			picture = chi_whampoa_military_academy		
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                                  send_volunteer_divisions_required = -0.8
+                                  send_volunteer_factor = 0.3
+                                  send_volunteer_size = 5
+                                  send_volunteers_tension = -0.5
+                                  air_volunteer_cap = 100
+
+			      }
+		}
+
+                
+             KAM_voen_avia = {
+
+			picture = air_support_focus	
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+		                  air_agility_factor = 0.5
+                                  air_attack_factor = 0.5
+                                  air_defence_factor = 0.5
+                                  air_intercept_efficiency = 0.5
+                                  air_maximum_speed_factor = 0.5
+
+			      }
+		   }
+
+                   KAM_grazdan_sovet = {
+
+			picture = SOV_scientist_defect	
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+		                consumer_goods_factor = -0.05
+				production_speed_arms_factory_factor = 0.10
+				production_speed_dockyard_factor = 0.10
+				production_speed_naval_base_factor = 0.10
+				production_speed_coastal_bunker_factor = 0.10
+				production_speed_bunker_factor = 0.10
+				production_speed_air_base_factor = 0.10
+				production_speed_anti_air_building_factor = 0.10
+				production_speed_radar_station_factor = 0.10
+				production_speed_fuel_silo_factor = 0.10
+				production_speed_synthetic_refinery_factor = 0.15
+				political_power_cost = 0.2
+                                industrial_capacity_factory = 0.1
+
+			      }
+		}
+
+                KAM_voen_avia = {
+
+			picture = air_support_focus	
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+		                  air_agility_factor = 0.5
+                                  air_attack_factor = 0.5
+                                  air_defence_factor = 0.5
+                                  air_intercept_efficiency = 0.5
+                                  air_maximum_speed_factor = 0.5
+
+			      }
+		   }
+
+                    CAM_vhite_sun = {
+
+			picture = KAZ_white_sun
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+		                  acclimatization_hot_climate_gain_factor = 0.15
+                                   heat_attrition_factor = -0.35
+
+			      }
+		   }
+
+                   CAM_poor_industry = {
+			picture = CAM_poor_industry
+			modifier = {
+				production_factory_max_efficiency_factor = -0.30
+				industrial_capacity_factory = -0.25
+				production_speed_buildings_factor = -0.3
+			}
+		}
+
+                 KAZ_aul = {
+			picture = KAZ_aul
+			modifier = {
+				    industrial_capacity_factory = 0.1
+			}
+		}
+
+                KAZ_prop = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				    political_power_factor = 0.05
+                                    stability_factor = 0.05
+			}
+		}

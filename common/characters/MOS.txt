@@ -1,0 +1,14 @@
+characters={
+	MOS_Gregory_Zhukov={
+		name="Gregory_Zhukov"
+		portraits={
+			civilian={
+				large=gfx/leaders/MOS/Portrait_Soviet_Gregory_Zhukov.dds
+			}
+		}
+		country_leader={
+			ideology= stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}

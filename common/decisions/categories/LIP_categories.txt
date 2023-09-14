@@ -1,0 +1,30 @@
+LIP_kazah_urr_category = {
+	priority = 24
+
+	icon = GFX_decision_category_generic_kazakhstan
+        picture = GFX_Vmeshatsa_kaza
+
+	allowed = {
+		original_tag = LIP
+	}
+
+	visible = {
+		has_completed_focus = LIP_vostoc_sosed
+		has_civil_war = no
+	}
+}
+
+LIP_igor_krol_category = {
+	icon = GFX_decision_category_generic_political_actions
+        picture = GFX_gazen
+	allowed = {
+		original_tag = LIP
+
+        }
+
+	visible = {
+		has_completed_focus = LIP_nazi_vlast
+		has_civil_war = no
+
+	}
+}

@@ -1,0 +1,258 @@
+characters={
+	GAC_billy_herrington={
+		name=GAC_billy_herrington
+		portraits={
+			civilian={
+				large="GFX_portrait_gac_billy_herrington"
+			}
+		}
+		country_leader={
+			ideology=gachism
+			traits={ Boss_of_the_gym }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal = {
+			traits = { infantry_officer aggressive_assaulter infantry_leader  }
+			skill = 6
+			attack_skill = 6
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 4
+ }
+
+	}
+	
+		GAC_gachi_policeman={
+		name=GAC_gachi_policeman
+		portraits={
+			army={
+				small="GFX_portrait_gac_gachi_policeman"
+				large=GFX_portrait_gac_gachi_policeman
+			}
+			civilian = {
+				large="GFX_portrait_gac_gachi_policeman"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = GAC_gachi_policeman
+			allowed = {
+				original_tag = GAC
+			}
+			traits = {
+				gachi_policeman
+			}
+		}
+	}
+	
+	GAC_Steve_Rambo={
+		name=GAC_Steve_Rambo
+		portraits={
+			army={
+				small="GFX_portrait_gac_perfomance_artist"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = GAC_perfomance_artist
+			available = {
+				has_intelligence_agency = yes 
+			}
+			allowed = {
+				original_tag = GAC
+				has_dlc = "La Resistance"
+			}
+			traits = {
+				perfomance_artist
+			}
+		}		
+	}
+	
+
+	GAC_Brad_McGuire={
+		name=GAC_Brad_McGuire
+		portraits={
+			army={
+				small="GFX_portrait_gac_brad_mcguire"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = GAC_has_slaves
+			allowed = {
+				original_tag = GAC
+			}
+			traits = {
+				has_slaves
+			}
+		}	
+	}
+	
+GAC_van_darkholme={
+		name=GAC_van_darkholme
+		portraits={
+			civilian={
+				large="GFX_portrait_gac_van_military"
+			}
+			army={
+				small="GFX_portrait_gac_van_civ"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer infantry_leader }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+ }
+ 
+ }
+	
+	GAC_mark_wolf={
+		name=GAC_mark_wolf
+		portraits={
+			civilian={
+				large="GFX_portrait_gac_mark_military"
+			}
+			army={
+				small="GFX_portrait_gac_mark_civ"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer organizer }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+ }
+ 
+}
+
+	GAC_danny_lee={
+		name=GAC_danny_lee
+		portraits={
+			civilian={
+				large="GFX_portrait_gac_danny_military"
+			}
+			army={
+				small="GFX_portrait_gac_danny_civ"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer commando }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+ }
+ 
+}
+
+	GAC_steve_herley={
+		name=GAC_steve_herley
+		portraits={
+			civilian={
+				large="GFX_portrait_gac_steve_military"
+			}
+			army={
+				small="GFX_portrait_gac_steve_civ"
+			}
+		}
+		corps_commander = {
+			traits = { armor_officer panzer_leader combined_arms_expert }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+ }
+ 
+}
+
+	GAC_tank={
+		name=GAC_tank
+		portraits={
+			civilian={
+				large="GFX_portrait_gac_tank_military"
+			}
+			army={
+				small="GFX_portrait_gac_tank_civ"
+			}
+		}
+		corps_commander = {
+			traits = { armor_officer panzer_leader panzer_expert }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+ }
+ 
+}
+
+GAC_rey_harley={
+		name=GAC_rey_harley
+		portraits={
+			army={
+				small="GFX_portrait_gac_rey_civ"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = rey_harley
+			allowed = {
+				original_tag = GAC
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				army_chief_drill_gac
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+	
+GAC_ricardo_milos={
+		name=GAC_ricardo_milos
+		portraits={
+			army={
+				small="GFX_portrait_gac_milos_civ"
+			}
+
+		}
+		advisor={
+			slot = air_chief
+			idea_token = milos
+			allowed = {
+				original_tag = GAC
+			}
+			available = {
+				or = {
+					has_government = fascism
+				}
+			}
+			traits = {
+				flex_air_master
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+}
+
+
+
+
+
+

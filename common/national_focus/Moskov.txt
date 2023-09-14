@@ -1,0 +1,171 @@
+focus_tree = {
+	id = moscva
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MOS
+		}
+	}
+	default = no
+        continuous_focus_position = { x = 50 y =1650 }
+        
+	focus = {
+		id = SOV_gosvo_kras
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 8
+		y = 0
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {	
+
+		set_rule = { can_send_volunteers = yes }
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 10
+
+		}
+	}
+
+        focus = {
+		id = SOV_vlast_zhuk
+		icon = GFX_MOS_grand_marshal_zhukov
+                mutually_exclusive = { focus = SOV_piz_zhukov }
+
+                relative_position_id = SOV_gosvo_kras
+		x = 4
+		y = 1
+              
+                prerequisite = {
+		focus = SOV_gosvo_kras
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 10
+		}
+	}        
+        
+         focus = {
+		id = SOV_piz_zhukov
+		icon = GFX_zhukov
+                mutually_exclusive = { focus = SOV_vlast_zhuk }
+
+                relative_position_id = SOV_gosvo_kras
+		x = -4
+		y = 1
+              
+                prerequisite = {
+		focus =  SOV_gosvo_kras
+
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+        
+         focus = {
+		id = SOV_soban_vlast
+		icon = GFX_MOS_soban
+
+                relative_position_id = SOV_piz_zhukov
+		x = -2
+		y = 1
+              
+                prerequisite = {
+		focus = SOV_piz_zhukov
+
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+		}
+	}

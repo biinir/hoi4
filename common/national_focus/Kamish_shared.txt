@@ -1,0 +1,19 @@
+#Suzuki's Start tree
+shared_focus = {
+	id = KAM_silicon_dreams_on_the_pearl_river
+	icon = GFX_KAM_Silicon_Dreams_at_Pearl_River
+
+	x = 8
+	y = 0
+
+	allow_branch = {
+		has_country_flag = chief_executive_suzuki
+		NOT = {
+			has_country_flag = yasuda_crisis
+		}
+	}
+	cost = 4.286
+
+			}
+		}
+}

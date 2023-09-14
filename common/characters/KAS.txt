@@ -1,0 +1,14 @@
+characters={
+	KUS_parlament_kurs={
+		name="Parlamnet Kurska"
+		portraits={
+			civilian={
+				large=gfx/leaders/KUS/Portrait_parlament_kurs.dds
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}

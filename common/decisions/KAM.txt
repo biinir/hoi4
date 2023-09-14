@@ -1,0 +1,862 @@
+KAM_morkov_urr_category = {
+
+	KAM_develop_cape = {
+
+		icon = GFX_decision_Develop_Cape_icon
+
+		available = {
+			has_full_control_of_state = 217
+		}
+		allowed = {
+
+			tag = KAM
+		}
+		visible = {
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = KAM_diamond_count
+				value = 18
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = KAM_18_diamond_cost
+
+		ai_will_do = {
+			factor = 25
+		}
+		days_remove = 365
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision KAM_develop_cape"
+			add_to_variable = { KAM_diamond_count = -18 }
+			set_temp_variable = { temp_state_value_addition = 0.2 }
+			217 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				econ_state_value_change_addition_specified_state = yes
+			}
+			KAM_gain_mothly_diamonds_1 = yes
+			hidden_effect = {
+				681 = {
+					add_state_modifier = {
+						modifier = {
+							state_GDP_growth_factor_modifier = 0.05
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = KAM_increase_state_gdp_growth_tt_cape
+		}
+	}
+	KAM_develop_orange = {
+
+		icon = GFX_decision_Develop_Orange_icon
+                 
+                available = {
+			has_full_control_of_state = 275
+		}
+		allowed = {
+			tag = KAM
+		}
+		visible = {
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = KAM_diamond_count
+				value = 18
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = KAM_18_diamond_cost
+
+		ai_will_do = {
+			factor = 25
+		}
+		days_remove = 365
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision KAM_develop_orange"
+			add_to_variable = { KAM_diamond_count = -18 }
+			set_temp_variable = { temp_state_value_addition = 0.25 }
+			275 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				econ_state_value_change_addition_specified_state = yes
+			}
+			KAM_gain_mothly_diamonds_1 = yes
+			hidden_effect = {
+				275 = {
+					add_state_modifier = {
+						modifier = {
+							state_GDP_growth_factor_modifier = 0.05
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = KAM_increase_state_gdp_growth_tt_orange
+		}
+	}
+	KAM_subsidize_transvaal_farms = {
+
+		icon = GFX_decision_industrial_farm
+
+		available = {
+			has_full_control_of_state = 940
+		}
+		allowed = {
+
+			tag = KAM
+		}
+		visible = {
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = KAM_diamond_count
+				value = 12
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = KAM_12_diamond_cost
+
+		ai_will_do = {
+			factor = 25
+		}
+		days_remove = 120
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision KAM_subsidize_transvaal_farms"
+			add_to_variable = { KAM_diamond_count = -12 }
+			hidden_effect = {
+				940 = {
+					add_state_modifier = {
+						modifier = {
+							state_GDP_growth_factor_modifier = 0.05
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = KAM_increase_state_gdp_growth_tt_transvaal
+		}
+	}
+	KAM_develop_bechuan = {
+
+		icon = GFX_decision_KAM_develop_bechuan_roads
+
+		available = {
+			any_controlled_state = {
+				is_bechuanaland_state = yes
+			}
+		}
+		allowed = {
+			tag = KAM
+		}
+		visible = {
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = KAM_diamond_count
+				value = 8
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = KAM_8_diamond_cost
+
+		ai_will_do = {
+			factor = 25
+		}
+		days_remove = 120
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision KAM_develop_bechuan"
+			add_to_variable = { KAM_diamond_count = -8 }
+			add_manpower = 450
+			set_temp_variable = { temp_state_value_addition = 0.05 }
+			random_controlled_state = {
+				limit = { 
+					is_bechuanaland_state = yes 
+					infrastructure < 9
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				econ_state_value_change_addition_specified_state = yes
+			}
+		}
+	}
+	KAM_develop_electric_grid = {
+		icon = GFX_decision_generic_construction
+		allowed = {
+			tag = KAM
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = KAM_diamond_count
+				value = 8
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = KAM_8_diamond_cost
+		ai_will_do = {
+			factor = 25
+		}
+		days_remove = 150
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision KAM_develop_electric_grid"
+			add_to_variable = { KAM_diamond_count = -8 }
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = thermoelectric_plant
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	KAM_fund_orange_militias = {
+
+		icon = GFX_decision_generic_military_parade
+
+		available = {
+			has_full_control_of_state = 275
+			NOT = {
+				has_country_flag = KAM_pro_anc
+			}
+		}
+		allowed = {
+			tag = KAM
+		}
+		visible = {
+			NOT = { has_global_flag = south_african_war }
+			NOT = {
+				has_country_flag = KAM_pro_anc
+			}
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = KAM_diamond_count
+				value = 12
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = KAM_12_diamond_cost
+
+		ai_will_do = {
+			factor = 25
+		}
+		days_remove = 120
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision KAM_fund_orange_militias"
+			add_to_variable = { KAM_diamond_count = -12 }
+			add_manpower = 10000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = KAM
+			}
+		}
+	}
+	KAM_expand_diamond_mines = {
+
+		icon = GFX_decision_KAM_expand_diamond_mines
+
+		available = {
+			NOT = {
+				has_country_flag = KAM_pro_anc
+			}
+		}
+		allowed = {
+			tag = KAM
+		}
+		visible = {
+			NOT = {
+				has_country_flag = KAM_pro_anc
+			}
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = KAM_diamond_count
+				value = 30
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = KAM_30_diamond_cost
+
+		ai_will_do = {
+			factor = 365
+		}
+		days_remove = 5
+		days_re_enable = 30
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision KAM_expand_diamond_mines"
+			add_to_variable = { KAM_diamond_count = -30 }
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			KAM_gain_mothly_diamonds_1 = yes
+			add_timed_idea = { idea = KAM_expand_diamond_mines_misc_income days = 90 }
+		}
+	}
+	KAM_raise_work_times = {
+
+		icon = GFX_decision_generic_civil_support
+
+		available = {
+			has_country_flag = KAM_anti_anc
+		}
+		allowed = {
+			tag = KAM
+		}
+		visible = {
+			NOT = {
+				has_country_flag = KAM_pro_anc
+			}
+		}
+		cost = 150
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 25
+		}
+		days_remove = 560
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision KAM_raise_work_times"
+			tno_max_workhours_worsen = yes
+			KAM_gain_mothly_diamonds_2 = yes
+		}
+	}
+	KAM_lower_worker_pensions = {
+
+		icon = GFX_decision_generic_use_force
+
+		available = {
+			has_country_flag = KAM_anti_anc
+		}
+		allowed = {
+
+			tag = KAM
+		}
+		visible = {
+			NOT = {
+				has_country_flag = KAM_pro_anc
+			}
+		}
+		cost = 125
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 25
+		}
+		days_remove = 365
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision KAM_lower_worker_pensions"
+			tno_pensions_worsen = yes
+			KAM_gain_mothly_diamonds_1 = yes
+		}
+	}
+
+	## army stuff
+	KAM_buy_OFN_guns = {
+
+		icon = GFX_decision_OFN_guns_icon
+
+		available = {
+		}
+		allowed = {
+			tag = KAM
+		}
+		visible = {
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = KAM_diamond_count
+				value = 8
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = KAM_8_diamond_cost
+
+		ai_will_do = {
+			factor = 25
+		}
+		days_remove = 120
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision KAM_buy_OFN_guns"
+			add_to_variable = { KAM_diamond_count = -8 }
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1250
+				producer = KAM
+			}
+			set_temp_variable = { KAM_Pakt_Displeasure_temp = 0.1 }
+			KAM_pakt_anger_change = yes
+		}
+	}
+	KAM_attract_OFN_business = {
+
+		icon = GFX_decision_KAM_attract_OFN_business
+
+		available = {
+		}
+		allowed = {
+			tag = KAM
+		}
+		visible = {
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = KAM_diamond_count
+				value = 12
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = KAM_12_diamond_cost
+
+		ai_will_do = {
+			factor = 25
+		}
+		days_remove = 120
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision KAM_attract_OFN_business"
+			add_to_variable = { KAM_diamond_count = -12 }
+			set_temp_variable = { gdp_growth_temp = 0.015 }
+			econ_gdp_growth_change = yes
+			set_temp_variable = { KAM_Pakt_Displeasure_temp = 0.15 }
+			KAM_pakt_anger_change = yes
+		}
+	}
+	KAM_ask_for_OFN_stationing = {
+
+		icon = GFX_decision_KAM_ask_OFN_stationing
+
+		available = {
+		}
+		allowed = {
+			tag = KAM
+		}
+		visible = {
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = KAM_diamond_count
+				value = 12
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = KAM_12_diamond_cost
+
+		ai_will_do = {
+			factor = 25
+		}
+		days_remove = 120
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision KAM_ask_for_OFN_stationing"
+			add_to_variable = { KAM_diamond_count = -12 }
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2500
+				producer = KAM
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = 1000
+				producer = KAM
+			}
+			add_manpower = 15000
+			set_temp_variable = { KAM_Pakt_Displeasure_temp = 0.3 }
+			KAM_pakt_anger_change = yes
+		}
+	}
+	KAM_cut_off_trade_with_the_pakt = {
+
+		icon = GFX_decision_KAM_end_pakt_trade
+
+		available = {
+			NOT = {
+				has_global_flag = german_civil_war
+			}
+		}
+		allowed = {
+			tag = KAM
+		}
+		visible = {
+			NOT = {
+				has_global_flag = south_african_war
+				has_global_flag = german_civil_war
+			}
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = KAM_Pakt_Displeasure
+				value = 0.60
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = PAKT_BYE_KAM
+
+		ai_will_do = {
+			factor = 25
+		}
+		fire_only_once = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision KAM_cut_off_trade_with_the_pakt"
+			add_manpower = 10000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 3750
+				producer = KAM
+			}
+			KAM_gain_5_diamonds = yes
+			KAM_end_pakt_trade = yes
+			set_temp_variable = { gdp_growth_temp = -1 }
+			econ_gdp_growth_change = yes
+			set_country_flag = KAM_ended_pakt_trade
+		}
+	}
+	KAM_buy_Pakt_guns = {
+
+		icon = GFX_decision_KAM_buy_pakt_guns
+
+		available = {
+			NOT = {
+				has_global_flag = german_civil_war
+				custom_trigger_tooltip = {
+					tooltip = KAM_displeasure_50
+					check_variable = {
+						var = KAM_Pakt_Displeasure
+						value = 0.5
+						compare = greater_than_or_equals
+					}
+				}
+			}
+		}
+		allowed = {
+			tag = KAM
+		}
+		visible = {
+			NOT = { has_global_flag = south_african_war }
+			NOT = {
+				OR = {
+					check_variable = {
+						var = KAM_Pakt_Displeasure
+						value = 0.5
+						compare = greater_than_or_equals
+					}
+					has_global_flag = german_civil_war
+				}
+			}
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = KAM_diamond_count
+				value = 8
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = KAM_8_diamond_cost
+
+		ai_will_do = {
+			factor = 25
+		}
+		days_remove = 120
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision KAM_buy_Pakt_guns"
+			add_to_variable = { KAM_diamond_count = -8 }
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1250
+				producer = KAM
+			}
+			set_temp_variable = { KAM_Pakt_Displeasure_temp = -0.075 }
+			KAM_pakt_anger_change = yes
+		}
+	}
+	KAM_attract_Pakt_business = {
+
+		icon = GFX_decision_KAM_attract_pakt_business
+
+		available = {
+			NOT = {
+				has_global_flag = german_civil_war
+				custom_trigger_tooltip = {
+					tooltip = KAM_displeasure_50
+					check_variable = {
+						var = KAM_Pakt_Displeasure
+						value = 0.5
+						compare = greater_than_or_equals
+					}
+				}
+			}
+		}
+		allowed = {
+			tag = KAM
+		}
+		visible = {
+			NOT = {
+				OR = {
+					check_variable = {
+						var = KAM_Pakt_Displeasure
+						value = 1
+						compare = greater_than_or_equals
+					}
+					has_global_flag = german_civil_war
+				}
+			}
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = KAM_diamond_count
+				value = 12
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = KAM_12_diamond_cost
+
+		ai_will_do = {
+			factor = 25
+		}
+		days_remove = 120
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision KAM_attract_Pakt_business"
+			add_to_variable = { KAM_diamond_count = -12 }
+			set_temp_variable = { gdp_growth_temp = 0.015 }
+			econ_gdp_growth_change = yes
+			set_temp_variable = { KAM_Pakt_Displeasure_temp = -0.10 }
+			KAM_pakt_anger_change = yes
+		}
+	}
+	KAM_buy_Pakt_research = {
+
+		icon = GFX_decision_KAM_buy_pakt_research
+
+		available = {
+			NOT = {
+				has_global_flag = german_civil_war
+				custom_trigger_tooltip = {
+					tooltip = KAM_displeasure_100
+					check_variable = {
+						var = KAM_Pakt_Displeasure
+						value = 1
+						compare = greater_than_or_equals
+					}
+				}
+			}
+		}
+		allowed = {
+
+			tag = KAM
+		}
+		visible = {
+			NOT = { has_global_flag = south_african_war }
+			NOT = {
+				OR = {
+					check_variable = {
+						var = KAM_Pakt_Displeasure
+						value = 1
+						compare = greater_than_or_equals
+					}
+					has_global_flag = german_civil_war
+				}
+			}
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = KAM_diamond_count
+				value = 12
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = KAM_12_diamond_cost
+
+		ai_will_do = {
+			factor = 25
+		}
+		days_remove = 120
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision KAM_buy_Pakt_research"
+			add_to_variable = { KAM_diamond_count = -12 }
+			TNO_improve_research_facilities_med = yes
+			set_temp_variable = { KAM_Pakt_Displeasure_temp = -0.15 }
+			KAM_pakt_anger_change = yes
+		}
+	}
+}
+
+
+KAM_kazah_urr_category = {
+       
+	KAM_otpravit_orugie = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+                 
+                available = {
+			has_full_control_of_state = 217
+		}
+		allowed = {
+
+			tag = KAM
+		}
+		visible = {
+		NOT = {
+				has_country_flag = KAM_pro_anc
+			}
+		}
+		cost = 50
+		fire_only_once = ye
+		ai_will_do = {
+			factor = 25
+		}
+		days_remove = 40
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision decision_generic_prepare_civil_war"
+			send_equipment = {
+				type = infantry_equipment
+				amount = 1000
+				target = KAZ
+			}
+			send_equipment = {
+				type = support_equipment
+				amount = 500
+				target = KAZ
+			}
+		}
+	}
+         
+       KAM_otpravit_samolet = {
+
+		icon = GFX_decision_generic_fighter_plane
+                 
+                available = {
+			has_full_control_of_state = 217
+		}
+		allowed = {
+
+			tag = KAM
+		}
+		visible = {
+		NOT = {
+				has_country_flag = KAM_pro_anc
+			}
+		}
+		cost = 70
+		fire_only_once = ye
+		ai_will_do = {
+			factor = 25
+		}
+		days_remove =  60
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision decision_generic_fighter_plane"
+			send_equipment = {
+				type = fighter_equipment_2
+				amount = 30
+				target = KAZ
+			}
+			send_equipment = {
+				type = fighter_equipment_1
+				amount = 60
+				target = KAZ
+			}
+		}
+	} 
+        
+	KAM_otpravit_tanki = {
+
+		icon = GFX_decision_generic_tank
+                 
+                available = {
+			has_full_control_of_state = 217
+		}
+		allowed = {
+
+			tag = KAM
+		}
+		visible = {
+		NOT = {
+				has_country_flag = KAM_pro_anc
+			}
+		}
+		cost = 50
+		fire_only_once = ye
+		ai_will_do = {
+			factor = 25
+		}
+		days_remove = 60
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision decision_generic_prepare_civil_war"
+			send_equipment = {
+				type = light_tank_equipment_2
+				amount = 30
+				target = KAZ
+			}
+			send_equipment = {
+				type = motorized_equipment
+				amount = 60
+				target = KAZ
+			}
+		}
+	}
+        KAM_bomb_udar = {
+
+		icon = GFX_decision_generic_bombing
+                 
+                available = {
+			has_full_control_of_state = 217
+		}
+		allowed = {
+
+			tag = KAM
+		}
+		visible = {
+		NOT = {
+				has_country_flag = KAM_pro_anc
+			}
+		}
+		cost = 80
+		fire_only_once = ye
+		ai_will_do = {
+			factor = 25
+		}
+		days_remove = 90
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision decision_generic_bombing"
+			if = {
+				KZZ = {
+				add_timed_idea = { idea = CAM_bomb_udar days = 90 }
+                                }
+			send_equipment = {
+				type = motorized_equipment
+				amount = 2
+	                        target = KAZ
+			}
+		}
+	}                

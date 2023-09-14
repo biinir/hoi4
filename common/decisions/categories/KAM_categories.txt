@@ -1,0 +1,23 @@
+KAM_morkov_urr_category = {
+	icon = GFX_decision_category_generic_mining
+	picture = GFX_KAM_deccat_mines
+	allowed = {
+		original_tag = KAM
+	}
+}
+
+KAM_kazah_urr_category = {
+	priority = 24
+
+	icon = decision_category_generic_kazakhstan
+        picture = GFX_Vmeshatsa_kaza
+
+	allowed = {
+		original_tag = KAM
+	}
+
+	visible = {
+		has_completed_focus = KAM_vostoc_sosed
+		has_civil_war = no
+	}
+}

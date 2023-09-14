@@ -1,0 +1,197 @@
+KAM_gain_mothly_diamonds_1 = {
+	add_to_variable = { KAM_diamond_gain = 1 }
+	custom_effect_tooltip = KAM_diamond_gain_boost_1
+}
+
+KAM_gain_mothly_diamonds_2 = {
+	add_to_variable = { KAM_diamond_gain = 2 }
+	custom_effect_tooltip = KAM_diamond_gain_boost_2
+}
+
+KAM_gain_5_diamonds = {
+	add_to_variable = { KAM_diamond_count = 5 }
+	custom_effect_tooltip = KAM_plus_5_diamonds
+}
+
+KAM_lose_mothly_diamonds_1 = {
+	add_to_variable = { KAM_diamond_gain = -1 }
+	custom_effect_tooltip = KAM_diamond_lose_boost_1
+}
+
+KAM_lose_mothly_diamonds_2 = {
+	add_to_variable = { KAM_diamond_gain = -2 }
+	custom_effect_tooltip = KAM_diamond_lose_boost_2
+}
+
+KAM_lose_mothly_diamonds = {
+	add_to_variable = { KAM_diamond_count = -5 }
+	custom_effect_tooltip = KAM_diamond_lose_boost_5
+}
+
+ KAM_diamond_count = {
+		set_variable = { KAM_diamond_misc_income = KAM_diamond_count }
+		multiply_variable = { KAM_diamond_misc_income = 0.001 }
+		log = "[GetDateText]: [THIS.GetName]: Added diamonds to KAM"
+}
+KAM_Pakt_Anger_Raise_5 = {
+	add_to_variable = { KAM_Pakt_Displeasure = 0.15 }
+	clamp_variable = {
+		var = KAM_Pakt_Displeasure
+		min = 0
+		max = 1
+	}
+	custom_effect_tooltip = KAM_PAKT_MAD_5
+}
+
+KAM_Pakt_Anger_Raise_10 = {
+	add_to_variable = { KAM_Pakt_Displeasure = 0.30 }
+	clamp_variable = {
+		var = KAM_Pakt_Displeasure
+		min = 0
+		max = 1
+	}
+	custom_effect_tooltip = KAM_PAKT_MAD_10
+}
+
+KAM_Pakt_Anger_Raise_20 = {
+	add_to_variable = { KAM_Pakt_Displeasure = 0.50 }
+	clamp_variable = {
+		var = KAM_Pakt_Displeasure
+		min = 0
+		max = 1
+	}
+	custom_effect_tooltip = KAM_PAKT_MAD_20
+}
+
+KAM_Pakt_Anger_Lower_3 = {
+	add_to_variable = { KAM_Pakt_Displeasure = -0.03 }
+	clamp_variable = {
+		var = KAM_Pakt_Displeasure
+		min = 0
+		max = 1
+	}
+	custom_effect_tooltip = KAM_PAKT_MAD_LESS_3
+}
+
+KAM_Pakt_Anger_Lower_6 = {
+	add_to_variable = { KAM_Pakt_Displeasure = -0.06 }
+	clamp_variable = {
+		var = KAM_Pakt_Displeasure
+		min = 0
+		max = 1
+	}
+	custom_effect_tooltip = KAM_PAKT_MAD_LESS_6
+}
+
+KAM_end_pakt_trade = {
+	add_to_variable = { KAM_Pakt_Displeasure = 1 }
+	clamp_variable = {
+		var = KAM_Pakt_Displeasure
+		min = 0
+		max = 1
+	}
+	hidden_effect = {
+		GER = { set_embargo_PREV = yes }
+		GGR = { set_embargo_PREV = yes }
+		BGR = { set_embargo_PREV = yes }
+		HGR = { set_embargo_PREV = yes }
+		SGR = { set_embargo_PREV = yes }
+		CZE = { set_embargo_PREV = yes }
+		GGN = { set_embargo_PREV = yes }
+		SLO = { set_embargo_PREV = yes }
+		UKR = { set_embargo_PREV = yes }
+		MCW = { set_embargo_PREV = yes }
+		OST = { set_embargo_PREV = yes }
+		COG = { set_embargo_PREV = yes }
+		CAU = { set_embargo_PREV = yes }
+		SER = { set_embargo_PREV = yes }
+		DEN = { set_embargo_PREV = yes }
+		HOL = { set_embargo_PREV = yes }
+		NOR = { set_embargo_PREV = yes }
+		CRN = { set_embargo_PREV = yes }
+		MAD = { set_embargo_PREV = yes }
+		GRO = { set_embargo_PREV = yes }
+		ANG = { set_embargo_PREV = yes }
+		HOL = { set_embargo_PREV = yes }
+		BRG = { set_embargo_PREV = yes }
+		BUL = { set_embargo_PREV = yes }
+		ENG = { set_embargo_PREV = yes }
+		FRA = { set_embargo_PREV = yes }
+		#BRT = { set_embargo_PREV = yes }
+		IRE = { set_embargo_PREV = yes }
+	}
+	custom_effect_tooltip = KAM_no_pakt_trade
+}
+
+#KAM_initialize_referendum = {
+#	681 = { #Cape
+#		set_state_flag = KAM_election_state
+#		set_variable = { KAM_voter_percent = 35 }
+#		set_variable = { KAM_monarchy_support = 59 }
+#	}
+#	719 = { #Natal
+#		set_state_flag = KAM_election_state
+#		set_variable = { KAM_voter_percent = 10 }
+#		set_variable = { KAM_monarchy_support = 79 }
+#	}
+#	275 = { #Orange Free State
+#		set_state_flag = KAM_election_state
+#		set_variable = { KAM_voter_percent = 9 }
+#		set_variable = { KAM_monarchy_support = 24 }
+#	}
+#	940 = { #Transvaal
+#		set_state_flag = KAM_election_state
+#		set_variable = { KAM_voter_percent = 44 }
+#		set_variable = { KAM_monarchy_support = 44 }
+#	}
+#	1050 = { #Bechuanaland
+#		set_state_flag = KAM_election_state
+#		set_variable = { KAM_voter_percent = 2 }
+#		set_variable = { KAM_monarchy_support = 48 }
+#	}
+#	set_country_flag = KAM_referendum
+#}
+#
+#KAM_calculate_referendum_winner = {
+#	set_variable = { KAM_monarchy_percent_total = 0 }
+#	hidden_effect = {
+#		every_owned_state = {
+#			limit = { has_state_flag = KAM_election_state }
+#			set_variable = { KAM_monarchy_percent_2 = KAM_monarchy_support }
+#			multiply_variable = { KAM_monarchy_percent_2 = KAM_voter_percent }
+#			multiply_variable = { KAM_monarchy_percent_2 = 0.01 }
+#			log = "THIS_IS_KAMELEC_DATA,\"[GetDateText]\",[THIS.GetName],[?THIS.KAM_monarchy_support],[?THIS.KAM_voter_percent],[?THIS.KAM_monarchy_percent_2]"
+#			add_to_variable = { KAM.KAM_monarchy_percent_total = KAM_monarchy_percent_2 }
+#		}
+#	}
+#	log = "THIS_IS_KAMELEC_DATA_2,\"[GetDateText]\",[?THIS.KAM_monarchy_percent_total]"
+#	if = {
+#		limit = {
+#			check_variable = { var = KAM_monarchy_percent_total value = 50 compare = greater_than_or_equals }
+#		}
+#		hidden_effect = {
+#			set_global_flag = KAM_monarchy_won
+#			country_event = {
+#				id = KAM.3
+#				days = 1
+#			}
+#			set_variable = { KAM_winner_percent = KAM_monarchy_percent_total }
+#			remove_ideas = KAM_The_Empty_Throne
+#		}
+#	}
+#	else = {
+#		hidden_effect ={
+#			set_global_flag = KAM_republic_won
+#			country_event = {
+#				id = KAM.2
+#				days = 1
+#			}
+#			set_variable = { KAM_winner_percent = 100 }
+#			subtract_from_variable = { KAM_winner_percent = KAM_monarchy_percent_total }
+#			set_cosmetic_tag = KAM_REP
+#			remove_ideas = KAM_The_Empty_Throne
+#		}
+#	}
+#	set_country_flag = KAM_referendum_over
+#}
+#

@@ -1,0 +1,201 @@
+focus_tree = {
+	id = grazdan1
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KAZ
+		}
+	}
+	default = no
+        continuous_focus_position = { x = 50 y =1650 }
+	focus = {
+		id = KAZ_1
+		icon = GFX_MON_improve_infantry_equipment_II
+		x = 8
+		y = 0
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {	
+
+		set_rule = { can_send_volunteers = yes }
+
+		}
+
+		completion_reward = {	                 
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 3000
+				producer = KAZ
+			}
+			hidden_effect = {
+				country_event = {
+					id =  arizona.11
+					days = 25
+				}
+			}
+		}
+	}
+         
+        focus = {
+		id = KAZ_2
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = KAZ_1 }
+		relative_position_id = KAZ_1
+		x = 0
+		y = 1
+		cost = 3
+		available = {
+			OR = {
+				407 = { is_owned_and_controlled_by = KAZ }
+				583 = { is_owned_and_controlled_by = KAZ }
+			}
+		}
+		ai_will_do = { factor = 30 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus POR_raise_regulos"
+			hidden_effect = {
+				if = {
+					limit = { has_template = "brigada opolchenia" }
+					delete_unit_template_and_units = { division_template = "brigada opolchenia" disband = yes } #no cheating
+				}
+			}
+			division_template = {
+				name = "brigada opolchenia"
+				division_names_group = POR_MIL_01
+				regiments = {
+					irregular_infantry = { x = 0 y = 0 }
+					irregular_infantry = { x = 0 y = 1 }
+					irregular_infantry = { x = 0 y = 2 }
+				}
+				template_counter = 68
+			}
+			random_owned_controlled_state = {
+				prioritize = { 407 583 }
+				limit = { valid_state_for_spawning_friendly_unit = yes }
+				create_unit = {
+					division = "name = \"1º brigada opolchenia\" division_template = \"brigada opolchenia\" start_experience_factor = 0.1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"2º brigada opolchenia\" division_template = \"brigada opolchenia\" start_experience_factor = 0.1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"3º brigada opolchenia\" division_template = \"brigada opolchenia\" start_experience_factor = 0.1"
+					owner = KAZ
+				}
+			}
+		}
+	}
+
+        focus = {
+		id = KAZ_3
+		icon = GFX_focus_generic_industry_1
+        relative_position_id =  KAZ_1
+		x = 4
+		y = 2
+              
+                prerequisite = {
+		focus =  KAZ_1
+
+	        }
+		cost = 4
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         add_ideas = KAZ_aul
+
+                         country_event = {
+			id = kazah.3
+			hours = 6
+
+                        }
+			add_political_power = 5
+		}
+	}
+    
+        focus = {
+		id = KAZ_4
+		icon = GFX_goal_continuous_def_against_influence
+        relative_position_id =  KAZ_1
+		x = -4
+		y = 2
+              
+                prerequisite = {
+		focus =  KAZ_1
+
+	        }
+		cost = 4
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         add_timed_idea = { idea = KAZ_prop days = 100 }
+
+                         country_event = {
+			id = kaz.4
+			hours = 6
+
+                        }
+			add_political_power = 5
+
+			}
+		}
+	}

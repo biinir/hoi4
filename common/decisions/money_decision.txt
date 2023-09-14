@@ -1,0 +1,674 @@
+#############this is the loans menu when you can asked for money most of them with a rate#############
+economic_decision = {
+
+
+	money_gui_open = {
+		#context_type = selected_country_context
+		#parent_window_token = top_bar
+		#window_name = decision_tab
+		
+		visible = { is_ai = no }
+		
+		available = { NOT = { has_country_flag = open_money_gui }}
+
+		complete_effect = { set_country_flag = open_money_gui }
+		
+		fire_only_once = no
+		
+
+	}
+	
+	
+	money_gui_open_top = {
+		#context_type = selected_country_context
+		#parent_window_token = top_bar
+		#window_name = decision_tab
+		
+		visible = {  Not = { has_country_flag = money_gui_open_top} is_ai = no }
+		
+		available = { }
+
+		complete_effect = { set_country_flag =  money_gui_open_top }
+		
+		fire_only_once = no
+		
+
+		
+	}
+	
+	money_gui_close_top = {
+		#context_type = selected_country_context
+		#parent_window_token = top_bar
+		#window_name = decision_tab
+		
+		visible = { has_country_flag = money_gui_open_top is_ai = no }
+		
+		available = { has_country_flag = money_gui_open_top}
+
+		complete_effect = { clr_country_flag =  money_gui_open_top }
+		
+		fire_only_once = no
+		
+
+		
+	}
+
+
+	#no rate but they can be used only once#
+	humanitary_assistance = {
+		icon = GFX_neutralmoney1
+		
+		ai_will_do = { factor = 0 }
+		
+		visible ={ is_major=no}
+		
+		available ={ has_war=no}
+		
+		complete_effect = { add_to_variable = { var = dx value = 150 } }
+		
+		modifier = {  } 
+		
+		fire_only_once = yes
+		days_remove = 10
+		days_re_enable = 0
+		cost = 10
+		
+		remove_effect = {}
+		
+
+	}
+	
+	#10% Borrowrate but you cannot be at war!#
+	league_ass1 = { 
+		icon = GFX_neutralmoney
+		
+		ai_will_do = { factor = 0 }
+		
+		visible ={ }
+		
+		available ={ has_war=no}
+		
+		complete_effect = { add_to_variable = { var = dx value = 200 } }
+		
+		modifier = {  } 
+		
+		fire_only_once = no
+		days_remove = 720
+		days_re_enable = 10
+		cost = 0
+		
+		remove_effect = {
+		add_to_variable = { var = dx value = -220 }
+		}
+		
+
+	}
+	
+	league_ass2 = { 
+		icon = GFX_neutralmoney
+		
+		ai_will_do = { factor = 0 }
+		
+		visible ={ check_variable = { dx < -50}}
+		
+		available ={ has_war=no
+		check_variable = { dx < -50}
+		}
+		
+		complete_effect = { add_to_variable = { var = dx value = 200 } }
+		
+		modifier = {  } 
+		
+		fire_only_once = no
+		days_remove = 720
+		days_re_enable = 1
+		cost = 0
+		
+		remove_effect = {
+		add_to_variable = { var = dx value = -220 }
+		}
+		
+
+	}
+	#no rate but they can be used only once and add 10% popularity on communism#
+	sov_assistance = {
+		icon = GFX_comunismmoney
+		
+		ai_will_do = { factor = 0 }
+		
+		visible ={ is_major=no
+		country_exists = MOL
+		{has_war_with = SOV}
+		}
+		
+		available ={ 
+			NOT={has_country_flag = fas_yes
+				has_country_flag = dem_yes
+				}
+			
+			}
+		
+		complete_effect = { 
+		set_country_flag = com_yes
+		
+		add_to_variable = { var = dx value = 250 }
+		add_popularity = {
+			ideology = communism
+			popularity = 0.10
+		}
+		}
+		
+		modifier = {  } 
+		
+		fire_only_once = yes
+		days_remove = 30
+		days_re_enable = 0
+		cost = 0
+		
+		remove_effect = {
+		clr_country_flag = com_yes
+		}
+		
+
+	}
+	#no rate but they can be used only once and add 10% popularity on fascism#
+	ger_assistance = {
+		icon = GFX_facismmoney
+		
+		ai_will_do = { factor = 0 }
+		
+		visible ={ is_major=no
+		country_exists = MOL
+		{has_war_with = MOL}
+		}
+		
+		available ={ 
+		NOT={ has_country_flag = com_yes
+			has_country_flag = dem_yes}
+		}
+		
+		complete_effect = { 
+		set_country_flag = fas_yes
+		add_to_variable = { var = dx value = 250 }
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.10
+		}
+		}
+		
+		modifier = {  } 
+		
+		fire_only_once = yes
+		days_remove = 30
+		days_re_enable = 0
+		cost = 0
+		
+		remove_effect = {
+		clr_country_flag = fas_yes 
+		}
+		
+
+	}
+	#no rate but they can be used only once and add 10% popularity on democratic#	
+	usa_assistance = {
+		icon = GFX_democraticmoney
+		
+		ai_will_do = { factor = 0 }
+		
+		visible ={ is_major=no
+		country_exists = MOL
+		NOT= {has_war_with = MOL}
+		}
+		
+		available ={
+		NOT={has_country_flag = fas_yes
+			has_country_flag = com_yes
+			}	
+		}
+		
+		complete_effect = { 
+		set_country_flag = dem_yes
+		add_to_variable = { var = dx value = 250 }
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.10
+		}
+		}
+		
+		modifier = {  } 
+		
+		fire_only_once = yes
+		days_remove = 30
+		days_re_enable = 0
+		cost = 0
+		
+		remove_effect = {
+		clr_country_flag = dem_yes
+		}
+		
+
+	}
+	#20% borrow rate# 
+	swi_assistance = {   
+		icon = GFX_neutralmoney0
+		
+		ai_will_do = { factor = 0 }
+		
+		visible ={ 
+		country_exists = MOL
+		{original_tag = MOL}
+		} 
+		
+		available ={}
+		
+		complete_effect = { 
+		
+		add_to_variable = { var = dx value = 250 }
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.01
+			}
+		}
+		
+		modifier = { } 
+		
+		fire_only_once = no
+		days_remove = 720
+		days_re_enable = 5
+		cost = 0
+		
+		remove_effect = {
+		add_to_variable = { var = dx value = -300 }
+		}
+		
+
+	}
+	#20% borrow rate#
+	sau_assistance = {   
+		icon = GFX_neutralmoney2
+		
+		ai_will_do = { factor = 0 }
+		
+		visible ={ 
+		country_exists = MOL
+		{original_tag = MOL}
+		} 
+		
+		available ={}
+		
+		complete_effect = { 
+		
+		add_to_variable = { var = dx value = 200 }
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.01
+			}
+		}
+		
+		modifier = { } 
+		
+		fire_only_once = no
+		days_remove = 360
+		days_re_enable = 5
+		cost = 0
+		
+		remove_effect = {
+		add_to_variable = { var = dx value = -240 }
+		}
+		
+
+	}
+	
+	#15% Borrow Rate and you are adding 5% popularity  to communism#	
+	com_assistance = { 
+		icon = GFX_comunismmoney
+		
+		ai_will_do = { factor = 0 }
+		
+		visible ={ is_major=no
+		communism > 0
+		has_civil_war = no
+		}
+		
+		available ={
+		
+		}
+		
+		complete_effect = { 
+		
+		add_to_variable = { var = dx value = 150 }
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		}
+		
+		modifier = {  } 
+		
+		fire_only_once = no
+		days_remove = 360
+		days_re_enable = 0
+		cost = 0
+		
+		remove_effect = {
+		add_to_variable = { var = dx value = -172.50 }
+		}
+		
+
+	}
+	#15% Borrow Rate and you are adding 5% popularity  to fascism#	
+	fas_assistance = {
+		icon = GFX_facismmoney
+		
+		ai_will_do = { factor = 0 }
+		
+		visible ={ is_major=no
+		fascism > 0
+		has_civil_war = no
+		}
+		
+		available ={
+		
+		}
+		
+		complete_effect = { 
+		
+		add_to_variable = { var = dx value = 150 }
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		}
+		
+		modifier = {  } 
+		
+		fire_only_once = no
+		days_remove = 360
+		days_re_enable = 0
+		cost = 0
+		
+		remove_effect = {
+		add_to_variable = { var = dx value = -172.50 }
+		}
+		
+
+	}
+	#15% Borrow Rate and you are adding 5% popularity  to democratic#	
+	dem_assistance = {
+		icon = GFX_democraticmoney
+		
+		ai_will_do = { factor = 0 }
+		
+		visible ={ is_major=no
+		democratic > 0
+		has_civil_war = no
+		}
+		
+		available ={
+		
+		}
+		
+		complete_effect = { 
+		
+		add_to_variable = { var = dx value = 150 }
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		}
+		
+		modifier = {  } 
+		
+		fire_only_once = no
+		days_remove = 360
+		days_re_enable = 0
+		cost = 0
+		
+		remove_effect = {
+		add_to_variable = { var = dx value = -172.50 }
+		}
+		
+
+	}
+	#15% Borrow Rate and you are adding 5% popularity  to autoritarism#	
+	neu_assistance = {
+		icon = GFX_neutralmoney0
+		
+		ai_will_do = { factor = 0 }
+		
+		visible ={ is_major=no
+		neutrality > 0 
+		has_civil_war = no
+		}
+		
+		available ={
+		
+		}
+		
+		complete_effect = { 
+		
+		add_to_variable = { var = dx value = 150 }
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		}
+		
+		modifier = {  } 
+		
+		fire_only_once = no
+		days_remove = 240
+		days_re_enable = 0
+		cost = 0
+		
+		remove_effect = {
+		add_to_variable = { var = dx value = -172.50 }
+		}
+		
+
+	}
+###########private loan with #15% rate#
+	priv_assistance0 = { #15% rate#
+		#icon = GFX_neutralmoney0
+		
+		ai_will_do = { factor = 0 }
+		
+		visible ={ 
+		has_civil_war = no
+		}
+		
+		available ={
+		
+		}
+		
+		complete_effect = { 
+		
+		add_to_variable = { var = dx value = 150 }
+		
+		}
+		
+		modifier = {  } 
+		
+		fire_only_once = no
+		days_remove = 240
+		days_re_enable = 0
+		cost = 0
+		
+		remove_effect = {
+		add_to_variable = { var = dx value = -172.50 }
+		}
+
+		
+	}
+	 #20% rate#
+	priv_assistance1 = {
+		#icon = GFX_neutralmoney0
+		
+		ai_will_do = { factor = 0 }
+		
+		visible ={ 
+		has_civil_war = no
+		}
+		
+		available ={
+		
+		}
+		
+		complete_effect = { 
+		
+		add_to_variable = { var = dx value = 200 }
+		
+		}
+		
+		modifier = {  } 
+		
+		fire_only_once = no
+		days_remove = 720
+		days_re_enable = 0
+		cost = 0
+		
+		remove_effect = {
+		add_to_variable = { var = dx value = -240 }
+		}
+		
+
+	}
+	############# a lot of money without borrow rate but you become a puppet#
+	usa_puppet = {
+		icon = GFX_democraticmoney
+		
+		ai_will_do = { factor = 0 }
+		
+
+		
+		visible ={ is_major=no
+		country_exists = USA
+		NOT= {has_war_with = USA}
+		check_variable = { dx < -200}
+		}
+		
+		available ={
+		NOT={has_country_flag = fas_yes
+			has_country_flag = com_yes
+			has_country_flag = fas_pup
+			has_country_flag = com_pup
+			}
+			is_puppet=no
+		}
+		
+		complete_effect = { 
+		set_country_flag = dem_yes
+		set_country_flag = dem_pup
+		add_to_variable = { var = dx value = 450 }
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.6
+		}
+		USA = { puppet = ROOT }
+		}
+		
+		modifier = {  } 
+		
+		fire_only_once = yes
+		days_remove = 30
+		days_re_enable = 0
+		cost = 0
+		
+		remove_effect = {
+		#clr_country_flag = dem_yes
+		}
+	}
+	ger_puppet = {
+		icon = GFX_facismmoney
+		
+		ai_will_do = { factor = 0 }
+		
+
+		
+		visible ={ is_major=no
+		country_exists = GER
+		NOT= {has_war_with = GER}
+		check_variable = { dx < -200}
+		}
+		
+		available ={
+		NOT={has_country_flag = dem_yes
+			has_country_flag = com_yes
+			has_country_flag = dem_pup
+			has_country_flag = com_pup
+			}	
+			is_puppet=no
+		}
+		
+		complete_effect = { 
+		set_country_flag = fas_yes
+		set_country_flag = fas_pup
+		add_to_variable = { var = dx value = 450 }
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.6
+		}
+		GER = { puppet = ROOT }
+		}
+		
+		modifier = {  } 
+		
+		fire_only_once = yes
+		days_remove = 30
+		days_re_enable = 0
+		cost = 0
+		
+		remove_effect = {
+		#clr_country_flag = dem_yes
+		#clr_country_flag = fas_pup
+		}
+	}
+	sov_puppet = {
+		icon = GFX_comunismmoney
+		
+		ai_will_do = { factor = 0 }
+		
+
+		
+		visible ={ is_major=no
+		country_exists = SOV
+		NOT= {has_war_with = SOV}
+		check_variable = { dx < -200}
+		}
+		
+		available ={
+		NOT={has_country_flag = dem_yes
+			has_country_flag = fas_yes
+			has_country_flag = dem_pup
+			has_country_flag = fas_pup
+			}	
+			is_puppet=no
+		}
+		
+		complete_effect = { 
+		set_country_flag = com_yes
+		set_country_flag = com_pup
+		add_to_variable = { var = dx value = 450 }
+		add_popularity = {
+			ideology = communism
+			popularity = 0.6
+		}
+		SOV = { puppet = ROOT }
+		}
+		
+		modifier = {  } 
+		
+		fire_only_once = yes
+		days_remove = 30
+		days_re_enable = 0
+		cost = 50
+		
+		remove_effect = {
+		#clr_country_flag = dem_yes
+		#clr_country_flag = fas_pup
+		}
+	}	
+	
+
+
+}

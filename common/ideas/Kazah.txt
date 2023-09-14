@@ -1,0 +1,11 @@
+ideas = {
+
+	country = {
+		white_sun = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
+			picture = KAZ_white_sun
+			modifier = {
+				acclimatization_hot_climate_gain_factor = 0.15
+	                        heat_attrition_factor = -0.35
+			}
+		}

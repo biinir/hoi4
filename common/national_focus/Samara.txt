@@ -1,0 +1,13 @@
+focus_tree = {
+	id = gachi_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = GAC
+		}
+	}
+	default = no
+	shared_focus = GAC_volga_masters
+
+}

@@ -1,0 +1,17 @@
+###Here are the cathegories added to the game these will be shown on the decision tab with their respective icon###################
+
+economic_decision = {
+	icon = GFX_decision_category_money
+	
+	visible = {}
+
+}
+
+political_option = {
+	icon = generic_intel_bonus
+	
+	visible = {  }
+
+	
+
+}

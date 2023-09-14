@@ -1,0 +1,110 @@
+##
+##	New Starting Tree
+##
+
+shared_focus = {
+	id = GAC_volga_masters
+	icon = GFX_GAC_focus_volga_masters
+	cost = 1.0
+	allow_branch = {
+		NOT = {
+			has_country_flag = GAC_start_tree_complete
+		}
+	}
+	ai_will_do = {
+		factor = 1000
+	}
+	dynamic = yes
+	x = 6
+	y = -5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GAC_volga_masters"
+		country_event = { id = samara.1 }
+
+	}
+}
+
+shared_focus = {
+	id = Billy_master
+	icon = GFX_GAC_focus_great_billy
+	cost = 1.0
+	dynamic = yes
+	relative_position_id = GAC_volga_masters
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = GAC_volga_masters
+	}
+	ai_will_do = {
+		factor = 1000
+	}
+	completion_reward = {	
+		log = "[GetDateText]: [Root.GetName]: Billy_master"
+		country_event = { id = samara.2 }
+	}
+}
+
+shared_focus = {
+	id = gachi_army
+	icon = GFX_GAC_focus_gachi_army
+	cost = 1.0
+	dynamic = yes
+	relative_position_id = GAC_volga_masters
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = GAC_volga_masters
+	}
+	ai_will_do = {
+		factor = 1000
+	}
+	completion_reward = {
+		country_event = { id = samara.3 }
+	}
+}
+
+shared_focus = {
+	id = Billy_plane
+	icon = GFX_GAC_focus_billy_plan
+	cost = 1.0
+	dynamic = yes
+	relative_position_id = gachi_army
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = gachi_army
+	}
+	prerequisite = {
+		focus = Billy_master
+	}
+	ai_will_do = {
+		factor = 1000
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus Billy_plane"
+		country_event = { id = samara.4 }
+	}
+}
+shared_focus = {
+	id = GAC_a_change_in_plan
+	icon = GFX_GAC_focus_volga_masters
+	cost = 3
+	allow_branch = {
+		has_country_flag = GAC_assassination_failed
+		NOT = {
+			has_country_flag = GAC_start_tree_complete
+		}
+	}
+	prerequisite = {
+		focus = Billy_plane
+	}
+	dynamic = yes
+	relative_position_id = Billy_plane
+	x = -5
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GAC_a_change_in_plan"
+		add_ideas = GAC_idea_changed_plans
+		add_political_power = -25
+	}
+}

@@ -1,0 +1,8 @@
+on_actions = {
+    on_startup = {	
+        effect = {
+             limit = { tag = UKR }
+             TAG = { country_event = { id = ukraine.1 } }
+        }
+    }
+}

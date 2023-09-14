@@ -1,0 +1,15 @@
+LA_PROXY_STRAT = {
+	allowed = {
+		original_tag = LIP
+	}
+	enable = {
+		has_completed_focus = LIP_vostoc_sosed
+		country_exists = KZZ
+
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = KZZ
+		value = 1000
+	}

@@ -1,0 +1,14 @@
+characters={
+	LIP_igor_rizhevolosovich={
+		name="Igor Rizhevolosovich"
+		portraits={
+			civilian={
+				large=gfx/leaders/LIP/Portrait_igor_rizhevolosovich.dds
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}

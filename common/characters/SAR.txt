@@ -1,0 +1,14 @@
+characters={
+	SAR_Andrey_Vlasov={
+		name="Andrey Vlasov"
+		portraits={
+			civilian={
+				large=gfx/leaders/SAR/Portrait_andrey_vlasov.dds
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}

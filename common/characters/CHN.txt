@@ -1,0 +1,14 @@
+characters={
+	 CHN_Leonid_Dobichin={
+		name="Leonid Dobichin"
+		portraits={
+			civilian={
+				large=gfx/leaders/CHN/portrait_leonid_dobichin.dds
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
