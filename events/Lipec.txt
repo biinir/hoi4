@@ -1,0 +1,64 @@
+add_namespace = lip
+
+country_event = { #KAM_budghet
+	id = lip.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: eventlip.1" }
+	title =lip.1.t
+	desc =lip.1.desc
+	picture = GFX_report_event_spr_republican_soldiers
+
+	is_triggered_only = yes
+	fire_only_once = yes 
+
+         trigger = {
+		has_completed_focus =  LIP_nazi_hhh
+                tag = LIP
+
+		}
+
+	option = { #
+		name =lip.1.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+
+country_event = { #KAM_budghet
+	id = lip.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event kamish.2" }
+	title = lip.2.t
+	desc = lip.2.desc
+	picture = GFX_report_event_kabin
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = lip.2.a
+		ai_chance = { factor = 1 }
+		add_political_power = -10 
+                 
+                country_event = lip.3
+	}
+}
+
+
+
+country_event = { #KAM_budghet
+	id = lip.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event kamish.2" }
+	title = lip.3.t
+	desc = lip.3.desc
+	picture = GFX_report_event_tur_machine_gunners
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = lip.3.a
+		ai_chance = { factor = 1 }
+		add_political_power = -10 
+                 
+
+	}
+}

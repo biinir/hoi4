@@ -1,0 +1,178 @@
+add_namespace = kamish
+
+country_event = { #KAM_budghet
+	id = kamish.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event kamish.1" }
+	title = kamish.1.t
+	desc = kamish.1.desc
+	picture = GFX_report_event_spr_republican_soldiers
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = kamish.1.a
+		ai_chance = { factor = 1 }
+		add_political_power = 20
+	}
+}
+
+
+country_event = { #KAM_budghet
+	id = kamish.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event kamish.2" }
+	title = kamish.2.t
+	desc = kamish.2.desc
+	picture = GFX_report_event_kabin
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = kamish.2.a
+		ai_chance = { factor = 1 }
+		add_political_power = -10
+	}
+}
+
+
+country_event = { #KAM_budghet
+	id = kamish.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event kamish.3" }
+	title = kamish.3.t
+	desc = kamish.3.desc
+	picture = GFX_report_event_tur_machine_gunners
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = kamish.3.a
+		ai_chance = { factor = 1 }
+		add_political_power = 1
+	}
+}
+
+
+country_event = {
+	id = kamish.4
+	title = kamish.4.t
+	desc = kamish.4.desc
+	picture = GFX_report_event_KAM_explosion
+	
+	trigger = {
+		NOT = { has_government = communism }
+		NOT = { has_idea = FRA_matignon_agreements }
+		has_completed_focus = KAM_analiz_budgeta
+		NOT = { has_country_flag = FRA_popular_front_cooldown }
+		tag = KAM
+		date > 1936.1.30
+		date < 1936.2.9
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {	days = 10 }
+
+	option = {
+		ai_chance = {
+			base = 15
+		}
+		name = kamish.4.a
+		add_timed_idea = {
+			idea = FRA_factory_strikes
+			days = 1
+		}
+	}
+}
+
+
+country_event = { #KAM_budghet
+	id = kamish.5
+	title = kamish.5.t
+	desc = kamish.5.desc
+	picture = GFX_report_event_fengtian_paper_factory
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = kamish.5.a
+		ai_chance = { factor = 1 }
+		add_political_power = 1
+	}
+}
+
+
+country_event = { #KAM_budghet
+	id = kamish.6
+	title = kamish.6.t
+	desc = kamish.6.desc
+	picture = GFX_report_event_KAM_kazach
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = kamish.6.a
+		ai_chance = { factor = 1 }
+		add_political_power = 1
+                country_event = lip.1
+	}
+}
+
+
+country_event = {
+	id = kamish.7
+	title = kamish.7.t
+	desc = kamish.7.desc
+	picture = GFX_report_event_KAM_explosion
+	
+	trigger = {
+		NOT = { has_government = communism }
+		NOT = { has_idea = FRA_matignon_agreements }
+		NOT = { has_country_flag = FRA_popular_front_cooldown }
+		tag = KAM
+		date > 1936.1.10
+		date < 1936.1.20
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {	days = 10 }
+
+	option = {
+		ai_chance = {
+			base = 15
+		}
+		name = kamish.7.a
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 80000
+				producer = KAM
+                                
+                            }
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = 100
+				producer = KAM
+
+                                   }
+			add_equipment_to_stockpile = {
+				type = light_tank_equipment_1
+				amount = 500
+				producer = KAM
+
+                                     }
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 600
+				producer = KAM
+
+                                     }
+			add_equipment_to_stockpile = {
+				type = light_tank_equipment_2
+				amount = 210
+				producer = KAM
+	}
+}

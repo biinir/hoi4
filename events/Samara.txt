@@ -1,0 +1,75 @@
+add_namespace = samara
+
+country_event = {
+	id = samara.1
+	title = samara.1.t
+	desc = samara.1.d
+	picture = GFX_news_event_GAC_river
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = samara.1.a		#join
+		add_political_power = 30
+	}
+
+
+
+}
+
+country_event = {
+	id = samara.2
+	title = samara.2.t
+	desc = samara.2.d
+	picture = GFX_news_event_GAC_great_billy
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = samara.2.a		#join
+		add_political_power = 30
+	}
+
+
+
+}
+
+country_event = {
+	id = samara.3
+	title = samara.3.t
+	desc = samara.3.d
+	picture = GFX_news_event_GAC_gachi_army
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = samara.3.a		#join
+		add_command_power = 30
+	}
+
+
+
+}
+
+country_event = {
+	id = samara.4
+	title = samara.4.t
+	desc = samara.4.d
+	picture = GFX_news_event_GAC_billy_plan
+
+
+	is_triggered_only = yes
+
+	option = {
+		add_political_power = 40
+		name = samara.4.a		#join
+		mark_focus_tree_layout_dirty = yes
+		set_country_flag = GAC_assassination_failed
+	}
+
+
+
+}
