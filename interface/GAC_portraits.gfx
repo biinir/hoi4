@@ -1,0 +1,96 @@
+spriteTypes = {
+
+	### characters
+
+	spriteType = {
+		name = "GFX_portrait_gac_billy_herrington"
+		texturefile = "gfx/leaders/GAC/Portrait_billy_herrington.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_gac_gachi_policeman"
+		texturefile = "gfx/leaders/GAC/Gachi_Policeman.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_gac_perfomance_artist"
+		texturefile = "gfx/leaders/GAC/Perfomance_artist.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_gac_brad_mcguire"
+		texturefile = "gfx/leaders/GAC/Has_slaves.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_gac_van_military"
+		texturefile = "gfx/leaders/GAC/Portrait_van_darkholme.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_gac_van_civ"
+		texturefile = "gfx/leaders/GAC/Van.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_gac_mark_military"
+		texturefile = "gfx/leaders/GAC/Portrait_mark.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_gac_mark_civ"
+		texturefile = "gfx/leaders/GAC/Mark.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_gac_danny_military"
+		texturefile = "gfx/leaders/GAC/Portrait_danny_lee.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_gac_danny_civ"
+		texturefile = "gfx/leaders/GAC/Danny.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_gac_steve_military"
+		texturefile = "gfx/leaders/GAC/Steve_Herley.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_gac_steve_civ"
+		texturefile = "gfx/leaders/GAC/Steve.png"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_portrait_gac_tank_military"
+		texturefile = "gfx/leaders/GAC/Portrait_gac.tank.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_gac_tank_civ"
+		texturefile = "gfx/leaders/GAC/gac_tank.png"
+	}
+	
+
+	spriteType = {
+		name = "GFX_portrait_gac_rey_civ"
+		texturefile = "gfx/leaders/GAC/rey.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_gac_milos_civ"
+		texturefile = "gfx/leaders/GAC/milos.png"
+	}
+	
+	### agency
+	
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_gac"
+		texturefile = "gfx/interface/operatives/agencies/agency_logo_gac.png"
+		noOfFrames = 2
+	}
+
+
+}
