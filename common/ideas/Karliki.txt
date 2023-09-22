@@ -1,0 +1,96 @@
+ideas = {
+	country = {
+		KRP_great_depression = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
+			picture = GFX_idea_KRP_great_depression
+			modifier = {
+				political_power_cost = 0.5
+				consumer_goods_factor = 0.4
+				conscription_factor = -0.5
+				join_faction_tension = 0.15
+				local_resources_factor = -0.2
+				stability_factor = -0.2
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+
+
+			}
+		}	
+	
+		KRP_stagnation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
+			picture = GFX_idea_KRP_stagnation
+			modifier = {
+				production_speed_arms_factory_factor = -0.25
+				production_speed_dockyard_factor = -0.25
+				production_speed_naval_base_factor = -0.25
+				production_speed_coastal_bunker_factor = -0.25
+				production_speed_bunker_factor = -0.25
+				production_speed_air_base_factor = -0.25
+				production_speed_anti_air_building_factor = -0.25
+				production_speed_radar_station_factor = -0.25
+				production_speed_fuel_silo_factor = -0.25
+				production_speed_synthetic_refinery_factor = -0.15
+
+
+			}
+		}	
+		KRP_KPR = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
+			picture = GFX_idea_KRP_KPR
+			modifier = {
+				planning_speed = 0.15
+				max_command_power = 20
+				stability_factor = 0.05
+				drift_defence_factor = 0.15
+				political_power_cost = -0.25
+				agency_upgrade_time = -0.25
+				subversive_activites_upkeep = -0.20
+				drift_defence_factor = 0.25
+				enemy_operative_detection_chance = 0.2
+				enemy_operative_capture_chance_factor = 0.2
+				civilian_intel_to_others = -20
+				intel_network_gain_factor = 0.2
+				operative_slot = 2
+			}
+		}	
+		KRP_que = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
+			picture = GFX_idea_KRP_que
+			modifier = {
+				join_faction_tension = 0.25
+				send_volunteers_tension = 0.5
+				guarantee_tension = 0.5
+				embargo_threshold_factor = 1.5
+			}
+		}	
+		KRP_politic_army = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
+			picture = GFX_idea_KRP_politic_army
+			modifier = {
+				command_abilities_cost_factor = 0.1
+				land_doctrine_cost_factor = 0.2
+				naval_doctrine_cost_factor = 0.2
+				air_doctrine_cost_factor = 0.2
+				army_core_defence_factor = 0.045
+			}
+		}	
+		KRP_science = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
+			picture = GFX_idea_KRP_science
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+		KRP_law = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
+			picture = GFX_idea_KRP_science
+			modifier = {
+				stability_factor = 0.05
+				political_power_cost = -0.25
+			}
+		}
+		
+	}
+
+}
