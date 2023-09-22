@@ -7259,9 +7259,41 @@ spriteType = {
 spriteType = {
 		name = "GFX_idea_GAC_gachi_system"
 		texturefile = "gfx/interface/ideas/idea_GAC_gachi_system.dds"
-
-          
-
 	}
-			
+	
+spriteType = {
+		name = "GFX_idea_KRP_great_depression"
+		texturefile = "gfx/interface/ideas/great_depression3.dds"
+	}
+	
+spriteType = {
+		name = "GFX_idea_KRP_stagnation"
+		texturefile = "gfx/interface/ideas/KRP_stagnation.dds"
+	}		
+	
+spriteType = {
+		name = "GFX_idea_KRP_science"
+		texturefile = "gfx/interface/ideas/KRP_science.dds"
+	}	
+	
+spriteType = {
+		name = "GFX_idea_KRP_que"
+		texturefile = "gfx/interface/ideas/KRP_que.dds"
+	}	
+	
+spriteType = {
+		name = "GFX_idea_KRP_politic_army"
+		texturefile = "gfx/interface/ideas/KRP_politic_army..dds"
+	}	
+	
+spriteType = {
+		name = "GFX_idea_KRP_law"
+		texturefile = "gfx/interface/ideas/KRP_law.dds"
+	}
+	
+spriteType = {
+		name = "GFX_idea_KRP_KPR"
+		texturefile = "gfx/interface/ideas/KRP_KPR.dds"
+	}	
+	
 }
