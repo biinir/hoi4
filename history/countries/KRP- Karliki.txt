@@ -171,6 +171,17 @@ if = {
 	}
 }
 
+add_manpower = 50000
+
+add_ideas = {
+KRP_great_depression
+KRP_stagnation
+KRP_que
+KRP_politic_army
+KRP_law
+KRP_KPR
+KRP_science
+}
 recruit_character = KRP_alexey_volkov
 recruit_character = CUB_guillermo_cabral
 recruit_character = CUB_wenceslao_carmona
@@ -193,7 +204,7 @@ recruit_character = CUB_gerardo_machado
 recruit_character = CUB_eugenio_molinet_castro
 
 set_stability = 0.6
-set_war_support = 0.4
+set_war_support = 0.5
 
 ### VARIANTS ###
 # 1936 Start #
