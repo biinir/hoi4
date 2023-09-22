@@ -50,7 +50,7 @@ units = {
 		location = 6502
 		division_template = "Gachi Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
-		start_experience_factor = 0.8
+		start_experience_factor = 1
 		}
 		
 		division= {			
@@ -58,7 +58,7 @@ units = {
 		location = 6502
 		division_template = "Gachi Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
-		start_experience_factor = 0.8
+		start_experience_factor = 1
 		}
 		
 		division= {			
@@ -66,7 +66,7 @@ units = {
 		location = 452
 		division_template = "Gachi Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
-		start_experience_factor = 0.7
+		start_experience_factor = 1
 		}
 		
 		division= {			
@@ -74,7 +74,7 @@ units = {
 		location = 452
 		division_template = "Gachi Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
-		start_experience_factor = 0.7
+		start_experience_factor = 1
 		}
 		
 		division= {			
@@ -82,7 +82,7 @@ units = {
 		location = 9473
 		division_template = "Gachi Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
-		start_experience_factor = 0.7
+		start_experience_factor = 1
 		}
 		
 		division= {			
@@ -90,7 +90,7 @@ units = {
 		location = 9473
 		division_template = "Gachi Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
-		start_experience_factor = 0.7
+		start_experience_factor = 1
 		}
 		
 		division= {			
@@ -98,7 +98,7 @@ units = {
 		location = 6574
 		division_template = "Gachi Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
-		start_experience_factor = 0.7
+		start_experience_factor = 1
 		}
 		
 		division= {			
@@ -106,7 +106,7 @@ units = {
 		location = 6574
 		division_template = "Gachi Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
-		start_experience_factor = 0.7
+		start_experience_factor = 1
 		}
 		
 		}
