@@ -182,7 +182,7 @@ KRP_law
 KRP_KPR
 KRP_science
 }
-recruit_character = KRP_alexey_volkov
+recruit_character = KRP_Alexey_Volkov
 recruit_character = CUB_guillermo_cabral
 recruit_character = CUB_wenceslao_carmona
 recruit_character = CUB_gregorio_morales
@@ -203,8 +203,8 @@ recruit_character = CUB_carlos_prio
 recruit_character = CUB_gerardo_machado
 recruit_character = CUB_eugenio_molinet_castro
 
-set_stability = 0.6
-set_war_support = 0.5
+set_stability = 0.45
+set_war_support = 0.4
 
 ### VARIANTS ###
 # 1936 Start #
@@ -323,18 +323,31 @@ if = {
 	}
 }
 
-create_country_leader = {
-	name = "Alexey Volkov"
-	desc = ""
-	picture = "gfx/leaders/KRP/Portrait_alexey_volkov.dds"
-	expire = "1965.1.1"
-	ideology = "conservatism"
-	traits = {
 
-	}
-}
+add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 10000
+				producer = KRP
+                                
+                            }
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = 394
+				producer = KRP
 
+                                   }
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis_1
+				amount = 926
+				producer = KRP
 
+                                     }
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 731
+				producer = KRP
+
+                                     }
 create_field_marshal = {
 	name = "David Ben-Gurion "
 	picture = "Ben-Gurion David.dds"
