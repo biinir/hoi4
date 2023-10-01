@@ -4218,7 +4218,9 @@ KRP:0 "Карликовая Республика"
  KRP_communism_ADJ:0 "Карликск."
  KRP_neutrality_ADJ:0 "Карликск."
  KRP_subject_ADJ:0 "Карликск."
-
+ KRP_Alexey_Volkov:0 "Алексей Волков"
+ KRP_organizer:0 "Организатор"
+ Anti_troll:0 "Не любит троллинг"
  
 ODS:0 "Одесская Республика"
  ODS_fascism:0 "Великая Одесса"
