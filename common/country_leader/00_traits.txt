@@ -14,7 +14,11 @@
 
 leader_traits = {
 
-
+	KRP_organizer = {
+	 political_power_factor = 0.25
+	 stability_factor = 0.05
+	 political_advisor_cost_factor = -0.15
+	 }
 	
 	Boss_of_the_gym = {
 		random = no
