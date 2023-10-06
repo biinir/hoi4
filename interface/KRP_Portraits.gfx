@@ -1,0 +1,64 @@
+spriteTypes = {
+
+	### characters
+
+	spriteType = {
+		name = "GFX_portrait_krp_gyrion_military"
+		texturefile = "gfx/leaders/KRP/Ben-Gurion David.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_krp_gyrion_civ"
+		texturefile = "gfx/leaders/KRP/Gyrion.png"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_portrait_krp_moshe_military"
+		texturefile = "gfx/leaders/KRP/Dayan_Moshe.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_krp_moshe_civ"
+		texturefile = "gfx/leaders/KRP/Iron_Moisha.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_krp_Goder_military"
+		texturefile = "gfx/leaders/KRP/Goder_Shmuel.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_krp_Goder_civ"
+		texturefile = "gfx/leaders/KRP/Goder.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_krp_Arye_military"
+		texturefile = "gfx/leaders/KRP/Dayan_Arye.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_krp_Arye_civ"
+		texturefile = "gfx/leaders/KRP/Arye.png"
+	}
+	
+		spriteType = {
+		name = "GFX_portrait_krp_Laskov_military"
+		texturefile = "gfx/leaders/KRP/David_Laskov.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_krp_Laskov_civ"
+		texturefile = "gfx/leaders/KRP/Laskov.png"
+	}
+			spriteType = {
+		name = "GFX_portrait_krp_Guy_military"
+		texturefile = "gfx/leaders/KRP/Goldfarb_Guy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_krp_Guy_civ"
+		texturefile = "gfx/leaders/KRP/Guy.png"
+	}
+}
