@@ -9,6 +9,33 @@ air_wings = {
 	# Note: ML-KNIL would increase in size during 1937-40 with USA models:
 	#	Curtis P-36 Hawks (H-75), CW-21 Interceptors, Brewster Buffaloes, Martin B-10s (WH-1--WH-3s)
 	454 = {
+		small_plane_airframe_1 = {		
+			owner = "KRP" 
+			amount = 100
+			version_name = "KR-3A"
+		}
+		small_plane_airframe_1 = {		
+			owner = "KRP" 
+			amount = 100
+			version_name = "KR-3A"
+		}
+		small_plane_airframe_1 = {		
+			owner = "KRP" 
+			amount = 48
+			version_name = "KR-3A"
+		}
+		small_plane_cas_airframe_1 = {		
+			owner = "KRP" 
+			amount = 100
+			version_name = "KR SHT-1"
+		}
+		small_plane_cas_airframe_1 = {		
+			owner = "KRP" 
+			amount = 48
+			version_name = "KR SHT-1"
+		}
+	}
+	116 = {
 		small_plane_cas_airframe_0 = {		
 			owner = "KRP" 
 			amount = 72
