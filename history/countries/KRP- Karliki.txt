@@ -13,17 +13,27 @@ if = {
 		set_air_oob = "KRP_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
+			aa_cannon_1 = 1
 			engines_1 = 1
+			engines_2 = 1
+			early_bombs = 1
 			aircraft_construction = 1
 			iw_small_airframe = 1
+			basic_small_airframe = 1
 			iw_medium_airframe = 1
-			early_bombs = 1
+			basic_medium_airframe = 1
+			iw_large_airframe = 1
 		}
 	else = {
 		set_air_oob = "KRP_1936_air_legacy"
 		set_technology = {
 			early_fighter = 1
+			fighter1 = 1
 			early_bomber = 1
+			tactical_bomber1 = 1
+			strategic_bomber1 = 1
+			CAS1 = 1
+			naval_bomber1 = 1
 		}
 	}
 }
@@ -171,7 +181,7 @@ if = {
 	}
 }
 
-add_manpower = 50000
+add_manpower = 82000
 
 add_ideas = {
 KRP_great_depression
@@ -183,12 +193,12 @@ KRP_KPR
 KRP_science
 }
 recruit_character = KRP_Alexey_Volkov
-recruit_character = CUB_guillermo_cabral
-recruit_character = CUB_wenceslao_carmona
-recruit_character = CUB_gregorio_morales
-recruit_character = CUB_fidel_castro
-recruit_character = CUB_enrique_c_rolas
-recruit_character = CUB_palaez_menendez
+recruit_character = KRP_Ben_Gyrion
+recruit_character = KRP_Moshe_Dayan
+recruit_character = KRP_Goldfarb_Guy
+recruit_character = KRP_Goder_Shmuel
+recruit_character = KRP_Laskov
+recruit_character = KRP_Arye
 recruit_character = CUB_domingo_r_del_toro
 recruit_character = CUB_eduardo_chibas
 recruit_character = CUB_juan_blas_hernandez
@@ -232,6 +242,28 @@ if = {
 			engine_type_slot = engine_1_2x
 			special_type_slot_1 = flying_boat_medium
 		}
+
+	}
+				create_equipment_variant = {
+		name = "KR-3A"
+		type = small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = empty
+		}
+		icon = "GFX_USA_fighter1_medium"
+	}
+		create_equipment_variant = {
+		name = "KR SHT-1"
+		type = small_plane_cas_airframe_1
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = dive_brakes_small
+		}
+		icon = "GFX_USA_CAS1_medium"
 	}
 }
 if = {
@@ -249,7 +281,6 @@ if = {
 		}
 		obsolete = yes
 	}
-
 	create_equipment_variant = {
 		name = "Dakar submarine"				# represents Surcouf, Roubtable, L'Esoire, and Agosta classes
 		type = ship_hull_submarine_2
@@ -322,7 +353,24 @@ if = {
 		icon = "GFX_USA_basic_light_tank_medium"
 	}
 }
-
+create_equipment_variant = {
+		name = "R3KR"
+		type = light_tank_chassis_2
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_auto_cannon
+			turret_type_slot = tank_light_two_man_tank_turret
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 3
+			tank_nsb_armor_upgrade = 2
+		}
+		icon = "GFX_USA_improved_light_tank_medium"
+	}
 
 add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -348,72 +396,10 @@ add_equipment_to_stockpile = {
 				producer = KRP
 
                                      }
-create_field_marshal = {
-	name = "David Ben-Gurion "
-	picture = "Ben-Gurion David.dds"
-	 traits = { politically_connected organisational_leader organizer   }
-	 skill = 4
-	 attack_skill = 4
-	 defense_skill = 4
-	 planning_skill = 3
-	 logistics_skill = 3
- }
- 
- 
-create_corps_commander = {
-	name = "Dayan Moshe"
-	picture = "Dayan_Moshe.dds"
-	 traits = { infantry_leader trait_reckless brilliant_strategist  }
-	 skill = 4
-	 attack_skill = 4
-	 defense_skill = 3
-	 planning_skill = 3
-	 logistics_skill = 3
- }
- 
- create_corps_commander = {
-	name = "Goder Shmuel"
-	picture = "Goder Shmuel.dds"
-	 traits = { panzer_leader combined_arms_expert  }
-	 skill = 3
-	 attack_skill = 3
-	 defense_skill = 2
-	 planning_skill = 2
-	 logistics_skill = 2
- }
- 
-  create_corps_commander = {
-	name = "Dayan Arye"
-	picture = "Dayan Arye.dds"
-	 traits = { commando inflexible_strategist  }
-	 skill = 3
-	 attack_skill = 4
-	 defense_skill = 2
-	 planning_skill = 2
-	 logistics_skill = 1
- }
 
-  create_corps_commander = {
-	name = "David Laskov"
-	picture = "David Laskov.dds"
-	 traits = { engineer_officer trait_engineer  }
-	 skill = 2
-	 attack_skill = 1
-	 defense_skill = 1
-	 planning_skill = 3
-	 logistics_skill = 3
- }
  
- create_navy_leader = {
- name = "Goldfarb Guy" 
- picture = "Goldfarb, Guy.dds"
- traits = { seawolf  }
-			skill = 4
-			attack_skill = 3
-			defense_skill = 4
-			maneuvering_skill = 3
-			coordination_skill = 3
-}
+ 
+
 1939.1.1 = {
 
 	add_political_power = 1198
@@ -463,7 +449,7 @@ create_corps_commander = {
 
 set_politics = {
 	ruling_party = democratic
-	last_election = "1936.1.10"
+	last_election = "1932.2.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
