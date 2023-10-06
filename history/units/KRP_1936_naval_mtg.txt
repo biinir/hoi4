@@ -6,35 +6,68 @@
 		task_force = {				
 			name = "Fleet KR"			
 			location = 792  
-			ship = { name = "Dabyr-1" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = KRP version_name = "Dabyr Class" } } }		
-			ship = { name = "Dabyr-2" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = KRP version_name = "Dabyr Class" } } }	
-			ship = { name = "Dabyr-3" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = KRP version_name = "Dabyr Class" } } }	
-			ship = { name = "Dabyr-4" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = KRP version_name = "Dabyr Class" } } }				
-			ship = { name = "Shaldag - 1" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
-			ship = { name = "Shaldag - 2" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
-			ship = { name = "Shaldag - 3" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
-			ship = { name = "Shaldag - 4" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
-			ship = { name = "Shaldag - 5" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
-			ship = { name = "Shaldag - 6" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
-			ship = { name = "Shaldag - 7" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
-			ship = { name = "Shaldag - 8" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }			
+			ship = { name = "Dabyr-1" definition = heavy_cruiser start_experience_factor = 0.88 equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = KRP version_name = "Dabyr Class" } } }		
+			ship = { name = "Dabyr-2" definition = heavy_cruiser start_experience_factor = 0.88 equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = KRP version_name = "Dabyr Class" } } }	
+			ship = { name = "Dabyr-3" definition = heavy_cruiser start_experience_factor = 0.88 equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = KRP version_name = "Dabyr Class" } } }	
+			ship = { name = "Dabyr-4" definition = heavy_cruiser start_experience_factor = 0.88 equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = KRP version_name = "Dabyr Class" } } }				
+			ship = { name = "Dabyr-5" definition = heavy_cruiser start_experience_factor = 0.88 equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = KRP version_name = "Dabyr Class" } } }		
+			ship = { name = "Dabyr-6" definition = heavy_cruiser start_experience_factor = 0.88 equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = KRP version_name = "Dabyr Class" } } }	
+			ship = { name = "Dabyr-7" definition = heavy_cruiser start_experience_factor = 0.88 equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = KRP version_name = "Dabyr Class" } } }	
+			ship = { name = "Dabyr-8" definition = heavy_cruiser start_experience_factor = 0.88 equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = KRP version_name = "Dabyr Class" } } }					
+			ship = { name = "Shaldag - 1" definition = destroyer start_experience_factor = 0.88 equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
+			ship = { name = "Shaldag - 2" definition = destroyer start_experience_factor = 0.88 equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
+			ship = { name = "Shaldag - 3" definition = destroyer start_experience_factor = 0.88 equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
+			ship = { name = "Shaldag - 4" definition = destroyer start_experience_factor = 0.88 equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
+			ship = { name = "Shaldag - 5" definition = destroyer start_experience_factor = 0.88 equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
+			ship = { name = "Shaldag - 6" definition = destroyer start_experience_factor = 0.88 equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
+			ship = { name = "Shaldag - 7" definition = destroyer start_experience_factor = 0.88 equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
+			ship = { name = "Shaldag - 8" definition = destroyer start_experience_factor = 0.88 equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }			
+			ship = { name = "Shaldag - 9" definition = destroyer start_experience_factor = 0.88 equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
+			ship = { name = "Shaldag - 10" definition = destroyer start_experience_factor = 0.88 equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
+			ship = { name = "Shaldag - 11" definition = destroyer start_experience_factor = 0.88 equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
+			ship = { name = "Shaldag - 12" definition = destroyer start_experience_factor = 0.88 equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
+			ship = { name = "Shaldag - 13" definition = destroyer start_experience_factor = 0.88 equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
+			ship = { name = "Shaldag - 14" definition = destroyer start_experience_factor = 0.88 equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
+			ship = { name = "Shaldag - 15" definition = destroyer start_experience_factor = 0.88 equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
+			ship = { name = "Shaldag - 16" definition = destroyer start_experience_factor = 0.88 equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }			
+			ship = { name = "Shaldag - 17" definition = destroyer start_experience_factor = 0.88 equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
+			ship = { name = "Shaldag - 18" definition = destroyer start_experience_factor = 0.88 equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
+			ship = { name = "Shaldag - 20" definition = destroyer start_experience_factor = 0.88 equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
+			ship = { name = "Shaldag - 21" definition = destroyer start_experience_factor = 0.88 equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
+			ship = { name = "Shaldag - 22" definition = destroyer start_experience_factor = 0.88 equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
+			ship = { name = "Shaldag - 23" definition = destroyer start_experience_factor = 0.88 equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }
+			ship = { name = "Shaldag - 24" definition = destroyer start_experience_factor = 0.88 equipment = { ship_hull_light_2 = { amount = 1 owner = KRP version_name = "Shaldag Class" } } }				
 		}				
 		task_force = {				
 			name = "submarine fleet KR"			
 			location = 792  
-			ship = { name = "Dakar-1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
-			ship = { name = "Dakar-2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
-			ship = { name = "Dakar-3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
-			ship = { name = "Dakar-4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
-			ship = { name = "Dakar-5" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
-			ship = { name = "Dakar-6" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
-			ship = { name = "Dakar-7" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
-			ship = { name = "Dakar-8" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
-			ship = { name = "Dakar-9" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
-			ship = { name = "Dakar-10" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
-			ship = { name = "Dakar-11" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
-			ship = { name = "Dakar-12" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
-			ship = { name = "Dakar-13" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
-			ship = { name = "Dakar-14" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Frogman-1" definition = submarine start_experience_factor = 1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Frogman-2" definition = submarine start_experience_factor = 1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Frogman-3" definition = submarine start_experience_factor = 1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Dakar-4" definition = submarine start_experience_factor = 0.88 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Dakar-5" definition = submarine start_experience_factor = 0.88 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Dakar-6" definition = submarine start_experience_factor = 0.88 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Dakar-7" definition = submarine start_experience_factor = 0.88 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Dakar-8" definition = submarine start_experience_factor = 0.88 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Dakar-9" definition = submarine start_experience_factor = 0.88 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Dakar-10" definition = submarine start_experience_factor = 0.88 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Dakar-11" definition = submarine start_experience_factor = 0.88 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Dakar-12" definition = submarine start_experience_factor = 0.88 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Dakar-13" definition = submarine start_experience_factor = 0.88 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Dakar-14" definition = submarine start_experience_factor = 0.88 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Dakar-15" definition = submarine start_experience_factor = 0.88 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Dakar-16" definition = submarine start_experience_factor = 0.88 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Dakar-17" definition = submarine start_experience_factor = 0.88 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Dakar-18" definition = submarine start_experience_factor = 0.88 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Dakar-19" definition = submarine start_experience_factor = 0.88 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Dakar-20" definition = submarine start_experience_factor = 0.88 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Dakar-21" definition = submarine start_experience_factor = 0.88 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Dakar-22" definition = submarine start_experience_factor = 0.88 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Dakar-23" definition = submarine start_experience_factor = 0.88 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Dakar-24" definition = submarine start_experience_factor = 0.88 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Dakar-25" definition = submarine start_experience_factor = 0.88 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Dakar-26" definition = submarine start_experience_factor = 0.88 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Dakar-27" definition = submarine start_experience_factor = 0.88 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }
+			ship = { name = "Dakar-28" definition = submarine start_experience_factor = 0.88 equipment = { ship_hull_submarine_1 = { amount = 1 owner = KRP version_name = "K-III Class" } } }			
 		}				
 	}
