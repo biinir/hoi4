@@ -57,6 +57,37 @@ if = {
 }
 
 set_convoys = 85
+set_autonomy = {
+		target = KGP
+		autonomous_state = associated_state
+		freedom_level = 0.24
+	}
+
+	set_autonomy = {
+		target = ODS
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2	
+	}
+	set_autonomy = {
+		target = KZA
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = KRM
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = KPA
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = TRP
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
 
 if = {
 	limit = { has_dlc = "By Blood Alone" }
@@ -181,7 +212,7 @@ if = {
 	}
 }
 
-add_manpower = 82000
+add_manpower = 84000
 
 add_ideas = {
 KRP_great_depression
@@ -193,28 +224,17 @@ KRP_KPR
 KRP_science
 }
 recruit_character = KRP_Alexey_Volkov
+recruit_character = KRP_Frogman
 recruit_character = KRP_Ben_Gyrion
 recruit_character = KRP_Moshe_Dayan
 recruit_character = KRP_Goldfarb_Guy
 recruit_character = KRP_Goder_Shmuel
 recruit_character = KRP_Laskov
 recruit_character = KRP_Arye
-recruit_character = CUB_domingo_r_del_toro
-recruit_character = CUB_eduardo_chibas
-recruit_character = CUB_juan_blas_hernandez
-recruit_character = CUB_sergio_carbo
-recruit_character = CUB_fulgencio_batista
-recruit_character = CUB_rodrigo_a_fuentes
-recruit_character = CUB_sandalio_junco
-recruit_character = CUB_salvador_castaneda_castro
-recruit_character = CUB_angel_gonzalez
-recruit_character = CUB_julio_sanguily
-recruit_character = CUB_carlos_prio
-recruit_character = CUB_gerardo_machado
-recruit_character = CUB_eugenio_molinet_castro
 
-set_stability = 0.45
-set_war_support = 0.4
+
+set_stability = 0.25
+set_war_support = 0.15
 
 ### VARIANTS ###
 # 1936 Start #
@@ -374,7 +394,7 @@ create_equipment_variant = {
 
 add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 10000
+				amount = 13400
 				producer = KRP
                                 
                             }
@@ -387,6 +407,12 @@ add_equipment_to_stockpile = {
 			add_equipment_to_stockpile = {
 				type = light_tank_chassis_1
 				amount = 926
+				producer = KRP
+
+                                     }
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis_2
+				amount = 274
 				producer = KRP
 
                                      }
