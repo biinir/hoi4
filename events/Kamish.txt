@@ -174,5 +174,55 @@ country_event = {
 				type = light_tank_equipment_2
 				amount = 210
 				producer = KAM
+                        }
+		}
+	}
+                          
+         
+country_event = { #explain power struggle
+	id =  kamish.8
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event  kamish.8"
+		hidden_effect = {
+			random_list = {
+				1 = {
+					set_country_flag = KAM_appease
+				}
+				4 = { }
+			}
+		}
+	}
+	title =  kamish.8.t
+	desc =  kamish.8.d
+	picture = GFX_report_event_RUS_letter
+
+	is_triggered_only = yes
+
+	option = {#TUKHA
+		name =  kamish.8.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+
+
+				}
+			}
+		}
+		set_country_flag = KAM_power_struggle_tukha
+		KAM_power_struggle_pulse = yes
+	}
+	option = {#ZHUKOV
+		name =  kamish.8.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+
+			}
+		}
+		set_country_flag = KAM_power_struggle_zhukov
+		KAM_power_struggle_pulse = yes
 	}
 }
