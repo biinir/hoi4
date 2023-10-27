@@ -302,3 +302,114 @@ LIP_otpravit_samolet:0 "Отправить самолёты"
 LIP_otpravit_tanki:0 "Отправить танки"
  LIP_bomb_udar:0 "Начать кампанию стратегических бомбардировок"
 
+ # Power Struggle GUI
+KAM_power_struggle_tukha_category: "Преемник Егорова"
+KAM_power_struggle_text: "ЗРРФ остаётся самым могущественным государством в разрушенной России, но маршал Егоров, старый вождь ЗРРФ, впал в маразм. Его дни проходят в размышлении о старых войнах и старых товарищах. Из рядов Фронта выделились маршалы §YЖуков§! и §RТухачевский§!, генералы Советского Союза времён Бухарина. Они ведут ожесточённую борьбу за власть, их две клики ведут открытую политическую войну, чтобы определить, кто возглавит наиболее законного преемника Красной Армии и, в конечном счёте, Советского Союза."
+ WRRF_struggle_tt: "§gКто сменит Егорова и приведёт §![WRS.GetFlag]§Y[WRS.GetName]§! §gк величию?§!"
+ 
+ WRRF_tukh_struggle_portrait: "§RМихаил Тухачевский, "Красный Бонапарт"§!"
+ WRRF_zhukov_struggle_portrait: "§YГеоргий Жуков, "Народный Маршал"§!"
+ 
+KAM_power_struggle_favor: "Лидирующий:\n[WRSGetMarshalInfluence]"
+KAM_factionalism_text: "Уровень фракционности внутри Фронта [GetWRSFactionalism]"
+ 
+KAM_tukh_influence: "§RТухачевский:\n- [?global.WRSTukhaInfluence] -§!"
+KAM_zhukov_influence: "§YЖуков:\n- [?global.WRSZhukovInfluence] -§!"
+ 
+ WRRF_struggle_factionalism_tt: "§YФракционности нельзя позволять процветать внутри Фронта, иначе §Rна него могут обрушиться серьёзные последствия.§!§!"
+ WRRF_tukh_influence_tooltip: "§F§RМаршал Михаил Тухачевский§! имеет §R([?global.WRSTukhaInfluence])§! влияния на политику государства [WRS.GetFlag]§Y[WRS.GetName]§!, что составляет §R[?WRS_tukh_percentage|2]%§! правительства."
+ WRRF_zhukov_influence_tooltip: "§F§YМаршал Георгий Жуков§! имеет §Y([?global.WRSZhukovInfluence])§! влияния на политику государства [WRS.GetFlag]§Y[WRS.GetName]§!, что составляет §Y[?WRS_zhukov_percentage|2]%§! правительства."
+ WRRF_struggle_influence_progbar: "§R[?WRS_tukh_percentage|2]%§! §W|§! §Y[?WRS_zhukov_percentage|2]%§!"
+ #\n\nThe current §Ybalance of power§! within the Front is in favor of [WRSGetMarshalInfluence].\n\nThe level of concerning factionalism within the Front is [ROOT.GetWRSFactionalism]."
+ 
+ 
+KAM_military_parade_cost: "£weapon_icon §Y250§! £manpower_icon §Y100§!"
+KAM_military_parade_cost_blocked: "£weapon_icon §R250§! £manpower_icon §R100§!"
+KAM_test_their_mettle_cost: "£weapon_icon §Y500§! £manpower_icon §Y1000§!"
+KAM_test_their_mettle_cost_blocked: "£weapon_icon §R500§! £manpower_icon §R1000§!"
+ 
+ #Zhukov Power Struggle Decisions
+KAM_power_struggle_zhukov_category: "Преемник Егорова"
+KAM_tukha_influence_ticker:0 "§gТухачевский§! делает ход!"
+KAM_appease_tukha:0 "Успокоить §gТухачевского§!"
+KAM_work_against_tukha:0 "Противодействовать §gТухачевскому§!"
+KAM_zhukov_military_parade:0 "Провести военный парад"
+KAM_zhukov_meet_with_veterans:0 "Встреча с ветеранами"
+KAM_zhukov_meet_with_voroshilov:0 "Встреча с §GЕгоровым§!"
+KAM_zhukov_meet_with_voroshilov_tt:0 "Съездить в Архангельск для встречи с Верховным Маршалом §GАлександром Ильичом Егоровым§!."
+KAM_zhukov_increase_oil_quotas:0 "Расширение §rнефтеперарабатывающих§! заводов"
+KAM_zhukov_deploy_red_army_labour_battalions:0 "Развернуть трудовые батальоны §RКрасной Армии§!"
+KAM_zhukov_compile_evidence:0 "Собрать §Yдоказательства§! по делу §gТухачевского§!"
+KAM_zhukov_compile_evidence_tt:0 "Мы соберём §Yсвидетельства§! незаконной деятельности §gМихаила Тухачевского§! во время §YЗападнорусской войны§! для предоставления их §GЕгорову§!.\n"
+
+ #Scripted loc
+KAM_factionalism_very_low:0 "§Mнезначительный§!"
+KAM_factionalism_low:0 "§Gмизерный§!"
+KAM_factionalism_medium:0 "§Yнизкий§!"
+KAM_factionalism_high:0 "§Hбеспокоящий§!"
+KAM_factionalism_very_high:0 "§Rкритический§!"
+
+KAM_tukha_dominant:0 "§gМихаил Тухачевский§!"
+KAM_zhukov_dominant:0 "§SГеоргий Жуков§!"
+KAM_no_marshal_dominant:0 "§OНет лидера.§!"
+
+
+ #Power Struggle Mechanic
+KAM_increase_tukha_influence_low_tt:0 "Это немного §Yувеличит§! влияние §gМихаила Тухачевского§!.\n"
+KAM_increase_tukha_influence_med_tt:0 "Это §Yувеличит§! влияние §gМихаила Тухачевского§!.\n"
+KAM_increase_tukha_influence_high_tt:0 "Это сильно §Yувеличит§! влияние §gМихаила Тухачевского§!.\n"
+
+KAM_decrease_tukha_influence_low_tt:0 "Это немного §Yуменьшит§! влияние §gМихаила Тухачевского§!.\n"
+KAM_decrease_tukha_influence_med_tt:0 "Это §Yуменьшит§! влияние §gМихаила Тухачевского§!.\n"
+KAM_decrease_tukha_influence_high_tt:0 "Это сильно §Yуменьшит§! влияние §gМихаила Тухачевского§!.\n"
+
+KAM_increase_zhukov_influence_low_tt:0 "Это немного §Yувеличит§! влияние §SГеоргия Жукова§!.\n"
+KAM_increase_zhukov_influence_med_tt:0 "Это §Yувеличит§! влияние §SГеоргия Жукова§!.\n"
+KAM_increase_zhukov_influence_high_tt:0 "Это сильно §Yувеличит§! влияние §SГеоргия Жукова§!.\n"
+
+KAM_decrease_zhukov_influence_low_tt:0 "Это немного §Yуменьшит§! влияние §SГеоргия Жукова§!.\n"
+KAM_decrease_zhukov_influence_med_tt:0 "Это §Yуменьшит§! влияние §SГеоргия Жукова§!.\n"
+KAM_decrease_zhukov_influence_high_tt:0 "Это сильно §Yуменьшит§! влияние §SГеоргия Жукова§!.\n"
+
+KAM_decrease_factionalism_low_tt:0 "Это немного §Yуменьшит§! §Rфракционализм§!.\n"
+KAM_decrease_factionalism_med_tt:0 "Это §Yуменьшит§! §Rфракционализм§!.\n"
+KAM_decrease_factionalism_high_tt:0 "Это сильно §Yуменьшит§! §Rфракционализм§!.\n"
+
+KAM_increase_factionalism_low_tt:0 "Это немного §Yувеличит§! §Rфракционализм§!.\n"
+KAM_increase_factionalism_med_tt:0 "Это §Yувеличит§! §Rфракционализм§!.\n"
+KAM_increase_factionalism_high_tt:0 "Это сильно §Yувеличит§! §Rфракционализм§!.\n"
+
+KAM_tank_tukha_influence_tt:0 "Влияние §gМихаила Тухачевского§! будет §eрасти§!!\n"
+KAM_tank_zhukov_influence_tt:0 "Влияние §SГеоргия Жукова§! будет §eрасти§!!\n"
+
+KAM_zhukov_influence_ticker:0 "§SЖуков§! делает ход!"
+KAM_appease_zhukov:0 "Успокоить §SЖукова§!"
+KAM_work_against_zhukov:0 "Противодействовать §SЖукову§!"
+KAM_tukha_military_parade:0 "Провести военный парад"
+KAM_tukha_meet_with_veterans:0 "Встреча с ветеранами"
+KAM_tukha_publish_theory:0 "Опубликовать §Yвоенную теорию§!"
+KAM_tukha_publish_theory_tt:0 "Опубликовать "§YДобровольческая армия в операции "Суворов" - современный анализs§!".\n"
+KAM_tukha_meet_with_voroshilov:0 "Встреча с §GЕгоровым§!"
+KAM_tukha_meet_with_voroshilov_tt:0 "Съездить в Архангельск для встречи с Верховным Маршалом §GАлександром Ильичом Егоровым§!."
+KAM_tukha_test_their_mettle:0 "ОПЕРАЦИЯ: §LСНЕГУРОЧКА§!"
+KAM_tukha_test_their_mettle_tt:0 "Если все получится, это значительно §Yувеличит§! влияние §gМихаила Тухачевского§!.\n\n"
+KAM_tukha_operation_firebird:0 "ОПЕРАЦИЯ: §eЖАР-ПТИЦА§!"
+KAM_tukha_operation_firebird_tt:0 "§YНезаконные меры§! будут приняты для ограничения влияния §SГеоргия Жукова§!.\n\n§eЭто может иметь катастрофические последствия§!.\n"
+
+
+ # Debug Decisions
+KAM_debug_decisions_category: "Дебаг решения ЗРРФ"
+KAM_load_WRS_initial: "Загрузить начальное древо"
+KAM_set_leader_zhukov: "Поставить §SЖукова§! лидером"
+KAM_set_leader_tukhachevsky: "Поставить §VТухачевского§! лидером"
+KAM_load_WRS_bombings_end: "Загрузить древо конца бомбардировок"
+KAM_load_WRS_zhukov_warlord: "Загрузить варлордное древо §SЖукова§!"
+KAM_load_WRS_zhukov_regional: "Загрузить региональное древо §SЖукова§!"
+KAM_load_WRS_zhukov_superregional: "Загрузить суперрегиональное древо §SЖукова§!"
+KAM_load_WRS_tukhachevsky_warlord: "Загрузить варлордное древо §VТухачевского§!"
+KAM_load_WRS_tukhachevsky_regional: "Загрузить региональное древо §VТухачевского§!"
+KAM_load_WRS_tukhachevsky_superregional: "Загрузить суперрегиональное древо §VТухачевского§!"
+
+ # Opinion Modifiers
+KAM_Withdrawn_Industry: "Выведенная промышленность"
+KAM_Shared_Hatreds: "Общая ненависть"
