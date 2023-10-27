@@ -859,4 +859,7 @@ KAM_kazah_urr_category = {
 	                        target = KAZ
 			}
 		}
-	}                
+	}
+	}
+    
+                
