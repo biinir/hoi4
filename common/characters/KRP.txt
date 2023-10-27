@@ -112,6 +112,25 @@ characters={
 	 logistics_skill = 4
  }
  }
+  	KRP_Frogman={
+		name=KRP_Frogman
+		portraits={
+			civilian={
+				large="GFX_portrait_krp_frogman_military"
+			}
+			army={
+				small="GFX_portrait_krp_frogman_civ"
+			}
+		}
+		navy_leader = {
+ traits = { seawolf silent_hunter torpedo_expert }
+			skill = 8
+			attack_skill = 10
+			defense_skill = 10
+			maneuvering_skill = 10
+			coordination_skill = 10
+ }
+ }
 	KRP_Goldfarb_Guy={
 		name=KRP_Goldfarb_Guy
 		portraits={
@@ -131,4 +150,6 @@ characters={
 			coordination_skill = 5
  }
  }
+ 
+
 }
