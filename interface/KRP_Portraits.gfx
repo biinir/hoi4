@@ -61,4 +61,14 @@ spriteTypes = {
 		name = "GFX_portrait_krp_Guy_civ"
 		texturefile = "gfx/leaders/KRP/Guy.png"
 	}
+	
+	spriteType = {
+		name = "GFX_portrait_krp_frogman_military"
+		texturefile = "gfx/leaders/KRP/Frogman.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_krp_frogman_civ"
+		texturefile = "gfx/leaders/KRP/Frogman.png"
+	}
 }
