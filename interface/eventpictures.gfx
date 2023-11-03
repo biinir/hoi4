@@ -2148,6 +2148,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_spr_anarchist_uprising2"
 		texturefile = "gfx/event_pictures/report_event_spr_anarchist_uprising2.dds"
+
+        }
+
+	spriteType = {
+		name = "GFX_peremoga"
+		texturefile = "gfx/event_pictures/peremoga.dds"
+
 	}
 
 	spriteType = {
@@ -2304,6 +2311,13 @@ spriteTypes = {
 	spriteType = { 
 		name = "GFX_report_event_french_tanks"
 		texturefile = "gfx/event_pictures/report_event_french_tanks.dds"
+
+        }
+	
+	spriteType = { 
+		name = "GFX_patrul"
+		texturefile = "gfx/event_pictures/patrul.dds"
+
 	}
 	
 	spriteType = { 
@@ -2483,6 +2497,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_news_event_the_megali_idea_succeeds"
 		texturefile = "gfx/event_pictures/news_event_the_megali_idea_succeeds.dds"
+        }
+
+	spriteType = {
+		name = "GFX_event_lip"
+		texturefile = "gfx/event_pictures/event_lip.dds"
+
+
 	}
 
 	spriteType = {
