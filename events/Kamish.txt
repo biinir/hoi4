@@ -226,3 +226,520 @@ country_event = { #explain power struggle
 		KAM_power_struggle_pulse = yes
 	}
 }
+
+add_namespace = KAM_power_struggle
+
+country_event = { #Tukha intro - Tukha perspective
+	id = KAM_power_struggle.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KAM_power_struggle.1"}
+	title = KAM_power_struggle.1.t
+	desc = KAM_power_struggle.1.desc
+	picture = GFX_report_event_KOM_paramils_1
+	is_triggered_only = yes
+
+	option = {
+		name = KAM_power_struggle.1.a
+		KAM_increase_tukha_influence_low = yes
+		add_political_power = 150
+	}
+}
+
+country_event = { #Tukha publishes "The Structure of the Militia Army in Operation Suvorov"
+	id = KAM_power_struggle.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KAM_power_struggle.2"}
+	title = KAM_power_struggle.2.t
+	desc = KAM_power_struggle.2.desc
+	picture = GFX_report_event_RUS_letter
+	is_triggered_only = yes
+
+	option = {
+		name = KAM_power_struggle.2.a
+		KAM_increase_tukha_influence_low = yes
+		army_experience = 30
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+
+country_event = { #Tukha meets with Voroshilov, yay maybe the fucking senile boomer likes us
+	id = KAM_power_struggle.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KAM_power_struggle.3"}
+	title = KAM_power_struggle.3.t
+	desc = KAM_power_struggle.3.desc
+	picture = GFX_report_event_RUS_bunker_command
+	is_triggered_only = yes
+
+	option = {
+		name = KAM_power_struggle.3.a
+		KAM_increase_tukha_influence_med = yes
+	}
+}
+
+country_event = { #we won border war yay tukha strong
+	id = KAM_power_struggle.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KAM_power_struggle.4"}
+	title = KAM_power_struggle.4.t
+	desc = KAM_power_struggle.4.desc
+	picture = GFX_report_event_RUS_red_army_march
+	is_triggered_only = yes
+
+	option = {
+		name = KAM_power_struggle.4.a
+		custom_effect_tooltip = gain_loot_1
+		add_to_variable = { loot_amount = 1 }
+		KAM_increase_tukha_influence_high = yes
+	}
+}
+
+country_event = { #we lost border war oof
+	id = KAM_power_struggle.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KAM_power_struggle.5"}
+	title = KAM_power_struggle.5.t
+	desc = KAM_power_struggle.5.desc
+	picture = GFX_report_event_RUS_forest_battle
+	is_triggered_only = yes
+
+	option = {
+		name = KAM_power_struggle.5.a
+		KAM_decrease_tukha_influence_high = yes
+		add_political_power = -75
+		add_stability = -0.1
+	}
+}
+
+country_event = { #we canceled border war for some reason??
+	id = KAM_power_struggle.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KAM_power_struggle.6"}
+	title = KAM_power_struggle.6.t
+	desc = KAM_power_struggle.6.desc
+	picture = GFX_report_event_RUS_soldier_weapon_1
+	is_triggered_only = yes
+
+	option = {
+		name = KAM_power_struggle.6.a
+	}
+}
+
+country_event = { #time to illegally sabotage Zhukov
+	id = KAM_power_struggle.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KAM_power_struggle.7"}
+	title = KAM_power_struggle.7.t
+	desc = KAM_power_struggle.7.desc
+	picture = GFX_report_event_RUS_letter
+	is_triggered_only = yes
+
+	option = {#forged Ukhta papers
+		name = KAM_power_struggle.7.a
+		hidden_effect = {
+			KAM = {
+				country_event = {
+					id = KAM_power_struggle.8
+					days = 3
+				}
+			}
+		}
+	}
+	option = {#ROA papers
+		name = KAM_power_struggle.7.b
+		hidden_effect = {
+			KAM = {
+				country_event = {
+					id = KAM_power_struggle.9
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+country_event = { #saboteurs cross into Ukhta on forged papers
+	id = KAM_power_struggle.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KAM_power_struggle.8"}
+	title = KAM_power_struggle.8.t
+	desc = KAM_power_struggle.8.desc
+	picture = GFX_report_event_KOM_car
+	is_triggered_only = yes
+
+	option = {#blow it up
+		name = KAM_power_struggle.8.a
+		hidden_effect = {
+			KAM = {
+				country_event = {
+					id = KAM_power_struggle.10
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+country_event = { #saboteurs cross into Ukhta on ROA papers
+	id = KAM_power_struggle.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KAM_power_struggle.9"}
+	title = KAM_power_struggle.9.t
+	desc = KAM_power_struggle.9.desc
+	picture = GFX_report_event_RUS_norilsk
+	is_triggered_only = yes
+
+	option = {#blow it up
+		name = KAM_power_struggle.9.a
+		hidden_effect = {
+			KAM = {
+				country_event = {
+					id = KAM_power_struggle.10
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = { #rip oil wells
+	id = KAM_power_struggle.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KAM_power_struggle.10"}
+	title = KAM_power_struggle.10.t
+	desc = KAM_power_struggle.10.desc
+	picture = GFX_report_event_RUS_siberian_worker
+	is_triggered_only = yes
+
+	option = {#motherfucker
+		name = KAM_power_struggle.10.a
+		869 = {
+			add_to_variable = { sabotaged_oil = -7 }
+			add_dynamic_modifier = {
+				modifier = sabotaged_resources
+				days = 90
+			}
+		}
+		hidden_effect = {
+			KAM = {
+				country_event = {
+					id = KAM_power_struggle.11
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = { #zhukov notices
+	id = KAM_power_struggle.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KAM_power_struggle.11"}
+	title = KAM_power_struggle.11.t
+	desc = KAM_power_struggle.11.desc
+	#TODO: request GFX of destroyed oil wells
+	picture = GFX_report_event_RUS_siberian_worker
+	is_triggered_only = yes
+
+	option = {#motherfucker
+		name = KAM_power_struggle.11.a
+		KAM_increase_factionalism_low = yes
+		hidden_effect = {
+			KAM = {
+				country_event = {
+					id = KAM_power_struggle.12
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = { #manhunt
+	id = KAM_power_struggle.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KAM_power_struggle.12"}
+	title = KAM_power_struggle.12.t
+	desc = KAM_power_struggle.12.desc
+	picture = GFX_report_event_RUS_letter
+	is_triggered_only = yes
+
+	option = {#rip
+		name = KAM_power_struggle.12.a
+		trigger = {
+			check_variable = { global.KAMFactionalism < 11 }
+		}
+		hidden_effect = {
+			KAM = {
+				country_event = {
+					id = KAM_power_struggle.13
+					days = 1
+				}
+			}
+		}
+	}
+
+	option = {#we found you motherfucker
+		name = KAM_power_struggle.12.b
+		trigger = {
+			check_variable = { global.KAMFactionalism > 30 }
+		}
+		hidden_effect = {
+			KAM = {
+				country_event = {
+					id = KAM_power_struggle.14
+					days = 1
+				}
+			}
+		}
+	}
+
+	option = {#its roa lol
+		name = KAM_power_struggle.12.c
+		trigger = {
+			AND = {
+				check_variable = { global.KAMFactionalism > 10 }
+				check_variable = { global.KAMFactionalism < 31 }
+			}
+		}
+		hidden_effect = {
+			KAM = {
+				country_event = {
+					id = KAM_power_struggle.15
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = { #zhukov cant find the perpetrator, gets yelled at
+	id = KAM_power_struggle.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KAM_power_struggle.13"}
+	title = KAM_power_struggle.13.t
+	desc = KAM_power_struggle.13.desc
+	picture = GFX_report_event_RUS_letter
+	is_triggered_only = yes
+
+	option = {#owned
+		name = KAM_power_struggle.13.a
+		add_political_power = 50
+		KAM_decrease_zhukov_influence_high = yes
+	}
+}
+
+country_event = { #tukha gets exposed
+	id = KAM_power_struggle.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KAM_power_struggle.14"}
+	title = KAM_power_struggle.14.t
+	desc = KAM_power_struggle.14.desc
+	picture = GFX_report_event_RUS_letter
+	is_triggered_only = yes
+
+	option = {#you fucked up
+		name = KAM_power_struggle.14.a
+		add_stability = -0.15
+		add_political_power = -100
+		KAM_increase_factionalism_high = yes
+		KAM_tank_tukha_influence = yes
+	}
+}
+
+country_event = { #ROA gets blamed
+	id = KAM_power_struggle.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KAM_power_struggle.15"}
+	title = KAM_power_struggle.15.t
+	desc = KAM_power_struggle.15.desc
+	picture = GFX_report_event_SAM_roa_2
+	is_triggered_only = yes
+
+	option = {#motherfucker
+		name = KAM_power_struggle.15.a
+		add_war_support = 0.05
+	}
+}
+
+country_event = { #Intro event - Zhukov perspective
+	id = KAM_power_struggle.100
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KAM_power_struggle.100"}
+	title = KAM_power_struggle.100.t
+	desc = KAM_power_struggle.100.desc
+	picture = GFX_report_event_generic_vodka
+	is_triggered_only = yes
+
+	option = {#motherfucker
+		name = KAM_power_struggle.100.a
+		KAM_increase_zhukov_influence_low = yes
+		add_political_power = 150
+	}
+}
+
+country_event = { #Zhukov meets with Voroshilov, yay maybe the fucking senile boomer likes us
+	id = KAM_power_struggle.101
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KAM_power_struggle.101"}
+	title = KAM_power_struggle.101.t
+	desc = KAM_power_struggle.101.desc
+	picture = GFX_report_event_RUS_bunker_command
+	is_triggered_only = yes
+
+	option = {
+		name = KAM_power_struggle.101.a
+		KAM_increase_zhukov_influence_med = yes
+	}
+}
+
+country_event = { #investigation
+	id = KAM_power_struggle.102
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KAM_power_struggle.102"}
+	title = KAM_power_struggle.102.t
+	desc = KAM_power_struggle.102.desc
+	picture = GFX_report_event_generic_paper_bundle
+	is_triggered_only = yes
+
+	option = {#motherfucker
+		name = KAM_power_struggle.102.a
+		KAM_increase_factionalism_low = yes
+		hidden_effect = {
+			KAM = {
+				country_event = {
+					id = KAM_power_struggle.103
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = { #time to dig into Tukhas past
+	id = KAM_power_struggle.103
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KAM_power_struggle.103"}
+	title = KAM_power_struggle.103.t
+	desc = KAM_power_struggle.103.desc
+	picture = GFX_report_event_RUS_letter
+	is_triggered_only = yes
+
+	option = {#found a lot
+		name = KAM_power_struggle.103.a
+		trigger = {
+			check_variable = { global.KAMFactionalism < 11 }
+		}
+		hidden_effect = {
+			KAM = {
+				country_event = {
+					id = KAM_power_struggle.104
+					days = 1
+				}
+			}
+		}
+	}
+
+	option = {#found nothing - motherfucker covered it up
+		name = KAM_power_struggle.103.b
+		trigger = {
+			check_variable = { global.KAMFactionalism > 30 }
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = KAM_leader_route
+						option = KAM_LEADER_ROUTE_ZHUKOV_AUTHSOC
+					}
+					has_game_rule = {
+						rule = KAM_leader_route
+						option = KAM_LEADER_ROUTE_ZHUKOV_LIBSOC
+					}
+					has_game_rule = {
+						rule = KAM_leader_route
+						option = KAM_LEADER_ROUTE_ZHUKOV_SOCDEM
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			KAM = {
+				country_event = {
+					id = KAM_power_struggle.105
+					days = 1
+				}
+			}
+		}
+	}
+
+	option = {#found some evidence
+		name = KAM_power_struggle.103.c
+		trigger = {
+			AND = {
+				check_variable = { global.KAMFactionalism > 10 }
+				check_variable = { global.KAMFactionalism < 31 }
+			}
+		}
+		hidden_effect = {
+			KAM = {
+				country_event = {
+					id = KAM_power_struggle.106
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = { #found a lot
+	id = KAM_power_struggle.104
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KAM_power_struggle.104"}
+	title = KAM_power_struggle.104.t
+	desc = KAM_power_struggle.104.desc
+	picture = GFX_report_event_RUS_letter
+	is_triggered_only = yes
+
+	option = {#owned
+		name = KAM_power_struggle.104.a
+		add_political_power = 50
+		KAM_decrease_tukha_influence_high = yes
+		KAM_increase_factionalism_high = yes
+	}
+}
+
+country_event = { #found nothing
+	id = KAM_power_struggle.105
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KAM_power_struggle.105"}
+	title = KAM_power_struggle.105.t
+	desc = KAM_power_struggle.105.desc
+	picture = GFX_report_event_RUS_letter
+	is_triggered_only = yes
+
+	option = {#you fucked up
+		name = KAM_power_struggle.105.a
+		add_political_power = -75
+		KAM_increase_factionalism_high = yes
+	}
+}
+
+country_event = { #found a bit
+	id = KAM_power_struggle.106
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KAM_power_struggle.106"}
+	title = KAM_power_struggle.106.t
+	desc = KAM_power_struggle.106.desc
+	picture = GFX_report_event_RUS_letter
+	is_triggered_only = yes
+
+	option = {#motherfucker
+		name = KAM_power_struggle.106.a
+		KAM_decrease_tukha_influence_med = yes
+		KAM_increase_factionalism_high = yes
+	}
+}
+
+country_event = { #bandaid fix to not bug WRRF
+	id = KAM_power_struggle.1000
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KAM_power_struggle.1000"}
+	title = KAM_power_struggle.1000.t
+	desc = KAM_power_struggle.1000.desc
+	picture = GFX_report_event_RUS_soldiers_bombed_city
+	is_triggered_only = yes
+
+	option = {#
+		name = KAM_power_struggle.1000.a
+		KAM_increase_tukha_influence_high = yes
+	}
+	option = {#
+		name = KAM_power_struggle.1000.b
+		KAM_increase_zhukov_influence_high = yes
+	}
+}
