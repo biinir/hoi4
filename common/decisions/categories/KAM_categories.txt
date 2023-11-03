@@ -21,3 +21,4 @@ KAM_kazah_urr_category = {
 		has_civil_war = no
 	}
 }
+
