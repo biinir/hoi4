@@ -12720,8 +12720,13 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/IND_hateful_love.dds"
 	}
 	SpriteType = {
+		name = "GFX_Discuss_SAR"
+		texturefile = "gfx/interface/goals/Discuss_SAR.dds"
+        }
+	SpriteType = {
 		name = "GFX_IND_paranoid_investments"
 		texturefile = "gfx/interface/goals/IND_paranoid_investments.dds"
+
 	}
 	SpriteType = {
 		name = "GFX_IND_mutual_wiretapping"
@@ -16969,8 +16974,14 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_LIP_voen"
+		texturefile = "gfx/interface/goals/LIP_voen.dds"
+        }
+
+	SpriteType = {
 		name = "GFX_JAP_Daisan_Ishin"
 		texturefile = "gfx/interface/goals/JAP_Daisan_Ishin.dds"
+         
 	}
 
 	SpriteType = {
@@ -17164,6 +17175,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_OMS_fortress_omsk"
 		texturefile = "gfx/interface/goals/OMS_fortress_omsk.dds"
+        }
+	SpriteType = {
+		name = "GFX_censorship_LIP"
+		texturefile = "gfx/interface/goals/censorship_LIP.dds"
+
 	}
 	SpriteType = {
 		name = "GFX_OMS_league_air_wings"
@@ -18783,6 +18799,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_generic_irkutsk_diplo"
 		texturefile = "gfx/interface/goals/GFX_generic_irkutsk_diplo.dds"
+       }
+	SpriteType = {
+		name = "GFX_LIP_mob"
+		texturefile = "gfx/interface/goals/LIP_mob.dds"
+
 	}
 	SpriteType = {
 		name = "GFX_generic_irkutsk_war"
@@ -20406,6 +20427,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_GER_Deny_Any_Involvement"
 		texturefile = "gfx/interface/goals/GER_Deny_Any_Involvement.dds"
+       }
+	SpriteType = {
+		name = "GFX_LIP_avio"
+		texturefile = "gfx/interface/goals/LIP_avio.dds"
+
 	}
 	SpriteType = {
 		name = "GFX_GER_Cleansing_the_Stain"
