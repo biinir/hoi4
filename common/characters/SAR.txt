@@ -1,13 +1,13 @@
 characters={
-	SAR_Andrey_Vlasov={
-		name="Andrey Vlasov"
+	SAR_Makim_Vorobiev={
+		name="Maxim Vorobyov"
 		portraits={
 			civilian={
-				large=gfx/leaders/SAR/Portrait_andrey_vlasov.dds
+				large=gfx/leaders/SAR/Portrait_Makim_Vorobiev.dds
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology= fascism_ideology
 			expire="1965.1.1.1"
 			id=-1
 		}

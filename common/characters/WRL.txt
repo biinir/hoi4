@@ -1,0 +1,14 @@
+characters={
+	WRL_Andrey_Vlasov ={
+		name="Andrey Vlasov "
+		portraits={
+			civilian={
+				large=gfx/leaders/WRL/Portrait_Andrey_Vlasov.dds
+			}
+		}
+		country_leader={
+			ideology= corporatocracy_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}

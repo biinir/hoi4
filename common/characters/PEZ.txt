@@ -1,0 +1,14 @@
+characters={
+	PEZ_Alez_Kuprin={
+		name="Aleksandr  Kuprin"
+		portraits={
+			civilian={
+				large=gfx/leaders/PEZ/PEZ_Alez_Kuprin.dds
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}

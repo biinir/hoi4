@@ -1,0 +1,12 @@
+characters={
+	NIN_makim_gorkii={
+		name="Maksim Gorky"
+		portraits={
+			civilian={
+				large=gfx/leaders/NIN/portrait_maksim_gorky.dds
+			}
+		}
+		country_leader={
+			ideology= stalinism
+			expire="1965.1.1.1"
+			id=-1
