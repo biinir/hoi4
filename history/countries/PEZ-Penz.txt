@@ -1,6 +1,6 @@
-capital = 220
+capital = 263
 
-oob = "SAR_1936"
+oob = "PEZ_1936"
 
 # Starting tech
 set_technology = {
@@ -37,26 +37,8 @@ if = {
 	}
 }
 
-recruit_character = SAR_Makim_Vorobiev
-recruit_character = CUB_guillermo_cabral
-recruit_character = CUB_wenceslao_carmona
-recruit_character = CUB_gregorio_morales
-recruit_character = CUB_fidel_castro
-recruit_character = CUB_enrique_c_rolas
-recruit_character = CUB_palaez_menendez
-recruit_character = CUB_domingo_r_del_toro
-recruit_character = CUB_eduardo_chibas
-recruit_character = CUB_juan_blas_hernandez
-recruit_character = CUB_sergio_carbo
-recruit_character = CUB_fulgencio_batista
-recruit_character = CUB_rodrigo_a_fuentes
-recruit_character = CUB_sandalio_junco
-recruit_character = CUB_salvador_castaneda_castro
-recruit_character = CUB_angel_gonzalez
-recruit_character = CUB_julio_sanguily
-recruit_character = CUB_carlos_prio
-recruit_character = CUB_gerardo_machado
-recruit_character = CUB_eugenio_molinet_castro
+recruit_character = PEZ_Alez_Kuprin
+
 
 
 set_country_flag = monroe_doctrine
@@ -111,28 +93,28 @@ set_convoys = 20
 }
 
 set_politics = {
-	ruling_party = fascism 
+	ruling_party = democratic
 	last_election = "1936.1.10"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 set_popularities = {
-	fascism  = 60
-	communism = 10
-        democratic = 30
-
+	democratic = 60
+	fascism = 18
+	communism = 2
+	neutrality = 20
 }
-
-add_ideas = {
-SAR_ministry_strengthened
-SAR_militia_based_army
-extensive_conscription
 
 
 }
 
-1939.1.1 = {
-	recruit_character = CUB_federico_laredo_bru
-	promote_character = CUB_federico_laredo_bru
-	retire_character = CUB_josé_agripino_barnet
+create_country_leader = {
+	name = "Anton Denikin"
+	desc = ""
+	picture = gfx/leaders/CHN/portrait_leonid_dobichin.dds
+	expire = "1953.3.1"
+	ideology = conservatism
+	traits = {
+		
+	}
 }
