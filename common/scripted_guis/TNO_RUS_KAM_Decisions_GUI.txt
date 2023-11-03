@@ -1,0 +1,39 @@
+scripted_gui = {
+	TNO_KAM_Tangle_Decisions_GUI = {
+		context_type = decision_category
+		window_name = "TNO_KAM_Tangle_Decisions_GUI"
+
+		visible = {
+			always = yes
+		}
+
+		triggers = {
+
+		}
+
+		effects = {
+
+		}
+
+		properties = {
+			KAM_Tangle_Dot = {
+				x = KAMTangle_X
+				y = KAMTangle_Y
+			}
+		}
+	}
+	TNO_KAM_struggle_decisions_GUI = {
+		context_type = decision_category
+		window_name = "TNO_KAM_Power_Struggle_Decisions_GUI"
+		parent_window_token = decision_tab
+		dirty = KAM_struggle_dirty_var
+		
+		visible = {
+			always = yes
+		}
+		properties = {
+			KAM_struggle_progress_bar = { frame = KAM_progbar_frame }
+			KAM_balance_scale = { image = "[GetKAMBalanceScale]" }
+		}
+	}
+}
