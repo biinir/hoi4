@@ -49,7 +49,8 @@ focus_tree = {
 
         focus = {
 		id = KAM_analiz_goda
-		icon = GFX_A_Modern_Banking_System
+		icon = GFX_KAM_open_the_government
+
 
                 relative_position_id = KAM_three_principles_of_the_people
 		x = 0
@@ -84,13 +85,17 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			add_political_power = 10
+                          
+                        hidden_effect = {
+			country_event = {id = kamish.2 days = 2 }
+                      
+                       }
 		}
 	}
-
- focus = {
+                 
+        focus = {
 		id = KAM_analiz_budgeta
-		icon = GFX_focus_mex_privatisation
-
+		icon = GFX_focus_generic_strike_at_democracy1
                 relative_position_id = KAM_analiz_goda
 		x = 0
 		y = 1
@@ -124,7 +129,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
                          country_event = {
-			id = kamish.1
+			id = kamish.8
 			hours = 6
 
                         }
