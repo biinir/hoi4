@@ -1,0 +1,22 @@
+ideas = {
+
+	country = {
+		SAR_ministry_strengthened = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
+			picture = SAR_ministry_strengthened
+			modifier = {
+				stability_factor = 0.03
+                                political_power_factor = 0.03
+	
+			}
+		}
+
+                SAR_militia_based_army = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea UKR_Splendid_Isolation"}
+			picture = SAR_militia_based_army
+			modifier = {
+				mobilization_speed = 0.04
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
