@@ -4,7 +4,7 @@ bookmarks = {
 		desc = "Aska_STORM_DESC"
 		date = 1936.1.1.12
 		picture = "Aska_Rey_1936"
-		default_country = "GER"
+		default_country = "KAM"
 		default = no
 		
 		"FRA"={
@@ -81,34 +81,34 @@ bookmarks = {
 				ENG_war_with_italy
 			}
 		}
-		"GER"={
-			history = "GER_GATHERING_STORM_DESC"
-			ideology = fascism
+		"KAM"={
+			history = "KAM_GATHERING_STORM_DESC"
+			ideology = neutrality
 			available = { has_dlc = "Waking the Tiger" }
 			ideas = {
-				sour_loser
-				general_staff
-				GER_mefo_bills_1
+				CAM_busy_ports
+				CHI_army_corruption_1
+				CAM_weak_government
 			}
 			focuses = {
-				GER_anschluss
-				GER_danzig_or_war
-				GER_revive_the_kaiserreich
+				KAM_three_principles_of_the_people
+				KAM_vostoc_sosed
+				KAM_sozvat_sovet
 			}
 		}
-		"GER"={
-			history = "GER_GATHERING_STORM_DESC"
-			ideology = fascism
+		"KAM"={
+			history = "KAM_GATHERING_STORM_DESC"
+			ideology = neutrality
 			available = { NOT = { has_dlc = "Waking the Tiger" } }
 			ideas = {
-				sour_loser
-				general_staff
-				GER_mefo_bills_1
+				CAM_busy_ports
+				CHI_army_corruption_1
+				CAM_weak_government
 			}
 			focuses = {
-				GER_anschluss
-				GER_danzig_or_war
-				GER_ussr_war_goal
+				KAM_three_principles_of_the_people
+				KAM_vostoc_sosed
+				KAM_sozvat_sovet
 			}
 		}
 		"ITA"={
