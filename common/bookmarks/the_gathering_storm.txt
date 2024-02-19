@@ -51,34 +51,34 @@ bookmarks = {
 				USA_reestablish_the_gold_standard
 			}
 		}
-		"ENG"={
-			history = "ENG_GATHERING_STORM_DESC"
+		"LIP"={
+			history = "LIP_GATHERING_STORM_DESC"
 			ideology = democratic
 			available = { has_dlc = "Man the Guns" }
 			ideas = {
-				stiff_upper_lip
-				ENG_the_war_to_end_all_wars
-				george_v
+				LIP_zakon_igor
+				LIP_comp_coryption
+				CAM_ubit_vseh
 			}
 			focuses = {
-				ENG_imperial_federation
-				ENG_the_kings_party
-				ENG_organize_the_blackshirts
+				LIP_pizda_parlamenty
+				LIP_army_par
+				LIP_prav_par
 			}
 		}
-		"ENG"={
-			history = "ENG_GATHERING_STORM_DESC"
+		"LIP"={
+			history = "LIP_GATHERING_STORM_DESC"
 			ideology = democratic
 			available = { NOT = { has_dlc = "Man the Guns" } }
 			ideas = {
-				stiff_upper_lip
-				ENG_the_war_to_end_all_wars
-				george_v
+				LIP_zakon_igor
+				LIP_comp_coryption
+				CAM_ubit_vseh
 			}
 			focuses = {
-				tizard_mission_focus
-				ENG_war_with_germany
-				ENG_war_with_italy
+				LIP_pizda_parlamenty
+				LIP_army_par
+				LIP_prav_par
 			}
 		}
 		"KAM"={
