@@ -1,0 +1,4 @@
+GEO_mission_decisions = {
+	icon = ger_mefo_bills
+	allowed = { always = no }
+}
