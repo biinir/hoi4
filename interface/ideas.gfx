@@ -3350,7 +3350,13 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_generic_military_theorist_african_2d"
-		texturefile = "gfx/interface/ideas/idea_generic_army_africa_1.dds"
+		texturefile = "gfx/interface/ideas/idea_generic_army_africa_1.dds"          
+         }
+					
+	spriteType = {
+		name = "GFX_idea_GEO_stal_prop"
+		texturefile = "gfx/interface/ideas/idea_GEO_stal_prop.dds"
+
 	}
 	spriteType = {
 		name = "GFX_idea_generic_naval_theorist_african_2d"
@@ -3595,6 +3601,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_hisaichi_terauchi"
 		texturefile = "gfx/interface/ideas/idea_hisaichi_terauchi.dds"
+         
+        }
+	spriteType = {
+		name = "GFX_idea_GEO_farmers_relief"
+		texturefile = "gfx/interface/ideas/idea_GEO_farmers_relief.dds"
+
 	}
 	spriteType = {
 		name = "GFX_idea_isoroku_yamamoto"
@@ -4634,6 +4646,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_tur_odpa"
 		texturefile = "gfx/interface/ideas/idea_tur_odpa.dds"
+         }	
+	
+	spriteType = {
+		name = "GFX_idea_SOV_Stakhanovite_Movement"
+		texturefile = "gfx/interface/ideas/idea_SOV_Stakhanovite_Movement.dds"
 	}
 		
 	spriteType = {
