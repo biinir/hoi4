@@ -1,0 +1,181 @@
+ideas = {
+
+	country = {
+		GEO_ind_stal = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
+			picture = eng_spirit_of_the_industrial_revolution
+			modifier = {
+				stability_factor = 0.02
+                                political_power_factor = 0.01
+                                industrial_capacity_factory = 0.1
+	
+			}
+		}
+                 
+                  GEO_stal_prop = {
+
+			picture = GEO_stal_prop
+
+			name = GEO_stal_prop
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.02
+			}
+
+		}
+
+                
+                    SOV_Stakhanovite_Movement = {
+
+			picture = SOV_Stakhanovite_Movement
+
+			name = SOV_Stakhanovite_Movement
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                                   industrial_capacity_factory = 0.1
+				
+			}
+
+		}
+
+
+                    SOV_Stakhanovite_Movement = {
+
+			picture = SOV_Stakhanovite_Movement
+
+			name = SOV_Stakhanovite_Movement
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                                   industrial_capacity_factory = 0.1
+				
+			}
+
+		}
+
+ 
+                GEO_army_red = {
+
+			picture = generic_communist_army
+
+			name = GEO_army_red
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                                 army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				mobilization_speed = 0.1
+                                army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				
+			}
+
+		}
+
+
+                
+                GEO_repr_red = {
+
+			picture = DEN_occupation_laws
+
+			name = GEO_repr_red
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                                 army_attack_factor = -0.1
+				army_defence_factor = -0.1
+                                political_power_factor = -0.1
+                                stability_factor = -0.25
+				
+			}
+
+		}
+
+                GEO_farmers_relief = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GEO_farmers_relief"}
+			picture = GEO_farmers_relief
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.15
+		                
+
+                           }
+
+		}
+
+                 GEO_army_red_1 = {
+
+			picture = generic_communist_army
+
+			name = GEO_army_red
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                                 army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				mobilization_speed = 0.1
+                                army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+                                army_org_factor = 0.01
+				
+			}
+
+		}айна 
+                     
+              
