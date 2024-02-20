@@ -1,0 +1,32 @@
+GEO_mission_decisions = {
+	GEO_Dam_mission = {
+		icon = GFX_decision_electrify
+		allowed = {
+			always = no
+		}
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 730
+		is_good = yes
+		fire_only_once = yes
+
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout GEO_Dam_mission"
+			add_stability = 0.1
+                        every_owned_state = {
+				limit = {
+					OR = {
+						state = 231
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = GEO_river_blown
+					
+			231 = {
+				increase_state_category_by_two_levels = yes
+			}
+		}
+	}
