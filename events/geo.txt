@@ -1,0 +1,48 @@
+add_namespace = ge
+
+country_event = {
+	id = ge.200
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ge.200"}
+	title = ge.200.t
+	desc = ge.200.d
+	picture = diplomacy3
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		ai_chance = {
+			factor = 100
+			modifier = {
+				add = 2
+				ROOT = {
+					OR = {
+						has_guaranteed = GEO
+						is_in_faction_with = GEO
+					}
+				}
+			}
+		}
+		name = ge.200.a
+		GEO = { 
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 2000 } 
+			add_opinion_modifier = { target = ROOT modifier = GEO_gave_weapons }
+		}
+		send_equipment = { target = GEO type = infantry_equipment amount = 2000 }
+	}
+	option = {
+		ai_chance = {
+			factor = 40
+			modifier = {
+				add = 0.5
+				ROOT = {
+					OR = {
+						has_guaranteed = GEO
+						is_in_faction_with = GEO
+					}
+				}
+			}
+		}
+		name = ge.200.b
+		GEO = { country_event = { id = ge.201 } }
+	}
+}

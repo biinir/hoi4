@@ -50,7 +50,12 @@ country_event = { #KAM_budghet
 		name = kamish.3.a
 		ai_chance = { factor = 1 }
 		add_political_power = 1
-	}
+    
+                    hidden_effect = {
+		          country_event = {id = kamish.9 days = 3 }
+
+                   }
+}
 }
 
 
@@ -741,5 +746,120 @@ country_event = { #bandaid fix to not bug WRRF
 	option = {#
 		name = KAM_power_struggle.1000.b
 		KAM_increase_zhukov_influence_high = yes
+	}
+}
+
+
+country_event = { #explain power struggle
+	id =  kamish.9
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event  kamish.8"
+		hidden_effect = {
+			random_list = {
+				1 = {
+					set_country_flag = KAM_appeasee
+				}
+				4 = { }
+			}
+		}
+	}
+	title =  kamish.9.t
+	desc =  kamish.9.d
+	picture = GFX_report_event_RUS_letter
+
+	is_triggered_only = yes
+
+	option = {#TUKHA
+		name =  kamish.9.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+
+
+				}
+			}
+		}
+		set_country_flag = KAM_power_strugglee_tukha
+                add_ideas = KAM_modern_proiz
+		KAM_power_strugglee_pulse = yes
+
+                    hidden_effect = {
+			country_event = {id = kamish.10 days = 6 }
+
+	}
+	option = {#ZHUKOV
+		name =  kamish.9.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+
+			}
+		}
+		set_country_flag = KAM_power_strugglee_zhukov
+                add_stability = 0.03
+		KAM_power_struggle_pulsee = yes
+
+                hidden_effect = {
+			country_event = {id = kamish.10 days = 6 }
+         
+                     }
+		}
+	}
+}
+
+country_event = { #explain power struggle
+	id =  kamish.10
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event  kamish.8"
+		hidden_effect = {
+			random_list = {
+				1 = {
+					set_country_flag = KAM_appeaseehh
+				}
+				4 = { }
+			}
+		}
+	}
+	title =  kamish.10.t
+	desc =  kamish.10.d
+	picture = GFX_report_event_RUS_letter
+
+	is_triggered_only = yes
+
+	option = {#TUKHA
+		name =  kamish.10.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+
+
+				}
+			}
+		}
+		set_country_flag = KAM_power_strugglee_tukha
+                add_ideas = KAM_modern_proiz
+		KAM_power_strugglee_pulse = yes
+
+                    hidden_effect = {
+			country_event = {id = kamish.10 days = 6 }
+
+	}
+	option = {#ZHUKOV
+		name =  kamish.10.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+
+			}
+		}
+		set_country_flag = KAM_power_strugglee_zhukov
+                add_stability = 0.03
+		KAM_power_struggle_pulsee = yes
 	}
 }
