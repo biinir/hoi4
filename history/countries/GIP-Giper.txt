@@ -1,7 +1,6 @@
-﻿capital = 231
+capital = 564
 
-oob = "GEO"
-set_naval_oob= "GEO_naval"
+oob = "GIP_1936"
 
 # Starting tech
 set_technology = {
@@ -38,8 +37,27 @@ if = {
 	}
 }
 
-recruit_character = GEO_iosif_stalin
-
+recruit_character = SAR_Makim_Vorobiev
+recruit_character = GIP_Velmir
+recruit_character = CUB_guillermo_cabral
+recruit_character = CUB_wenceslao_carmona
+recruit_character = CUB_gregorio_morales
+recruit_character = CUB_fidel_castro
+recruit_character = CUB_enrique_c_rolas
+recruit_character = CUB_palaez_menendez
+recruit_character = CUB_domingo_r_del_toro
+recruit_character = CUB_eduardo_chibas
+recruit_character = CUB_juan_blas_hernandez
+recruit_character = CUB_sergio_carbo
+recruit_character = CUB_fulgencio_batista
+recruit_character = CUB_rodrigo_a_fuentes
+recruit_character = CUB_sandalio_junco
+recruit_character = CUB_salvador_castaneda_castro
+recruit_character = CUB_angel_gonzalez
+recruit_character = CUB_julio_sanguily
+recruit_character = CUB_carlos_prio
+recruit_character = CUB_gerardo_machado
+recruit_character = CUB_eugenio_molinet_castro
 
 
 set_country_flag = monroe_doctrine
@@ -94,37 +112,26 @@ set_convoys = 20
 }
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = fascism 
 	last_election = "1936.1.10"
 	election_frequency = 48
 	elections_allowed = no
-
+}
+set_popularities = {
+	fascism  = 70
+	communism = 10
+        democratic = 20
 
 }
 
 add_ideas = {
-    GEO_ind_stal
-    GEO_stal_prop
-    SOV_Stakhanovite_Movement
-    GEO_army_red
-}
-set_popularities = {
-	democratic = 10
-	fascism = 10
-	communism = 70
-	neutrality = 10
-}
+extensive_conscription
 
 
 }
 
-create_country_leader = {
-	name = "Anton Denikin"
-	desc = ""
-	picture = gfx/leaders/CHN/portrait_leonid_dobichin.dds
-	expire = "1953.3.1"
-	ideology = conservatism
-	traits = {
-		
-	}
-
+1939.1.1 = {
+	recruit_character = CUB_federico_laredo_bru
+	promote_character = CUB_federico_laredo_bru
+	retire_character = CUB_josé_agripino_barnet
+}

@@ -1,7 +1,6 @@
-﻿capital = 231
+capital = 263
 
-oob = "GEO"
-set_naval_oob= "GEO_naval"
+oob = "AMU_1936"
 
 # Starting tech
 set_technology = {
@@ -38,12 +37,12 @@ if = {
 	}
 }
 
-recruit_character = GEO_iosif_stalin
+recruit_character = AMU_Vladimir_Zhirinov
 
 
 
 set_country_flag = monroe_doctrine
-set_war_support = 0.1
+set_war_support = 0.5
 set_convoys = 20
 
 1939.1.1 = {
@@ -94,25 +93,16 @@ set_convoys = 20
 }
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = paternal_autocrat
 	last_election = "1936.1.10"
 	election_frequency = 48
 	elections_allowed = no
-
-
-}
-
-add_ideas = {
-    GEO_ind_stal
-    GEO_stal_prop
-    SOV_Stakhanovite_Movement
-    GEO_army_red
 }
 set_popularities = {
-	democratic = 10
-	fascism = 10
-	communism = 70
-	neutrality = 10
+	paternal_autocrat = 60
+	fascism = 18
+	communism = 2
+	neutrality = 20
 }
 
 
@@ -127,4 +117,4 @@ create_country_leader = {
 	traits = {
 		
 	}
-
+}
