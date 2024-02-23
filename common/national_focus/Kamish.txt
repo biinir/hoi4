@@ -8,7 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
-        continuous_focus_position = { x = 50 y =1650 }
+        continuous_focus_position = { x = 900 y = 3500 }
 
 	focus = {
 		id = KAM_three_principles_of_the_people
@@ -129,7 +129,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
                          country_event = {
-			id = kamish.8
+			id = kamish.9
 			hours = 6
 
                         }
@@ -137,48 +137,26 @@ focus_tree = {
 		}
 	}
 
- focus = {
+        focus = {
 		id = KAM_sozvat_sovet
 		icon = GFX_KAM_open_the_government
-
+                cost = 3
                 relative_position_id = KAM_analiz_budgeta
 		x = -6
 		y = 1
-              
-                prerequisite = {
+
+               prerequisite = {
 		focus = KAM_analiz_budgeta
 
-	        }
-		cost = 1
+                }
 
-		ai_will_do = {
-			factor = 4
-		}
-
-		available = {
-		
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		search_filters = { FOCUS_FILTER_STABILITY }
+		available = { always = no }
+                date > 1938.5.1
+		ai_will_do = { factor = 10 }
+		bypass = { has_country_flag = KAM_shahlik }
 		completion_reward = {
-                         country_event = {
-			id = kamish.2
-			hours = 6
-
-                        }
-			add_political_power = 10
+			log = "[GetDateText]: [Root.GetName]: Focus KAM_sozvat_sovet"
+			custom_effect_tooltip = our_future_tooltipp
 		}
 	}
 
@@ -545,3 +523,554 @@ focus = {
 
 			}
 		}
+
+        focus = {
+		id = KAM_pereocenc_sost
+		icon = GFX_generic_army_grand_battleplan
+                relative_position_id = KAM_sozvat_sovet
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = KAM_sozvat_sovet
+
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         country_event = {
+			id = kamish.13
+			hours = 6
+
+                        }
+			add_political_power = 10
+		}
+	}
+
+
+        focus = {
+		id = KAM_vistyp_gragdan
+		icon = GFX_NFA_national_propaganda
+                relative_position_id = KAM_pereocenc_sost
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = KAM_pereocenc_sost
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         country_event = {
+			id = kamish.14
+			hours = 6
+
+                        }
+			add_political_power = 10
+		}
+	}
+
+         focus = {
+		id = KAM_vistyp_gragdan
+		icon = GFX_NFA_national_propaganda
+                relative_position_id = KAM_vistyp_gragdan
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = KAM_vistyp_gragdan
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         country_event = {
+			id = kamish.14
+			hours = 6
+
+                        }
+			add_political_power = 10
+		}
+	}
+
+        
+        focus = {
+		id = KAM_gotov_refr
+		icon = GFX_MON_doctrines_I
+                relative_position_id = KAM_vistyp_gragdan
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = KAM_vistyp_gragdan
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+
+
+          focus = {
+		id = KAM_plan_sekay
+		icon = GFX_goal_generic_territory_or_war
+                relative_position_id = KAM_gotov_refr
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = KAM_gotov_refr
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			 set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+                             }
+
+                        add_popularity = {
+				ideology = paternal_autocrat
+		 		popularity = 0.30
+
+			   }
+			add_political_power = 1
+                        mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+         
+       focus = {
+		id = KAM_velik_restvr
+		icon = GFX_focus_TUR_ratify_the_six_arrows
+                relative_position_id = KAM_plan_sekay
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = KAM_plan_sekay
+	        }
+		cost = 3
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 30
+                        add_stability = 0.03
+		}
+	}
+
+
+        focus = {
+		id = KAM_put_ver
+		icon = GFX_focus_generic_japanese_imperial_glory
+                relative_position_id = KAM_velik_restvr
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = KAM_velik_restvr
+	        }
+		cost = 3
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                                   log = "[GetDateText]: [Root.GetName]: Focus UKR_Newforpol"
+                                 add_political_power = 20
+                                 add_ideas =   KAM_cult_ver
+			
+		}
+	}
+
+
+        
+        focus = {
+		id = KAM_smert_pob
+		icon = GFX_focus_generic_japanese_imperial_glory
+                relative_position_id = KAM_put_ver
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = KAM_put_ver
+	        }
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                                   swap_ideas = {
+					remove_idea = KAM_cult_ver
+					add_idea = KAM_cult_ver_1
+                      
+			}
+		}
+	}
+   
+        focus = {
+		id = KAM_kult_lith
+		icon = GFX_focus_jap_spiritual_mobilization
+                relative_position_id = KAM_smert_pob
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = KAM_smert_pob
+	        }
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                                   add_political_power = 50
+                                   add_stability = 0.09
+			
+		}
+	}
+
+
+       focus = {
+		id = KAM_vern_lud
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+                relative_position_id = KAM_pereocenc_sost
+		x = -3
+		y = 1
+              
+                prerequisite = {
+		focus = KAM_pereocenc_sost
+	        }
+		cost = 2
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                                   add_political_power = 23
+                                   add_stability = 0.02
+			
+		}
+	}
+
+  
+          focus = {
+		id = KAM_neord_lich
+		icon = GFX_goal_generic_position_armies
+                mutually_exclusive = { focus = KAM_norm_chel }
+                relative_position_id = KAM_vern_lud
+		x = -2
+		y = 1
+              
+                prerequisite = {
+		focus = KAM_vern_lud
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                                   add_political_power = 1
+                                   add_stability = 0.01
+			
+		}
+	}
+
+        focus = {
+		id = KAM_norm_chel
+		icon = GFX_goal_generic_position_armies
+                mutually_exclusive = { focus = KAM_neord_lich }
+                relative_position_id = KAM_vern_lud
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = KAM_vern_lud
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                                   add_political_power = 1
+                                   add_stability = 0.01
+			
+		}
+	}
+
+
+           focus = {
+		id = KAM_ssro_ogo
+		icon = GFX_goal_generic_secret_weapon
+                relative_position_id = KAM_vern_lud
+		x = -4
+		y = 3
+              
+                prerequisite = {
+		focus = KAM_plan_sekay
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                                   add_political_power = 1
+                                   add_stability = 0.01
+			
+		}
+	}                        
