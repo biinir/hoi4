@@ -1,0 +1,327 @@
+#Main Menu Theme
+
+music = {
+	name = "maintheme"
+	file = "hoi4mainthemeallies.ogg"
+	volume = 0.65
+}
+
+#Sabaton all tracks
+
+music = {
+	name = "waffenss"
+	file = "waffenss.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "power_ending"
+	file = "power_ending.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "pizdec"
+	file = "pizdec.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "moloth_slezi_oseni"
+	file = "moloth_slezi_oseni.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "moloth_myzhelozhestvo"
+	file = "moloth_myzhelozhestvo.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "makim_theme"
+	file = "makim_theme.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "burmenko_march"
+	file = "burmenko_march.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "burmen_gimn"
+	file = "burmen_gimn.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "biniir_theme"
+	file = "biniir_theme.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "ban"
+	file = "ban.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "riverscorp"
+	file = "riverscorp.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "anricamyshin_a"
+	file = "anricamyshin_a.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "anricanyshin_b"
+	file = "anricanyshin_b.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "anricamyshin_c"
+	file = "anricamyshin_c.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "camyshin_symerki"
+	file = "camyshin_symerki.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "camyshin_peremozhe"
+	file = "camyshin_peremozhe.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "psycho_vsg"
+	file = "psycho_vsg.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "posledny_den_vsg"
+	file = "posledny_den_vsg.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "shalyshai"
+	file = "shalyshai.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "incident_ptu"
+	file = "incident_ptu.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "songs_camyshin_sanitars"
+	file = "songs_camyshin_sanitars.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "camyshin_plastic_love"
+	file = "camyshin_plastic_love.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "instryktor_iz_stalingrada"
+	file = "instryktor_iz_stalingrada.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "warmusic_a"
+	file = "warmusic_a.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "kaz_gribi"
+	file = "kaz_gribi.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "granica"
+	file = "granica.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "ment_plita"
+	file = "ment_plita.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "camyshin_chetire_utra"
+	file = "camyshin_chetire_utra.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "camyshin_im_in_love"
+	file = "camyshin_im_in_love.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "camyshin_with_me"
+	file = "camyshin_with_me.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "neistoviy_ment"
+	file = "neistoviy_ment.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "camyshin_flyday"
+	file = "camyshin_flyday.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "odyvanchiki"
+	file = "odyvanchiki.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "ment_pizdit_pliti"
+	file = "ment_pizdit_pliti.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "chvk_stalingrad"
+	file = "chvk_stalingrad.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "ment_na_kriltse"
+	file = "ment_na_kriltse.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "lybly_pliti"
+	file = "lybly_pliti.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "nya"
+	file = "nya.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "tyan"
+	file = "tyan.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "ya_ebanytiy"
+	file = "ya_ebanytiy.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "japan_porno"
+	file = "japan_porno.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "camyshin_bad_city"
+	file = "camyshin_bad_city.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "landishi"
+	file = "landishi.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "gelendzhik"
+	file = "gelendzhik.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "odyvanchiki_b"
+	file = "odyvanchiki_b.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "vse_dolzhni_zigovat"
+	file = "vse_dolzhni_zigovat.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "razvedosss"
+	file = "razvedosss.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "gotov_dat_svoi_kevlar"
+	file = "gotov_dat_svoi_kevlar.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "battotai"
+	file = "battotai.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rei_perfect_girl"
+	file = "rei_perfect_girl.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "gladiator"
+	file = "gladiator.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "shalyshai_b"
+	file = "shalyshai_b.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "redan"
+	file = "redan.ogg"
+	volume = 0.65
+}
