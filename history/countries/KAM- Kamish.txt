@@ -115,6 +115,7 @@ if = {
 }
 
 recruit_character = KAM_aianami_rey
+recruit_character = KAM_aianami_rey
 recruit_character = CUB_guillermo_cabral
 recruit_character = CUB_wenceslao_carmona
 recruit_character = CUB_gregorio_morales
@@ -278,6 +279,8 @@ set_politics = {
 }
 
 
+
+
 create_field_marshal = {
 	name = "Stalin"
 	picture = "Maksim.dds"
@@ -334,6 +337,19 @@ create_corps_commander = {
 	 logistics_skill = 3
 
 
+  }
+
+create_country_leader = {
+	name = "Shashlik Ayanami"
+	desc = ""
+	picture = "gfx/leaders/KAM/Portrait_KAM_aianami_rey.dds"
+	expire = "1953.3.1"
+	ideology = corporatocracy_subtype
+	traits = {
+		
+	}
+
+
 
 }
 set_popularities = {
@@ -349,6 +365,7 @@ add_ideas = {
     CAM_weak_government
     CAM_ubit_vseh
     KAM_dobr_military
+
 
 }
 
