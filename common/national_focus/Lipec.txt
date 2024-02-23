@@ -2001,7 +2001,322 @@ focus = {
                         country_event = {
 			id = lip.2
 			hours = 6
-                            
+                     
+                       }
+		}
+	}
+
+        focus = {
+		id = LIP_cen_poln
+		icon = GFX_censorship_LIP
+
+                relative_position_id = LIP_nazi_vlast
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = LIP_nazi_vlast
+
+	        }
+		cost = 3
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         country_event = {
+			id = kamish.1
+			hours = 6
+
+                        }
+			add_political_power = 10
                         mark_focus_tree_layout_dirty = yes
+		}
+	}
+         
+
+        
+        focus = {
+		id = LIP_voen_pol
+		icon = GFX_LIP_voen
+                cost = 1 
+                prerequisite = { focus = LIP_cen_poln }
+                x = 0
+		y = 1
+                allow_branch = { has_country_flag = LIP_kocul }
+                relative_position_id = LIP_cen_poln
+		ai_will_do = {
+			factor = 4
+
+                }
+                               
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         country_event = {
+			id = kamish.1
+			hours = 6
+
+                        }
+			add_political_power = 10
+                        mark_focus_tree_layout_dirty = yes
+		}
+	}
+         
+         focus = {
+		id = LIP_spec_otrad
+		icon = GFX_LIP_mob
+                relative_position_id = LIP_voen_pol
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = LIP_voen_pol
+
+		}
+                cost = 2
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         country_event = {
+			id = kamish.1
+			hours = 6
+
+                        }
+			add_political_power = 10
+                        mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+        
+         focus = {
+		id = LIP_prop
+		icon = GFX_goal_continuous_def_against_influence
+                relative_position_id = LIP_spec_otrad
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = LIP_spec_otrad
+
+		}
+                cost = 2
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         country_event = {
+			id = kamish.1
+			hours = 6
+
+                        }
+			add_political_power = 30
+                        mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+       focus = {
+		id = LIP_avio_udar
+		icon = GFX_LIP_avio
+
+                relative_position_id = LIP_prop
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = LIP_prop
+
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         country_event = {
+			id = kamish.1
+			hours = 6
+
+                        }
+			add_political_power = 10
+                        mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+         
+          focus = {
+		id = LIP_otrad_sam
+		icon = GFX_MON_improve_infantry_equipment_II
+                relative_position_id = LIP_avio_udar
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = LIP_avio_udar
+
+		}
+                cost = 2
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                         country_event = {
+			id = kamish.1
+			hours = 6
+
+                        }
+			add_political_power = 10
+                        mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+
+         focus = {
+		id = LIP_final_nastyp
+		icon = GFX_MON_doctrines_I
+                relative_position_id = LIP_otrad_sam
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = LIP_otrad_sam
+
+		}
+                cost = 2
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                  257 = {
+			add_core_of = LIP
+                 254 = {
+			add_core_of = LIP
+                 260 = {
+			add_core_of = LIP
+                 228 = {
+			add_core_of = LIP 
 		}
 	}
