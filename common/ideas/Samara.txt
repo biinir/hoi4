@@ -8,15 +8,15 @@ ideas = {
 
 			modifier = {
 				stability_factor = -0.1		
-				conscription = -0.018
+				conscription_factor = -0.55
 				send_volunteer_divisions_required = -0.75
-				
+				}
 			rule = {
 				can_create_factions = yes
 			}
 
 
-			}
+			
 		}
 		
 		GAC_gachi_slaves_run = {
@@ -24,7 +24,7 @@ ideas = {
 			picture = GAC_gachi_slaves_run
 			modifier = {
 				stability_factor = -0.07
-				conscription = -0.005
+				conscription_factor = -0.25
 
 
 			}

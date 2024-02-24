@@ -117,7 +117,7 @@ if = {
 }
 
 
-create_faction =  pennaia antanta
+create_faction =  pennaia_antanta
 add_to_faction = LIP
 add_to_faction = KUS
 
