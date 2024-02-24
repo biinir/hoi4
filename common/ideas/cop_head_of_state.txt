@@ -4,6 +4,7 @@ ideas = {
 	
 		head_monarch = {
 			available = {
+                                     is_in_faction_with = MOL
 				OR = {
 					has_government = neutrality
 					AND = {
@@ -60,6 +61,7 @@ ideas = {
 		
 		head_prime_minister = {
 			available = {
+                                    is_in_faction_with = MOL
 				NOT = {
 					has_government = communism
 				}
@@ -83,6 +85,7 @@ ideas = {
 		
 		head_president = {
 			available = {
+                                    is_in_faction_with = MOL
 				NOT = {
 					has_government = communism
 				}
@@ -105,6 +108,7 @@ ideas = {
 		
 		head_military = {
 			available = {
+                                    is_in_faction_with = MOL
 				NOT = {
 					has_government = democratic
 				}
@@ -133,6 +137,7 @@ ideas = {
 	
 			available = {
 				has_government = communism
+                                is_in_faction_with = MOL
 			}
 
 			modifier = {
