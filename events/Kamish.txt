@@ -783,11 +783,14 @@ country_event = { #explain power struggle
 		}
 		set_country_flag = KAM_power_strugglee_tukha
                 add_ideas = KAM_modern_proiz
-		KAM_power_strugglee_pulse = yes
-
-                    hidden_effect = {
-			country_event = {id = kamish.10 days = 6 }
-
+		KAM_power_strugglee_pulse = yes                                    
+                hidden_effect = {
+			country_event = {
+				id = kamish.10
+				days = 1
+				random = 48
+	}
+	}
 	}
 	option = {#ZHUKOV
 		name =  kamish.9.b
@@ -800,16 +803,19 @@ country_event = { #explain power struggle
 		}
 		set_country_flag = KAM_power_strugglee_zhukov
                 add_stability = 0.03
-		KAM_power_struggle_pulsee = yes
-
+		KAM_power_struggle_pulsee = yes                             
                 hidden_effect = {
-			country_event = {id = kamish.10 days = 6 }
+			hidden_effect = {
+			country_event = {
+				id = kamish.10
+				days = 1
+				random = 48
          
                      }
 		}
 	}
 }
-
+}
 country_event = { #explain power struggle
 	id =  kamish.10
 	immediate = {
@@ -842,12 +848,15 @@ country_event = { #explain power struggle
 			}
 		}
 		set_country_flag = KAM_power_strugglee_tukha
-                add_ideas = KAM_modern_proiz
-		KAM_power_strugglee_pulse = yes
-
-                    hidden_effect = {
-			country_event = {id = kamish.10 days = 6 }
-
+                add_ideas = KAM_vnedr_busido
+		KAM_power_strugglee_pulse = yes                                    
+                hidden_effect = {
+			country_event = {
+				id = kamish.11
+				days = 1
+				random = 48
+	}
+	}
 	}
 	option = {#ZHUKOV
 		name =  kamish.10.b
@@ -860,6 +869,136 @@ country_event = { #explain power struggle
 		}
 		set_country_flag = KAM_power_strugglee_zhukov
                 add_stability = 0.03
-		KAM_power_struggle_pulsee = yes
+		KAM_power_struggle_pulsee = yes                             
+                hidden_effect = {
+			hidden_effect = {
+			country_event = {
+				id = kamish.11
+				days = 1
+				random = 48
+         
+                     }
+		}
+	}
+}
+}
+        
+country_event = { #explain power struggle
+	id =  kamish.11
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event  kamish.8"
+		hidden_effect = {
+			random_list = {
+				1 = {
+					set_country_flag = KAM_appeaseehh
+				}
+				4 = { }
+			}
+		}
+	}
+	title =  kamish.11.t
+	desc =  kamish.11.d
+	picture = GFX_report_event_RUS_letter
+
+	is_triggered_only = yes
+
+	option = {#TUKHA
+		name =  kamish.11.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+
+
+				}
+			}
+		}
+		set_country_flag = KAM_power_strugglee_tukha
+		KAM_power_strugglee_pulse = yes                                    
+                hidden_effect = {
+			country_event = {
+				id = kamish.12
+				days = 1
+				random = 48
+	}
+	}
+	}
+	option = {#ZHUKOV
+		name =  kamish.11.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+
+			}
+		}
+		set_country_flag = KAM_power_strugglee_zhukov
+		KAM_power_struggle_pulsee = yes                             
+                hidden_effect = {
+			hidden_effect = {
+			country_event = {
+				id = kamish.13
+				days = 1
+				random = 48
+         
+                     }
+		}
+	}
+}
+}
+
+country_event = { #KAM_budghet
+	id =  kamish.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event kamish.2" }
+	title =  kamish.12.t
+	desc =  kamish.11.d
+	picture = GFX_peremoga
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = lip.12.a
+		ai_chance = { factor = 1 }
+		add_political_power = -18 
+                set_country_flag = KAM_shahlik
+                complete_national_focus = KAM_sozvat_sovet 
+         
+              }
+      }
+
+country_event = { #KAM_budghet
+	id = kamish.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event kamish.2" }
+	title = kamish.13.t
+	desc = kamish.13.desc
+	picture = GFX_report_event_kabin
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = kamish.13.a
+		ai_chance = { factor = 1 }
+		add_political_power = -10
+	}
+}
+
+
+country_event = { #KAM_budghet
+	id = kamish.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event kamish.2" }
+	title = kamish.14.t
+	desc = kamish.14.desc
+	picture = GFX_report_event_kabin
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = kamish.14.a
+		ai_chance = { factor = 1 }
+		add_political_power = 20
 	}
 }
