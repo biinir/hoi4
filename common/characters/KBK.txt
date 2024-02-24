@@ -1,0 +1,31 @@
+characters = {
+	KBK_betal_kalmyk = {
+		name = "Kazim Bekkievich" 
+		portraits = {
+			civilian = {
+				large = gfx/leaders/KBK/Portrait_Kazim_Mechiev.dds
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1950.1.1.1"
+			id = -1
+
+                      }
+		}
+	}
+                      
+  KBK_kazim_bechiev = {
+		name = "Kazim Bekkievich" 
+		portraits = {
+			civilian = {
+				large = gfx/leaders/KBK/Portrait_Kazim_Mechiev.dds
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+}
