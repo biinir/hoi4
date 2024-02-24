@@ -12258,8 +12258,15 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_TRM_Increase_Legitimacy"
+		texturefile = "gfx/interface/goals/TRM_Increase_Legitimacy.dds"
+
+       }
+
+	SpriteType = {
 		name = "GFX_ORE_expanding_relations_with_the_league"
 		texturefile = "gfx/interface/goals/ORE_expanding_relations_with_the_league.dds"
+
 	}
 
 	SpriteType = {
@@ -13230,6 +13237,13 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_MAD_snipe_the_reichskommissar"
 		texturefile = "gfx/interface/goals/focus_MAD_snipe_the_reichskommissar.dds"
+
+       }
+
+	SpriteType = {
+		name = "GFX_NFA_national_propaganda"
+		texturefile = "gfx/interface/goals/NFA_national_propaganda.dds"
+
 	}
 
 	SpriteType = {
@@ -14117,8 +14131,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/TNO_generic_defense.dds"
 	}
 	SpriteType = {
+		name = "GFX_BBR_crush_ultraradicals"
+		texturefile = "gfx/interface/goals/BBR_crush_ultraradicals.dds"
+ 
+        }
+	SpriteType = {
 		name = "GFX_GER_SS_Light"
 		texturefile = "gfx/interface/goals/GER_SS_Light.dds"
+          
 	}
 	SpriteType = {
 		name = "GFX_AKT_Against_the_Poles"
@@ -18639,6 +18659,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_PRM_ever_onwards"
 		texturefile = "gfx/interface/goals/PRM_ever_onwards.dds"
+        }
+	SpriteType = {
+		name = "GFX_generic_army_grand_battleplan"
+		texturefile = "gfx/interface/goals/generic_army_grand_battleplan.dds"
+
 	}
 	SpriteType = {
 		name = "GFX_PRM_exploit_the_cracks"
@@ -28870,9 +28895,4 @@ spriteTypes = {
 
 	}
 
-	SpriteType = {
-		name = "GFX_GAC_focus_slaves_hunters"
-		texturefile = "gfx/interface/goals/Slaves_hunters.dds"
-
-	}
 }
