@@ -1038,7 +1038,7 @@ focus = {
            focus = {
 		id = KAM_ssro_ogo
 		icon = GFX_goal_generic_secret_weapon
-                relative_position_id = KAM_vern_lud
+                relative_position_id = KAM_norm_chel
 		x = -4
 		y = 3
               
@@ -1073,4 +1073,249 @@ focus = {
                                    add_stability = 0.01
 			
 		}
-	}                        
+	}
+
+         focus = {
+		id = KAM_ssro_norm
+		icon = GFX_censorship_LIP
+                relative_position_id = KAM_ssro_ogo
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = KAM_norm_chel
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                                   add_political_power = 1
+                                   add_stability = 0.01
+			
+		}
+	}
+
+
+        focus = {
+		id = KAM_ssrone_norm
+		icon = GFX_BBR_crush_ultraradicals
+                relative_position_id = KAM_ssro_ogo
+		x = -2
+		y = 1
+              
+                prerequisite = {
+		focus = KAM_neord_lich
+	        }
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                                   add_political_power = 1
+                                   add_stability = 0.01
+			
+		}
+	}
+
+          
+        focus = {
+		id = KAM_vospit_mol
+		icon = GFX_goal_generic_demand_territory
+                relative_position_id = KAM_kult_lith
+		x = 2
+		y = 1
+              
+                prerequisite = {
+		focus = KAM_kult_lith
+	        }
+		cost = 8
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                                   add_political_power = 30
+                                   add_stability = 0.1
+			
+		}
+	}
+
+
+         focus = {
+		id = KAM_compr_prov
+		icon = GFX_focus_BUL_restore_the_bulgarian_patriarchate
+                relative_position_id = KAM_kult_lith
+		x = -4
+		y = 1
+              
+                prerequisite = {
+		focus = KAM_kult_lith
+	        }
+		cost = 4
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                                   add_political_power = -20
+                                   add_stability = -0.05
+			
+		}
+	}
+
+          focus = {
+		id = KAM_cercov_control
+		icon = GFX_focus_SOV_rebuild_the_savior_cathedral
+                relative_position_id = KAM_compr_prov
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = KAM_compr_prov
+	        }
+		cost = 3
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                                   add_political_power = -40
+                                   add_stability = -0.07
+			
+		}
+	}
+
+       
+          focus = {
+		id = KAM_oper_raskl
+		icon = GFX_LIP_observations_of_outside
+                relative_position_id = KAM_ssrone_norm
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = KAM_ssrone_norm
+                focus = KAM_ssro_norm
+	        }
+		cost = 3
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                                   add_political_power = -40
+                                   add_stability = -0.07
+			
+		}
+	}                                                                                                                                                              
