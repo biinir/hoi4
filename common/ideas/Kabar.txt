@@ -1,0 +1,12 @@
+ideas = {
+
+	country = {
+		KAB_sovet_storetion = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
+			picture = SAR_ministry_strengthened
+			modifier = {
+				stability_factor = 0.03
+                                political_power_factor = 0.03
+	
+			}
+		}
