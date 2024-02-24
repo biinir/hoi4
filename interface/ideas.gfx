@@ -1740,6 +1740,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_usa_war_department"
 		texturefile = "gfx/interface/ideas/idea_usa_war_department.dds"
+
+         }
+
+	spriteType = {
+		name = "GFX_idea_KAM_cult_ver"
+		texturefile = "gfx/interface/ideas/idea_KAM_cult_ver.dds"
 	}
 	
 	spriteType = {
@@ -2548,6 +2554,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_HUN_charles_v"
 		texturefile = "gfx/interface/ideas/idea_hun_charles_v.dds"
+
 	}
 
 	spriteType = {
@@ -3421,6 +3428,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_generic_navy_carrier_bonus"
 		texturefile = "gfx/interface/ideas/idea_generic_navy_carrier_bonus.dds"
+  
 	}
 	
 	spriteType = {
