@@ -1,0 +1,14 @@
+characters={
+	GIP_Velmir={
+		name="Velmir"
+		portraits={
+			civilian={
+				large=gfx/leaders/GIP/Portrait_Velmir.dds
+			}
+		}
+		country_leader={
+			ideology= fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}

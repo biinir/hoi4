@@ -1,0 +1,14 @@
+characters={
+	AMU_Vladimir_Zhirinov ={
+		name="Vladimir Zhirinovsky "
+		portraits={
+			civilian={
+				large=gfx/leaders/AMU/Portrait_Vladimir_Zhirinov.dds
+			}
+		}
+		country_leader={
+			ideology= corporatocracy_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
