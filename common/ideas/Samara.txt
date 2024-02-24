@@ -29,6 +29,14 @@ ideas = {
 
 			}
 		}
+
+		GAC_gachi_slaves_run1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
+			picture = GAC_gachi_slaves_run
+			modifier = {
+				conscription_factor = -0.1
+			}
+		}
 		
 		GAC_gachi_army = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}

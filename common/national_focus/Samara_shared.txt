@@ -86,9 +86,9 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = GAC_a_change_in_plan
-	icon = GFX_GAC_focus_volga_masters
-	cost = 3
+	id = GAC_slaves_hunters
+	icon = GFX_GAC_focus_slaves_hunters
+	cost = 10
 	allow_branch = {
 		has_country_flag = GAC_assassination_failed
 		NOT = {
@@ -104,7 +104,34 @@ shared_focus = {
 	y = 1
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GAC_a_change_in_plan"
-		add_ideas = GAC_idea_changed_plans
-		add_political_power = -25
+			swap_ideas = {
+				remove_idea = GAC_gachi_slaves_run
+				add_idea = GAC_gachi_slaves_run1
+			}
+	division_template = {
+	name = "Slaves Hunter Division"
+	division_names_group = GAC_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+
+	}
+		    support = {
+        military_police = { x = 0 y = 0 }
+		}
+}
+
+								random_owned_controlled_state = {
+				create_unit = {
+                    division = "name = \"1 Slaves Hunter Division\" division_template = \"Slaves Hunter Division\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+                    owner = GAC
+	            }
+				create_unit = {
+                    division = "name = \"2 Slaves Hunter Division\" division_template = \"Slaves Hunter Division\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+                    owner = GAC
+	            }	            
+			}
 	}
 }

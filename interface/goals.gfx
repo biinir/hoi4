@@ -28870,4 +28870,9 @@ spriteTypes = {
 
 	}
 
+	SpriteType = {
+		name = "GFX_GAC_focus_slaves_hunters"
+		texturefile = "gfx/interface/goals/Slaves_hunters.dds"
+
+	}
 }
