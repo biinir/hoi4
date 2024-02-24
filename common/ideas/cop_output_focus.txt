@@ -6,6 +6,7 @@ ideas = {
 		
 		output_army_dominant = {
 		    available = {
+                               is_in_faction_with = MOL
 			}
 			
 			modifier = {
@@ -30,6 +31,7 @@ ideas = {
 
 		output_army_strengthened = {
 		    available = {
+                               is_in_faction_with = MOL
 			}
 			
 			modifier = {
@@ -54,6 +56,7 @@ ideas = {
 
 		output_balanced = {
 		    available = {
+                                is_in_faction_with = MOL
 			}
 			
 			modifier = {
@@ -74,6 +77,7 @@ ideas = {
 
 		output_navy_strengthened = {
 		    available = {
+                               is_in_faction_with = MOL
 			}
 			
 			modifier = {
@@ -98,6 +102,7 @@ ideas = {
 
 		output_navy_dominant = {
 		    available = {
+                                 is_in_faction_with = MOL
 			}
 			
 			modifier = {
