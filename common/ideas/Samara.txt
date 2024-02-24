@@ -92,6 +92,15 @@ ideas = {
 			}
 		}
 
+	GAC_Nico_Douga = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
+			picture = gac_nico_douga
+			modifier = {
+				stability_weekly = 0.0020
+				fascism_drift = 0.05
+				conscription_factor = 0.1
+			}
+		}
 		
 }
 }

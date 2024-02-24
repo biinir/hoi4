@@ -135,3 +135,28 @@ shared_focus = {
 			}
 	}
 }
+
+shared_focus = {
+	id = GAC_nico_douga
+	icon = GFX_GAC_focus_nico_douga
+	cost = 10
+	allow_branch = {
+		has_country_flag = GAC_assassination_failed
+		NOT = {
+			has_country_flag = GAC_start_tree_complete
+		}
+	}
+	prerequisite = {
+		focus = Billy_plane
+	}
+	dynamic = yes
+	relative_position_id = Billy_plane
+	x = -3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GAC_a_change_in_plan"
+		add_ideas = {
+	GAC_Nico_Douga
+	}
+	}
+}
