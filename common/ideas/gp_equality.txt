@@ -7,6 +7,7 @@ ideas = {
 		equality_all = {
 
 		    available = {
+                                is_in_faction_with = MOL
 				NOT = {
 					has_government = fascism
 				}
@@ -37,6 +38,7 @@ ideas = {
 		equality_segregation = {
 
 			available = {
+                                    is_in_faction_with = MOL
 		       NOT = { 
 				    OR = {
 					has_government = communism
@@ -78,6 +80,7 @@ ideas = {
 		equality_genocide = {
 
 			available = {
+                                    is_in_faction_with = MOL
 				NOT = { 
 				    AND = {
 					has_government = democratic
@@ -107,7 +110,14 @@ ideas = {
 		}
 		
 		equality_minority = {
-		 available = {}
+		 available = {
+                             is_in_faction_with = MOL
+                          NOT = { 
+			       AND = {
+				      has_government = democratic
+				      }
+				}
+			}
 			
 			modifier = {
 				resistance_damage_to_garrison = -0.15

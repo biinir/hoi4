@@ -97,6 +97,7 @@ ideas = {
 		
 		natural_exports = {
 			available = {
+                                    is_in_faction_with = MOL
 				OR = {
 					has_idea = export_focus
 					has_idea = free_trade
