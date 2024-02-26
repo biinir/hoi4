@@ -12,3 +12,24 @@ characters={
 			id=-1
 		}
 	}
+
+       WRL_valacas={
+		name= "Zhmyshenko Valery"
+		portraits={
+			civilian={
+				large="gfx/leaders/WRL/WRL_Valacas.dds"
+			}
+			army={
+				small="GFX_portrait_gac_van_civ"
+			}
+		}
+		corps_commander = {
+			traits = { panzer_leader }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+ }
+ 
+ }
