@@ -2766,6 +2766,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_chi_wargaming_division"
 		texturefile = "gfx/interface/ideas/idea_chi_wargaming_division.dds"
+
+       }
+	
+	spriteType = {
+		name = "GFX_idea_Wlas_roa"
+		texturefile = "gfx/interface/ideas/idea_Wlas_roa.dds"
+
 	}
 	
 	spriteType = {
@@ -7353,10 +7360,4 @@ spriteType = {
           
 
 	}	
-
-	spriteType = {
-		name = "GFX_idea_gac_nico_douga"
-		texturefile = "gfx/interface/ideas/Nico_douga.dds"
-	}
-
 }
