@@ -1083,7 +1083,7 @@ focus = {
 		y = 1
               
                 prerequisite = {
-		focus = KAM_norm_chel
+		focus = KAM_ssro_ogo
 	        }
 		cost = 1
 
@@ -1124,7 +1124,7 @@ focus = {
 		y = 1
               
                 prerequisite = {
-		focus = KAM_neord_lich
+		focus = KAM_ssro_ogo
 	        }
 		cost = 1
 
