@@ -38,6 +38,8 @@ if = {
 }
 
 recruit_character = WRL_Andrey_Vlasov
+recruit_character = WRL_valacas
+
 
 
 
@@ -103,7 +105,13 @@ set_popularities = {
 	fascism = 18
 	communism = 2
 	neutrality = 20
+
 }
+
+add_ideas = {
+Wlas_roa
+rus_ideaaa
+extensive_conscription
 
 
 }
