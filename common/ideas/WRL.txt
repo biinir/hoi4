@@ -1,0 +1,25 @@
+ideas = {
+
+	country = {
+		Wlas_roa = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
+			picture = idea_Wlas_roa
+			modifier = {
+				army_attack_factor = 0.06
+				army_defence_factor = 0.06
+				mobilization_speed = 0.05
+                                army_core_attack_factor = 0.07
+				army_core_defence_factor = 0.07
+	
+			}
+		} 
+
+                 rus_ideaaa = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
+			picture = SOV_fascist_womens_movement
+			modifier = {
+				political_power_factor = 0.03
+                                 stability_factor = 0.09
+	
+			}
+		}
