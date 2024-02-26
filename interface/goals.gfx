@@ -12488,11 +12488,27 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_ORE_no_more_closed_factories"
 		texturefile = "gfx/interface/goals/ORE_no_more_closed_factories.dds"
+
+        }
+
+	SpriteType = {
+		name = "GFX_DKB_vlasov_wins"
+		texturefile = "gfx/interface/goals/DKB_vlasov_wins.dds"
+
 	}
+
+	SpriteType = {
+		name = "GFX_DKB_Manifesto"
+		texturefile = "gfx/interface/goals/DKB_Manifesto.dds"
+
+      }
 
 	SpriteType = {
 		name = "GFX_ORE_schedueled_congress_meetings"
 		texturefile = "gfx/interface/goals/ORE_schedueled_congress_meetings.dds"
+
+
+
 	}
 
 	SpriteType = {
@@ -13274,6 +13290,13 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_MAD_the_knife_in_the_dark"
 		texturefile = "gfx/interface/goals/focus_MAD_the_knife_in_the_dark.dds"
+
+       }
+
+	SpriteType = {
+		name = "GFX_RUS_Ban_All_Socialist_Parties"
+		texturefile = "gfx/interface/goals/RUS_Ban_All_Socialist_Parties.dds"
+
 	}
 
 	SpriteType = {
@@ -28892,20 +28915,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_GAC_focus_billy_plan"
 		texturefile = "gfx/interface/goals/Gachi_Billy_plan.dds"
-
-	}
-
-
-
-	SpriteType = {
-		name = "GFX_GAC_focus_slaves_hunters"
-		texturefile = "gfx/interface/goals/Slaves_hunters.dds"
-
-	}
-
-	SpriteType = {
-		name = "GFX_GAC_focus_nico_douga"
-		texturefile = "gfx/interface/goals/Nico_douga.dds"
 
 	}
 
