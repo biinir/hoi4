@@ -1083,7 +1083,8 @@ focus = {
          focus = {
 		id = KAM_ssro_norm
 		icon = GFX_censorship_LIP
-                relative_position_id = KAM_ssro_ogo
+                mutually_exclusive = { focus = KAM_ssrone_norm }
+                relative_position_id = KAM_ssro_ogo      
 		x = 0
 		y = 1
               
@@ -1124,6 +1125,7 @@ focus = {
         focus = {
 		id = KAM_ssrone_norm
 		icon = GFX_BBR_crush_ultraradicals
+                mutually_exclusive = { focus = KAM_ssro_norm }
                 relative_position_id = KAM_ssro_ogo
 		x = -2
 		y = 1
