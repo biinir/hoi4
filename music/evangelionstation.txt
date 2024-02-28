@@ -1,0 +1,521 @@
+
+music_station = "evangelion"
+
+#Main menu theme
+
+music = {
+	song = "maintheme"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+#All evangelion tracks
+
+music = {
+	song = "waffenss"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "power_ending"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "pizdec"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "moloth_slezi_oseni"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "moloth_myzhelozhestvo"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "makim_theme"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "burmenko_march"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "burmen_gimn"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "biniir_theme"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "ban"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "riverscorp"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "anricamyshin_a"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "anricanyshin_b"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "anricamyshin_c"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "camyshin_symerki"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "camyshin_peremozhe"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "psycho_vsg"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "posledny_den_vsg"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "shalyshai"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "incident_ptu"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "songs_camyshin_sanitars"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "camyshin_plastic_love"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "instryktor_iz_stalingrada"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "warmusic_a"
+	chance = {
+		modifier = {
+			tag = KAM
+			at_war = yes
+			factor = 100
+		}		
+	}
+}
+
+music = {
+	song = "kaz_gribi"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "granica"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "ment_plita"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "camyshin_chetire_utra"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "camyshin_im_in_love"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "camyshin_with_me"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "neistoviy_ment"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "camyshin_flyday"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "odyvanchiki"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "ment_pizdit_pliti"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "chvk_stalingrad"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "ment_na_kriltse"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "lybly_pliti"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "camyshin_bad_city"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "landishi"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "gelendzhik"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "odyvanchiki_b"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "vse_dolzhni_zigovat"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "razvedosss"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "gotov_dat_svoi_kevlar"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "battotai"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "rei_perfect_girl"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "gladiator"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "shalyshai_b"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "redan"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "ebanko_car"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "renai_circulation_gachi"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "planka"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "svat_brat"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "take_on_miky"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "code_red"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "ne_otdam"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}

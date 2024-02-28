@@ -1,6 +1,6 @@
 characters={
 	KAM_aianami_rey={
-		name="Shashlik Ayanami"
+		name="Шашлык Аянами"
 		portraits={
 			civilian={
 				large=gfx/leaders/KAM/Portrait_KAM_aianami_rey.dds
