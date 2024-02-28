@@ -1,0 +1,12 @@
+spriteTypes = {
+
+	### agency
+	
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_lip"
+		texturefile = "gfx/interface/operatives/agencies/agency_logo_lip.dds"
+		noOfFrames = 2
+	}
+
+
+}
