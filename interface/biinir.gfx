@@ -88,7 +88,10 @@ spriteType = {
 		texturefile = "gfx/interface/ideas/Nico_douga.dds"
 	}
 
-
+spriteType = {
+		name = "GFX_news_event_GAC_kirkorov0"
+		texturefile = "gfx/event_pictures/kirkorov0.dds"
+	}
 
 
 
