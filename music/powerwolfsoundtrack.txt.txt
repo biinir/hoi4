@@ -492,3 +492,66 @@ music = {
 		}		
 	}
 }
+
+music = {
+	song = "ebanko_car"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "renai_circulation_gachi"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "planka"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "svat_brat"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "take_on_miky"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "code_red"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}
+
+music = {
+	song = "ne_otdam"
+	chance = {
+		modifier = {
+			factor = 5
+		}		
+	}
+}

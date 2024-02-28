@@ -325,3 +325,45 @@ music = {
 	file = "redan.ogg"
 	volume = 0.65
 }
+
+music = {
+	name = "ebanko_car"
+	file = "ebanko_car.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "renai_circulation_gachi"
+	file = "renai_circulation_gachi.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "planka"
+	file = "planka.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "svat_brat"
+	file = "svat_brat.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "take_on_miky"
+	file = "take_on_miky.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "code_red"
+	file = "code_red.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "ne_otdam"
+	file = "ne_otdam.ogg"
+	volume = 0.65
+}
