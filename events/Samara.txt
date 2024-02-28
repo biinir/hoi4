@@ -73,3 +73,23 @@ country_event = {
 
 
 }
+
+country_event = {
+	id = samara.5
+	title = samara.5.t
+	desc = samara.5.d
+	picture = GFX_news_event_GAC_kirkorov
+
+
+	is_triggered_only = yes
+
+	option = {
+		add_political_power = 10
+		name = samara.5.a		#join
+		mark_focus_tree_layout_dirty = yes
+		set_country_flag = GAC_assassination_failed
+	}
+
+
+
+}

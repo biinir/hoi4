@@ -100,10 +100,11 @@ shared_focus = {
 	}
 	dynamic = yes
 	relative_position_id = Billy_plane
-	x = -5
+	x = -3
 	y = 1
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GAC_a_change_in_plan"
+		country_event = { id = samara.5 }
 			swap_ideas = {
 				remove_idea = GAC_gachi_slaves_run
 				add_idea = GAC_gachi_slaves_run1
@@ -151,7 +152,7 @@ shared_focus = {
 	}
 	dynamic = yes
 	relative_position_id = Billy_plane
-	x = -3
+	x = -1
 	y = 1
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GAC_a_change_in_plan"
