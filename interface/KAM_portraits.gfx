@@ -1,0 +1,69 @@
+spriteTypes = {
+
+	### characters
+
+	spriteType = {
+		name = GFX_portrait_kam_stalin
+		texturefile = "gfx/leaders/KAM/Stalin.dds"
+	}
+	
+	spriteType = {
+		name = GFX_portrait_kam_stalin_small
+		texturefile = "gfx/leaders/KAM/Stalin_small.dds"
+	}
+	
+	spriteType = {
+		name = GFX_portrait_kam_kaz
+		texturefile = "gfx/leaders/KAM/Kaz.dds"
+	}
+	
+	spriteType = {
+		name = GFX_portrait_kam_kaz_small
+		texturefile = "gfx/leaders/KAM/Kaz_small.dds"
+	}
+	
+	spriteType = {
+		name = GFX_portrait_kam_hitoshi_imamura
+		texturefile = "gfx/leaders/KAM/Hitoshi_Imamura.dds"
+	}
+	
+	spriteType = {
+		name = GFX_portrait_kam_grechko
+		texturefile = "gfx/leaders/KAM/Grechko.dds"
+	}
+	
+	spriteType = {
+		name = GFX_portrait_kam_burn
+		texturefile = "gfx/leaders/KAM/stalingrad.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_kam_hitoshi_imamura_small
+		texturefile = "gfx/leaders/KAM/Hitoshi_Imamura_small.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_kam_burn_small
+		texturefile = "gfx/leaders/KAM/stalingrad_small.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_kam_ment
+		texturefile = "gfx/leaders/KAM/ment.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_kam_ment_small
+		texturefile = "gfx/leaders/KAM/ment_small.dds"
+	}
+
+	### agency
+	
+	spriteType = {
+		name = "rabbit"
+		texturefile = "rabbit"
+		noOfFrames = 2
+	}
+
+
+}

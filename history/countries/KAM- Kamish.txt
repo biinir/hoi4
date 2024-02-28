@@ -115,26 +115,13 @@ if = {
 }
 
 recruit_character = KAM_aianami_rey
-recruit_character = KAM_aianami_rey
-recruit_character = CUB_guillermo_cabral
-recruit_character = CUB_wenceslao_carmona
-recruit_character = CUB_gregorio_morales
-recruit_character = CUB_fidel_castro
-recruit_character = CUB_enrique_c_rolas
-recruit_character = CUB_palaez_menendez
-recruit_character = CUB_domingo_r_del_toro
-recruit_character = CUB_eduardo_chibas
-recruit_character = CUB_juan_blas_hernandez
-recruit_character = CUB_sergio_carbo
-recruit_character = CUB_fulgencio_batista
-recruit_character = CUB_rodrigo_a_fuentes
-recruit_character = CUB_sandalio_junco
-recruit_character = CUB_salvador_castaneda_castro
-recruit_character = CUB_angel_gonzalez
-recruit_character = CUB_julio_sanguily
-recruit_character = CUB_carlos_prio
-recruit_character = CUB_gerardo_machado
-recruit_character = CUB_eugenio_molinet_castro
+recruit_character = KAM_stalin
+recruit_character = KAM_kaz
+recruit_character = KAM_hitoshi_imamura
+recruit_character = KAM_grechko
+recruit_character = KAM_voronov
+recruit_character = KAM_burn
+recruit_character = KAM_ment
 
 
 set_country_flag = monroe_doctrine
@@ -280,78 +267,6 @@ set_politics = {
 
 
 
-
-create_field_marshal = {
-	name = "Stalin"
-	picture = "Maksim.dds"
-	 traits = { politically_connected organisational_leader organizer fortress_buster }
-	 skill = 4
-	 attack_skill = 4
-	 defense_skill = 4
-	 planning_skill = 3
-	 logistics_skill = 3
- }
-
- 
-create_corps_commander = {
-	name = "Alexey Voronov"
-	picture = "Voronov.dds"
-	 traits = { fortress_buster }
-	 skill = 1
-	 attack_skill = 3
-	 defense_skill = 2
-	 planning_skill = 3
-	 logistics_skill = 3
- }
- 
- create_corps_commander = {
-	name = "Andrey Grecho"
-	picture = "Grechko.dds"
-	 traits = { cavalry_officer career_officer  }
-	 skill = 2
-	 attack_skill = 3
-	 defense_skill = 2
-	 planning_skill = 2
-	 logistics_skill = 2
- }
- 
-  create_corps_commander = {
-	name = "Iosif Apanasenko"
-	picture = "Apanasenko.dds"
-	 traits = { infantry_officer  }
-	 skill = 3
-	 attack_skill = 4
-	 defense_skill = 2
-	 planning_skill = 2
-	 logistics_skill = 1
- }
-
-  create_corps_commander = {
-	name = "Anatoli Kulikov"
-	picture = "Kulik.dds"
-	 traits = { commando organizer politically_connected thorough_planner  }
-	 skill = 2
-	 attack_skill = 2
-	 defense_skill = 1
-	 planning_skill = 4
-	 logistics_skill = 3
-
-
-  }
-
-create_country_leader = {
-	name = "Shashlik Ayanami"
-	desc = ""
-	picture = "gfx/leaders/KAM/Portrait_KAM_aianami_rey.dds"
-	expire = "1953.3.1"
-	ideology = corporatocracy_subtype
-	traits = {
-		
-	}
-
-
-
-}
 set_popularities = {
 	fascism = 10
 	communism = 10

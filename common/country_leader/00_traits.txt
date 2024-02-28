@@ -61,6 +61,24 @@ leader_traits = {
 		}
 	}
 	
+    army_chief_drill_kam { 
+		sprite = 5
+		training_time_army_factor = -0.2
+		army_org_factor = 0.10
+		army_morale_factor = 0.10
+		experience_gain_army = @chief_experience_gain_medium
+
+		command_cap = @tier2
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				command_power < @tier2
+			}
+		}
+	}
+
 	perfomance_artist = {
 		random = no
 		sprite = 15
