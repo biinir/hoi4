@@ -1,0 +1,907 @@
+focus_tree = {
+	id = WRL_Vlasov_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = WRL
+		}
+	}
+	default = no
+        continuous_focus_position = { x = 900 y = 3500 }
+
+	focus = {
+		id = WRL_vlast_vlas
+		icon = GFX_DKB_vlasov_wins
+		x = 5
+		y = 0
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 50
+                        add_stability = 0.04
+		}
+	}
+
+             
+         focus = {
+		id = WRL_mon_dva
+		icon = GFX_DKB_Manifesto
+
+                relative_position_id = WRL_vlast_vlas
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = WRL_vlast_vlas
+
+	        }
+		cost = 3
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 60
+                        add_stability = 0.03
+		}
+	}
+
+
+          focus = {
+		id = WRL_dobit_kom
+		icon = GFX_RUS_Ban_All_Socialist_Parties
+
+                relative_position_id = WRL_mon_dva
+		x = -2
+		y = 1
+              
+                prerequisite = {
+		focus = WRL_mon_dva
+
+	        }
+		cost = 4
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 75
+                        add_stability = -0.02
+		}
+	}
+
+       
+       focus = {
+		id = WRL_pol_ref
+		icon = GFX_DKB_Martial_Law
+
+                relative_position_id = WRL_mon_dva
+		x = 2
+		y = 1
+              
+                prerequisite = {
+		focus = WRL_mon_dva
+
+	        }
+		cost = 4
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = DKB_Martial_Law                      
+		}
+	}
+
+
+          focus = {
+		id = WRL_trud_svobod
+		icon = GFX_DKB_Start_War
+
+                relative_position_id = WRL_dobit_kom
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = WRL_dobit_kom
+
+	        }
+		cost = 2
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_war_support = 0.10                     
+		}
+	}
+
+
+          
+       focus = {
+		id = WRL_zav_cheb
+		icon = GFX_ZAM_arms_factory
+
+                relative_position_id = WRL_mon_dva
+		x = 4
+		y = 1
+              
+                prerequisite = {
+		focus = WRL_mon_dva
+
+	        }
+		cost = 9
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			 256 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+
+                                 }
+				add_extra_state_building_slots = 1
+			}
+		}
+	}
+
+
+         focus = {
+		id = WRL_oziv_proiz
+		icon = GFX_DKB_Shovel
+
+                relative_position_id = WRL_zav_cheb
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = WRL_zav_cheb
+
+	        }
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			 add_ideas =  WRL_modern_proiz
+               }
+	}
+        
+        focus = {
+		id = WRL_zac_chuv
+		icon = GFX_RUS_New_Constitution
+
+                relative_position_id = WRL_pol_ref
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = WRL_pol_ref
+
+	        }
+		cost = 4
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			 add_manpower = 3500
+               }
+	}
+
+         focus = {
+		id = WRL_konr
+		icon = GFX_DKB_konr
+		prerequisite = {
+			focus = WRL_zac_chuv
+                }
+	     prerequisite = {
+			focus = WRL_oziv_proiz
+                }
+	     prerequisite = {
+                        focus = WRL_trud_svobod
+		}
+		cost = 5
+		relative_position_id = WRL_zac_chuv
+		x = -2
+		y = 1
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GEO_dam"
+			custom_effect_tooltip = konr_ogo_tooltip			
+                        add_political_power = 10
+                        add_ideas =  WRL_konr
+
+                     }
+	}
+
+
+         focus = {
+		id = WRL_ubit_kom
+		icon = GFX_focus_attack_soviet
+		prerequisite = {
+			focus = WRL_konr       
+		}
+		cost = 3
+		relative_position_id = WRL_konr
+		x = -2
+		y = 1
+
+		ai_will_do = {
+			factor = 1000
+		}
+
+		completion_reward = {
+			declare_war_on = { target = NIN type = annex_everything }
+
+                     }
+	}
+
+
+        focus = {
+		id = WRL_zachistk
+		icon = GFX_BBR_crush_ultraradicals
+
+                relative_position_id = WRL_ubit_kom
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = WRL_ubit_kom
+
+	        }
+		cost = 3
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+                         has_full_control_of_state = 252
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = -40
+                        add_stability = -0.08
+		}
+	}
+
+
+         focus = {
+		id = WRL_ostav_star
+		icon = GFX_KAM_open_the_government
+                mutually_exclusive = { focus = WRL_neostav_star }
+
+                relative_position_id = WRL_zachistk
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = WRL_zachistk
+
+	        }
+		cost = 4
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {                         
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 40
+                        add_stability = -0.01
+		}
+	}
+
+
+        focus = {
+		id = WRL_neostav_star
+		icon = GFX_focus_generic_strike_at_democracy1
+                 mutually_exclusive = { focus = WRL_ostav_star }
+
+                relative_position_id = WRL_zachistk
+		x = -2
+		y = 1
+              
+                prerequisite = {
+		focus = WRL_zachistk
+
+	        }
+		cost = 4
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {                         
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = -20
+                        add_stability = -0.05
+		}
+	}
+
+        focus = {
+		id = WRL_intgr_nov
+		icon = GFX_focus_generic_strike_at_democracy1
+
+                relative_position_id = WRL_neostav_star
+		x = -1
+		y = 1
+              
+                prerequisite = {
+		focus =  WRL_neostav_star
+                focus =  WRL_ostav_star
+
+	        }
+		cost = 4
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {                         
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			252 = {
+			add_core_of = WRL
+                     }
+		}
+	}
+
+        focus = {
+		id = WRL_osvobod_rusk
+		icon = GFX_TTR_reject_idel_ural
+		prerequisite = {
+			focus = WRL_intgr_nov   
+		}
+		cost = 3
+		relative_position_id = WRL_intgr_nov
+		x = 1
+		y = 1
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		completion_reward = {
+			declare_war_on = { target = TAT type = annex_everything }
+
+                     }
+	}
+
+
+       focus = {
+		id = WRL_uroki_voin
+		icon = GFX_DKB_ROA_Army
+
+                relative_position_id = WRL_zachistk
+		x = 3
+		y = 1
+              
+                prerequisite = {
+		focus = WRL_zachistk
+
+	        }
+		cost = 6
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			army_experience = 30
+		}
+	}
+
+          focus = {
+		id = WRL_nin_prom
+		icon = GFX_focus_generic_industry_2
+
+                relative_position_id = WRL_uroki_voin
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = WRL_uroki_voin
+
+	        }
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+				add_tech_bonus = {
+					name = SOV_reorganize_the_pc_of_heavy_industry_name_default
+					bonus = 1.0
+					uses = 1
+					category = industry
+
+			}
+		}
+	}
+
+
+        focus = {
+		id = WRL_zacrep_cercov
+		icon = GFX_RUS_Russian_Christian_Democracy
+
+                relative_position_id = WRL_nin_prom
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = WRL_nin_prom
+
+	        }
+		cost = 4
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 40
+                        add_stability = 0.06
+		}
+	}
+
+
+       focus = {
+		id = WRL_popitk_kuprin
+		icon = GFX_UKR_Look_To_Russia
+
+                relative_position_id = WRL_zacrep_cercov
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = WRL_zacrep_cercov
+
+	        }
+		cost = 6
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			PEZ = { country_event = { id = wrl.1 } }
+		}
+	}
+
+
+          focus = {
+		id = WRL_poisk_konr
+		icon = GFX_BRY_Every_Hand_A_Rifle
+
+                relative_position_id = WRL_popitk_kuprin
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = WRL_popitk_kuprin
+
+	        }
+		cost = 7
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = WRL
+			}
+		}
+	}
+
+       focus = {
+		id = WRL_wso_dla_svobod
+		icon = GFX_DKB_to_serve_russia
+
+                relative_position_id = WRL_poisk_konr
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = WRL_poisk_konr
+
+	        }
+		cost = 8
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = { add_ideas = DKB_All_For_The_Liberation }
+	}        
+
+        focus = {
+		id = WRL_pizda_gachi
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = {
+			focus = WRL_wso_dla_svobod       
+		}
+		cost = 3
+		relative_position_id = WRL_wso_dla_svobod
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 1000
+		}
+
+		completion_reward = {
+			declare_war_on = { target = GAC type = annex_everything }
+
+                     }
+	}
+
+        focus = {
+		id = WRL_intgr_penz
+		icon = GFX_goal_generic_intelligence_exchange
+                relative_position_id = WRL_popitk_kuprin
+		x = 2
+		y = 1
+              
+                prerequisite = {
+		focus = WRL_popitk_kuprin
+
+	        }
+		cost = 3
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+                         has_full_control_of_state = 250
+                         has_full_control_of_state = 255
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			250 = {
+			add_core_of = WRL
+                        255 = {
+			add_core_of = WRL
+                     }
+		}
+	}
