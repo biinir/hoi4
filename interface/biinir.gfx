@@ -5,13 +5,69 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/Slaves_hunters.dds"
 
 	}
+	
+	SpriteType = {
+		name = "GFX_GAC_focus_logo"
+		texturefile = "gfx/interface/goals/Gachi_logo.png"
 
+	}
+	
+	SpriteType = {
+		name = "GFX_GFX_portrait_samara_generic_operative_male_1"
+		texturefile = "gfx/leaders/GAC/portrait_samara_generic_operative_male_1.dds"
+
+	}
+	SpriteType = {
+		name = "GFX_GFX_portrait_samara_generic_operative_male_2"
+		texturefile = "gfx/leaders/GAC/portrait_samara_generic_operative_male_2.dds"
+
+	}	
+	SpriteType = {
+		name = "GFX_GFX_portrait_samara_generic_operative_female_1"
+		texturefile = "gfx/leaders/GAC/portrait_samara_generic_operative_female_1.dds"
+
+	}	
 	SpriteType = {
 		name = "GFX_GAC_focus_nico_douga"
 		texturefile = "gfx/interface/goals/Nico_douga.dds"
 
 	}
-	
+	SpriteType = {
+		name = "GFX_GAC_black_lord"
+		texturefile = "gfx/leaders/GAC/black_lord.dds"
+
+	}
+			SpriteType = {
+		name = "GFX_GAC_focus_logo_shine"
+		texturefile = "gfx/interface/goals/Gachi_logo.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Gachi_logo.png"
+			animationtexturefile = "gfx/interface/goals/Gachi_logo.png"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Gachi_logo.png"
+			animationtexturefile = "gfx/interface/goals/Gachi_logo.png"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
 		SpriteType = {
 		name = "GFX_GAC_focus_slaves_hunters_shine"
 		texturefile = "gfx/interface/goals/Slaves_hunters.dds"

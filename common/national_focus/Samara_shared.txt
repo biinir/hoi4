@@ -169,3 +169,31 @@ shared_focus = {
 	}
 	}
 }
+
+shared_focus = {
+	id = GAC_logo
+	icon = GFX_GAC_focus_logo
+	cost = 2.9
+	allow_branch = {
+		has_country_flag = GAC_assassination_failed
+		NOT = {
+			has_country_flag = GAC_start_tree_complete
+		}
+	}
+	prerequisite = {
+		focus = Billy_plane
+	}
+	dynamic = yes
+	relative_position_id = Billy_plane
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GAC_a_change_in_plan"
+	if = {
+					limit = {
+						has_intelligence_agency = no
+					}
+					create_intelligence_agency = yes
+				}
+	}
+}

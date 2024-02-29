@@ -352,9 +352,23 @@ set_popularities = {
 	fascism  = 80
 	communism = 15
         democratic = 5
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Black_Lord"
+		GFX = GFX_GAC_black_lord
+		traits = { operative_linguist operative_commando operative_seducer }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { GAC }
+	}
 
 
-
+}
 
 1939.1.1 = {
 	recruit_character = CUB_federico_laredo_bru
