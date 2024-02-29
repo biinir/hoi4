@@ -57,6 +57,16 @@ spriteTypes = {
 		texturefile = "gfx/leaders/KAM/ment_small.dds"
 	}
 
+	spriteType = {
+		name = GFX_portrait_kam_jude
+		texturefile = "gfx/leaders/KAM/jude.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_kam_shalyshai
+		texturefile = "gfx/leaders/KAM/shalyshai.dds"
+	}
+
 	### agency
 	
 	spriteType = {
