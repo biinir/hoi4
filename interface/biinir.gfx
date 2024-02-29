@@ -83,9 +83,15 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/kirkorov.dds"
 	}
 
+spriteType = {
+		name = "GFX_idea_gac_nico_douga"
+		texturefile = "gfx/interface/ideas/Nico_douga.dds"
+	}
 
-
-
+spriteType = {
+		name = "GFX_news_event_GAC_kirkorov0"
+		texturefile = "gfx/event_pictures/kirkorov0.dds"
+	}
 
 
 

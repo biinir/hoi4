@@ -78,7 +78,7 @@ country_event = {
 	id = samara.5
 	title = samara.5.t
 	desc = samara.5.d
-	picture = GFX_news_event_GAC_kirkorov
+	picture = GFX_news_event_GAC_kirkorov0
 
 
 	is_triggered_only = yes
@@ -86,6 +86,46 @@ country_event = {
 	option = {
 		add_political_power = 10
 		name = samara.5.a		#join
+		mark_focus_tree_layout_dirty = yes
+		set_country_flag = GAC_assassination_failed
+	}
+
+
+
+}
+
+country_event = {
+	id = samara.6
+	title = samara.6.t
+	desc = samara.6.d
+	picture = GFX_news_event_GAC_kirkorov
+
+
+	is_triggered_only = yes
+
+	option = {
+		add_political_power = 10
+		name = samara.6.a		#join
+		mark_focus_tree_layout_dirty = yes
+		set_country_flag = GAC_assassination_failed
+	}
+
+
+
+}
+
+country_event = {
+	id = samara.7
+	title = samara.7.t
+	desc = samara.7.d
+	picture = GFX_news_event_GAC_kirkorov
+
+
+	is_triggered_only = yes
+
+	option = {
+		add_political_power = 10
+		name = samara.7.a		#join
 		mark_focus_tree_layout_dirty = yes
 		set_country_flag = GAC_assassination_failed
 	}

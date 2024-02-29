@@ -1,6 +1,6 @@
 characters={
 	KUS_nikita_frogman={
-		name="Nikita Frogman"
+		name="Nikita_Frogman"
 		portraits={
 			civilian={
 				large=gfx/leaders/KUS/Portrait_parlament_kurs.dds
