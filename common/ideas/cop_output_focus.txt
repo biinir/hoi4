@@ -5,9 +5,7 @@ ideas = {
 		law = yes
 		
 		output_army_dominant = {
-		    available = {
-                               is_in_faction_with = MOL
-			}
+
 			
 			modifier = {
 				industrial_capacity_dockyard = -0.2
@@ -16,7 +14,7 @@ ideas = {
 				industry_repair_factor = 0.15
 			}
 
-			cost = 150
+			cost = 3000
 			
 			ai_will_do = {
 				factor = 1

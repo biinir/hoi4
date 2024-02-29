@@ -6,10 +6,7 @@ ideas = {
 		
 		mass_media_propaganda = {
 			
-			available = {
-				NOT = { has_government = democratic }
-                                is_in_faction_with = MOL
-			}
+
 			
 			modifier = {
 				political_power_factor = -0.15
@@ -17,7 +14,7 @@ ideas = {
 				stability_factor = 0.1
 				drift_defence_factor = 0.5
 			}
-
+cost = 3000
 			ai_will_do = {
    				factor = 1
 				modifier = {

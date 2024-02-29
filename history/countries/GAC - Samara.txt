@@ -203,6 +203,9 @@ add_ideas = {
 	GAC_gachi_army
 	GAC_gachi_slaves_run
 	GAC_gachi_system
+	population_controlled
+	women_workers
+	navy_production_no
 }
 add_manpower = 111540
 

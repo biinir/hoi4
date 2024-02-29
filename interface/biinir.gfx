@@ -11,7 +11,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/Gachi_logo.png"
 
 	}
-	
+	SpriteType = {
+		name = "GFX_GAC_army_plus"
+		texturefile = "gfx/interface/goals/Gachi_army_plus.png"
+
+	}	
 	SpriteType = {
 		name = "GFX_GFX_portrait_samara_generic_operative_male_1"
 		texturefile = "gfx/leaders/GAC/portrait_samara_generic_operative_male_1.dds"
@@ -57,6 +61,37 @@ spriteTypes = {
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Gachi_logo.png"
 			animationtexturefile = "gfx/interface/goals/Gachi_logo.png"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+			SpriteType = {
+		name = "GFX_GAC_army_plus_shine"
+		texturefile = "gfx/interface/goals/Gachi_army_plus.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Gachi_army_plus.png"
+			animationtexturefile = "gfx/interface/goals/Gachi_army_plus.png"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Gachi_army_plus.png"
+			animationtexturefile = "gfx/interface/goals/Gachi_army_plus.png"
 			animationrotation = 90.0
 			animationlooping = no
 			animationtime = 0.75
