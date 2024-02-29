@@ -23,3 +23,55 @@ ideas = {
 	
 			}
 		}
+
+
+              DKB_Martial_Law = {
+			picture = idea_DKB_Martial_Law
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.05
+				political_power_cost = -0.05
+				resistance_growth = -0.10
+			}
+		}
+
+
+                 
+                WRL_modern_proiz = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea UKR_Splendid_Isolation"}
+			picture = generic_production_bonus
+			modifier = {
+				industrial_capacity_factory = 0.04
+			}
+		}
+
+                WRL_konr = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea UKR_Splendid_Isolation"}
+			picture = WRL_Konr
+			modifier = {
+				conscription = 0.02
+			}
+		}
+
+               DKB_All_For_The_Liberation = {
+		picture =  DKB_All_For_The_Liberation
+			allowed = { always = no }
+            modifier = { army_attack_factor = 0.10 }
+			targeted_modifier = {
+				tag = GAC
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.15
+
+                         targeted_modifier = {
+				tag = TAT
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.15
+
+                           targeted_modifier = {
+				tag = PEZ
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.15
+			}
+		}
+	}
