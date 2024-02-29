@@ -38,7 +38,26 @@ if = {
 	}
 }
 
-
+if = {
+		limit = { has_dlc = "La Resistance" }
+		set_technology = { armored_car1 = 1 }
+		create_operative_leader = {
+			name = KAM_shalyshai
+		    GFX = GFX_portrait_kam_shalyshai
+		    traits = { operative_escape_artist operative_demolition_expert operative_commando operative_tough}
+		    bypass_recruitment = no
+		    available_to_spy_master = yes
+		    nationalities = { KAM GAC }
+		}
+		create_operative_leader = {
+			name = KAM_jude
+		    GFX = GFX_portrait_kam_jude
+		    traits = { operative_double_agent operative_seducer operative_natural_orator operative_infiltrator}
+		    bypass_recruitment = no
+		    available_to_spy_master = yes
+		    nationalities = { KAM KUS }
+		}
+	}
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -68,7 +87,6 @@ if = {
 	}
 }
 
-
 set_research_slots = 3
 
 # Starting tech
@@ -95,6 +113,7 @@ set_technology = {
 	 basic_heavy_tank = 1
          
 }
+
 if = {
 	limit = {
 		NOT = {
