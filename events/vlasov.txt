@@ -1,0 +1,98 @@
+add_namespace = wrl
+
+
+country_event = { #explain power struggle
+	id =  wrl.1
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event  kamish.8"
+		hidden_effect = {
+			random_list = {
+				1 = {
+					set_country_flag = KAM_appeaseehh
+				}
+				4 = { }
+			}
+		}
+	}
+	title =  wrl.1.t
+	desc =  wrl.1.d
+	picture = GFX_report_event_RUS_letter
+
+	is_triggered_only = yes
+
+	option = {#TUKHA
+		name =  wrl.1.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1
+				OR = {
+
+
+				}
+			}
+		}
+		set_country_flag = KAM_power_strugglee_tukha
+		KAM_power_strugglee_pulse = yes                                                    
+		WRL = { country_event = { id = wrl.2 } }
+            } 
+	
+	option = {#ZHUKOV
+		name =  wrl.1.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+
+			}
+		}
+		set_country_flag = KAM_power_strugglee_zhukov
+		KAM_power_struggle_pulsee = yes                                            
+	        WRL = { country_event = { id = wrl.3 } }
+
+               }
+     }
+
+country_event = { #KAM_budghet
+	id =  wrl.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event kamish.1" }
+	title =  wrl.2.t
+	desc = wrl.2.desc
+	picture = GFX_report_event_spr_republican_soldiers
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name =  wrl.2.a
+		ai_chance = { factor = 1 }
+		add_political_power = 20
+               annex_country = { target = PEZ transfer_troops = yes }
+               255 = {
+			add_core_of = WRL }
+                250 = {
+			add_core_of = WRL        
+             
+              }
+    }
+}
+
+             
+country_event = { #KAM_budghet
+	id =  wrl.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event kamish.1" }
+	title =  wrl.3.t
+	desc = wrl.3.desc
+	picture = GFX_report_event_spr_republican_soldiers
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name =  wrl.3.a
+		ai_chance = { factor = 1 }
+		declare_war_on = { target = PEZ type = annex_everything }
+               
+              
+	}
+}
