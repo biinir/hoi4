@@ -11700,6 +11700,14 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_MGN_BOU"
 		texturefile = "gfx/interface/goals/MGN_BOU.dds"
+
+        }
+
+	SpriteType = {
+		name = "GFX_DKB_ROA_Army"
+		texturefile = "gfx/interface/goals/DKB_ROA_Army.dds"
+
+
 	}
 
 	SpriteType = {
@@ -13413,6 +13421,12 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_generic_dreadnought_warfare"
 		texturefile = "gfx/interface/goals/GFX_generic_dreadnought_warfare.dds"
+
+        }
+	SpriteType = {
+		name = "GFX_DKB_Martial_Law"
+		texturefile = "gfx/interface/goals/DKB_Martial_Law.dds"
+
 	}
 	SpriteType = {
 		name = "GFX_generic_diplomacy_defense"
@@ -14428,6 +14442,12 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_GER_Crosshair_Cossack"
 		texturefile = "gfx/interface/goals/GER_Crosshair_Cossack.dds"
+
+        }
+	SpriteType = {
+		name = "GFX_DKB_konr"
+		texturefile = "gfx/interface/goals/DKB_konr.dds"
+
 	}
 	SpriteType = {
 		name = "GFX_GER_Deals_Cossack"
@@ -14688,6 +14708,12 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_SAM_food_shelter_protection"
 		texturefile = "gfx/interface/goals/GFX_SAM_food_shelter_protection.dds"
+
+        }
+	SpriteType = {
+		name = "GFX_ZAM_arms_factory"
+		texturefile = "gfx/interface/goals/ZAM_arms_factory.dds"
+
 	}
 	SpriteType = {
 		name = "GFX_SAM_not_a_dictator_but_a_saviour"
@@ -14947,6 +14973,12 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_The_Irish_Lenguage"
 		texturefile = "gfx/interface/goals/The_Irish_Lenguage.dds"
+
+        }
+	SpriteType = {
+		name = "GFX_DKB_Shovel"
+		texturefile = "gfx/interface/goals/DKB_Shovel.dds"
+        
 	}
 	SpriteType = {
 		name = "GFX_fascism_generic"
@@ -15475,6 +15507,12 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_GAY_Spirit_Of_Saint_George"
 		texturefile = "gfx/interface/goals/GFX_GAY_Spirit_Of_Saint_George.dds"
+
+        }
+	SpriteType = {
+		name = "GFX_DKB_Start_War"
+		texturefile = "gfx/interface/goals/DKB_Start_War.dds"
+
 	}
 	SpriteType = {
 		name = "GFX_GAY_Squirrels_Nest_Fortress"
@@ -15914,6 +15952,12 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_WRS_invade_tatarstan"
 		texturefile = "gfx/interface/goals/GFX_WRS_invade_tatarstan.dds"
+
+        }
+	SpriteType = {
+		name = "GFX_TTR_reject_idel_ural"
+		texturefile = "gfx/interface/goals/TTR_reject_idel_ural.dds"
+
 	}
 	SpriteType = {
 		name = "GFX_WRS_invade_gorki"
@@ -16730,6 +16774,12 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_GER_retter_des_reichs"
 		texturefile = "gfx/interface/goals/GFX_GER_retter_des_reichs.dds"
+
+         }
+	SpriteType = {
+		name = "GFX_DKB_to_serve_russia"
+		texturefile = "gfx/interface/goals/DKB_to_serve_russia.dds"
+
 	}
 	SpriteType = {
 		name = "GFX_GER_ungeheuer_in_uniform"
@@ -19510,6 +19560,13 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_ITA_potential_in_india_rework"
 		texturefile = "gfx/interface/goals/ITA_potential_in_india_rework.dds"
+
+       }
+
+	SpriteType = {
+		name = "GFX_BRY_Every_Hand_A_Rifle"
+		texturefile = "gfx/interface/goals/BRY_Every_Hand_A_Rifle.dds"
+
 	}
 
 	SpriteType = {

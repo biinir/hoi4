@@ -1746,6 +1746,20 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_KAM_cult_ver"
 		texturefile = "gfx/interface/ideas/idea_KAM_cult_ver.dds"
+
+         }
+
+	spriteType = {
+		name = "GFX_idea_DKB_All_For_The_Liberation"
+		texturefile = "gfx/interface/ideas/idea_DKB_All_For_The_Liberation.dds"
+
+
+        }
+
+	spriteType = {
+		name = "GFX_idea_WRL_Konr"
+		texturefile = "gfx/interface/ideas/idea_WRL_Konr.dds"
+
 	}
 	
 	spriteType = {
@@ -3188,10 +3202,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_generic_war_industrialist_middle_eastern_2d"
 		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_arab_3.dds"
-	}
-		spriteType = {
-		name = "GFX_idea_generic_army_chief_off_middle_eastern_2d"
-		texturefile = "gfx/interface/ideas/idea_generic_army_arab_3.dds"
+        }
+	spriteType = {
+		name = "GFX_Konr"
+		texturefile = "gfx/interface/ideas/Konr.dds"	       
 	}
 	spriteType = {
 		name = "GFX_idea_generic_army_chief_def_middle_eastern_2d"
@@ -4122,6 +4136,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_FRA_market_dynamism"
 		texturefile = "gfx/interface/ideas/fra_market_dynamism.dds"
+
+        }
+
+	spriteType = {
+		name = "GFX_idea_DKB_Martial_Law"
+		texturefile = "gfx/interface/ideas/idea_DKB_Martial_Law.dds"
+
 	}
 
 	spriteType = {
