@@ -5,7 +5,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/Slaves_hunters.dds"
 
 	}
-	
+	SpriteType = {
+		name = "GFX_GAC_focus_volga_masters"
+		texturefile = "gfx/interface/goals/GAC_masters_volga.dds"
+
+	}
 	SpriteType = {
 		name = "GFX_GAC_focus_logo"
 		texturefile = "gfx/interface/goals/Gachi_logo.png"
@@ -21,7 +25,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/Gachi_army_plus.png"
 
 	}	
-	
+
 	SpriteType = {
 		name = "GFX_GAC_saratov_poradok"
 		texturefile = "gfx/interface/goals/Gachi_poradok_sar.png"
@@ -52,6 +56,37 @@ spriteTypes = {
 		name = "GFX_GAC_black_lord"
 		texturefile = "gfx/leaders/GAC/black_lord.dds"
 
+	}
+	SpriteType = {
+		name = "GFX_GAC_focus_volga_masters_shine"
+		texturefile = "gfx/interface/goals/GAC_masters_volga.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GAC_masters_volga.dds"
+			animationtexturefile = "gfx/interface/goals/GAC_masters_volga.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GAC_masters_volga.dds"
+			animationtexturefile = "gfx/interface/goals/GAC_masters_volga.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
 	}
 			SpriteType = {
 		name = "GFX_GAC_saratov_poradok_shine"

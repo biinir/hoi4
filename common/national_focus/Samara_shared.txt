@@ -268,5 +268,6 @@ shared_focus = {
 	y = 4
 	completion_reward = {
 		239 = {add_core_of = GAC}
+		add_political_power = 50
 	}
 }
