@@ -4356,6 +4356,8 @@ SAR:0 "Саратов"
  SAR_subject_ADJ:0 "Саратовск."
 
 GAC:0 "Гачи Государство"
+GAC_Saratov_porjadok:0 "Навести порядок в Саратове"
+GAC_Saratov_War:0 "Операция <<Борьба в Саратове>>"
  GAC_logo:0 "Central Fisitng Departament"
  GAC_logo_desc:0 "Перфоманс Артист Стив Рэмбо уже давно готовит своих boyчиков для внедрения к slavам. Пора реализовать их умения."
  GAC_fascism:0 "Гачи Государство"

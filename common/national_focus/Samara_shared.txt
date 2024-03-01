@@ -223,3 +223,50 @@ shared_focus = {
 	}
 	}
 }
+
+shared_focus = {
+	id = GAC_Saratov_War
+	icon = GFX_GAC_borba_saratov_shine
+	cost = 5.8
+	allow_branch = {
+		has_country_flag = GAC_assassination_failed
+		NOT = {
+			has_country_flag = GAC_start_tree_complete
+		}
+	}
+	prerequisite = {focus = GFX_GAC_army_plus}
+	prerequisite = {focus = GAC_logo}
+	prerequisite = {focus = GAC_nico_douga}
+	prerequisite = {focus = GAC_slaves_hunters}
+	dynamic = yes
+	relative_position_id = Billy_plane
+	x = 0
+	y = 3
+	completion_reward = {
+		declare_war_on = { target = SAR type = annex_everything }
+	}
+}
+
+shared_focus = {
+	id = GAC_Saratov_porjadok
+	icon = GFX_GAC_saratov_poradok
+	cost = 10
+	allow_branch = {
+		has_country_flag = GAC_assassination_failed
+		NOT = {
+			has_country_flag = GAC_start_tree_complete
+		}
+	}
+	prerequisite = {focus = GAC_Saratov_War}
+		available = {
+                         has_full_control_of_state = 239
+
+		}
+	dynamic = yes
+	relative_position_id = Billy_plane
+	x = 0
+	y = 4
+	completion_reward = {
+		239 = {add_core_of = GAC}
+	}
+}
