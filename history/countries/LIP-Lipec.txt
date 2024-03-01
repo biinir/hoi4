@@ -117,7 +117,7 @@ if = {
 }
 
 
-create_faction =  pennaia_antanta
+create_faction =  pennaia antanta
 add_to_faction = LIP
 add_to_faction = KUS
 
@@ -273,6 +273,18 @@ create_corps_commander = {
 	 skill = 2
 	 attack_skill = 1
 	 defense_skill = 1
+	 planning_skill = 3
+	 logistics_skill = 3
+
+   }
+
+  create_corps_commander = {
+	name = "Nikolay vatutin"
+	picture = "Vatutin.dds"
+	 traits = { trait_reckless infantry_officer }
+	 skill = 3
+	 attack_skill = 1
+	 defense_skill = 3
 	 planning_skill = 3
 	 logistics_skill = 3
 }
