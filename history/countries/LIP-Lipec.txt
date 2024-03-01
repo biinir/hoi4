@@ -264,7 +264,7 @@ create_corps_commander = {
 	 attack_skill = 3
 	 defense_skill = 2
 	 planning_skill = 2
-	 logistics_skill = 2
+	 logistics_skill = 1
  }
  
   create_corps_commander = {
@@ -291,6 +291,18 @@ create_corps_commander = {
    }
 
   create_corps_commander = {
+	name = "Matvey Shaposhnikov"
+	picture = "shapok.dds"
+	 traits = { panzer_leader }
+	 skill = 2
+	 attack_skill = 3
+	 defense_skill = 2
+	 planning_skill = 2
+	 logistics_skill = 2
+
+    }
+
+  create_corps_commander = {
 	name = "Nikolay vatutin"
 	picture = "Vatutin.dds"
 	 traits = { trait_reckless infantry_officer }
@@ -299,6 +311,7 @@ create_corps_commander = {
 	 defense_skill = 3
 	 planning_skill = 3
 	 logistics_skill = 3
+
 }
 set_popularities = {
 	democratic = 60
