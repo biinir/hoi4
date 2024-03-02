@@ -269,5 +269,16 @@ shared_focus = {
 	completion_reward = {
 		239 = {add_core_of = GAC}
 		add_political_power = 50
+		country_event = { id = samara.8 }
 	}
+}
+# 
+shared_focus = {
+	id = GAC_tests
+	icon = GFX_CHI_Modern_Construction_Equipment
+	cost = 4
+	x = 12
+	y = 0
+	completion_reward = {
+
 }

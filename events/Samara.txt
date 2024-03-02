@@ -133,3 +133,23 @@ country_event = {
 
 
 }
+
+country_event = {
+	id = samara.8
+	title = samara.8.t
+	desc = samara.8.d
+	picture = GFX_news_event_GAC_kirkorov
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = samara.8.a		#join
+		hidden_effect = {
+			load_focus_tree = { tree = gach_focuss = no }
+			}
+	}
+
+
+
+}
