@@ -220,19 +220,6 @@ create_country_leader = {
 }
 
 
-create_country_leader = {
-	name = "Igor Rizhevolosovich"
-	desc = ""
-	picture = "gfx/leaders/LIP/Portrait_fash_igor_rizhevolosovich.dds"
-	expire = "1953.3.1"
-	ideology = fascism_ideology
-	traits = {
-		
-	}
-
-}
-
-
 create_field_marshal = {
 	name = "Lapkin "
 	picture = "lapkin.dds"
