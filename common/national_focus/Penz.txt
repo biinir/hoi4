@@ -1174,7 +1174,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = PEZ_fortify_insurgency focus = PEZ_second_nra }
 		available = {
-			owns_state = 550 #Xiamen
+			owns_state = 255 #Xiamen
 		}
 		ai_will_do = { base = 100 }
 		completion_reward = {
