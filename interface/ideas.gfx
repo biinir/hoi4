@@ -3570,6 +3570,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_osami_nagano"
 		texturefile = "gfx/interface/ideas/idea_osami_nagano.dds"
+
+        }
+	spriteType = {
+		name = "GFX_idea_PEZ_prosv"
+		texturefile = "gfx/interface/ideas/idea_PEZ_prosv.dds"
+
 	}
 	spriteType = {
 		name = "GFX_idea_shigetaro_shimada"
@@ -3714,6 +3720,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_jap_the_unthinkable_option"
 		texturefile = "gfx/interface/ideas/idea_jap_the_unthinkable_option.dds"
+
+       }
+	
+	spriteType = {
+		name = "GFX_idea_PEZ_sokol"
+		texturefile = "gfx/interface/ideas/idea_PEZ_sokol.dds"
+
 	}
 	
 	spriteType = {
