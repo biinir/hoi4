@@ -1,0 +1,152 @@
+add_namespace = pez
+
+
+country_event = { #explain power struggle
+	id =  pez.1
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event  kamish.8"
+		hidden_effect = {
+			random_list = {
+				1 = {
+					set_country_flag = KAM_appeaseehh
+				}
+				4 = { }
+			}
+		}
+	}
+	title =  pez.1.t
+	desc =  pez.1.d
+	picture = GFX_report_event_RUS_letter
+
+	is_triggered_only = yes
+
+	option = {#TUKHA
+		name =  pez.1.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1
+				OR = {
+
+
+				}
+			}
+		}
+		set_country_flag = KAM_power_strugglee_tukha
+		KAM_power_strugglee_pulse = yes
+                PEZ = { country_event = { id = pez.2 } }
+               
+                
+            } 
+	
+	option = {#ZHUKOV
+		name =  pez.1.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+
+			}
+		}
+		set_country_flag = KAM_power_strugglee_zhukov
+		KAM_power_struggle_pulsee = yes                                            
+	        PEZ = { country_event = { id = pez.3 } }
+
+               }
+     }
+
+
+      country_event = { #KAM_budghet
+	id =  pez.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event kamish.1" }
+	title =  pez.2.t
+	desc = pez.3.desc
+	picture = GFX_report_event_spr_republican_soldiers
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name =  pez.2.a
+		ai_chance = { factor = 1 }
+		add_ideas = KAM_voeni_sovet
+               
+              
+	}
+}
+
+
+
+country_event = { #explain power struggle
+	id =  pez.5
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event  kamish.8"
+		hidden_effect = {
+			random_list = {
+				1 = {
+					set_country_flag = KAM_appeaseehh
+				}
+				4 = { }
+			}
+		}
+	}
+	title =  pez.5.t
+	desc =  pez.5.d
+	picture = GFX_report_event_RUS_letter
+
+	is_triggered_only = yes
+
+	option = {#TUKHA
+		name =  pez.5.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1
+				OR = {
+
+
+				}
+			}
+		}
+		set_country_flag = KAM_power_strugglee_tukha
+		KAM_power_strugglee_pulse = yes
+                PEZ = { country_event = { id = pez.6 } }
+               
+                
+            } 
+	
+	option = {#ZHUKOV
+		name =  pez.5.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+
+			}
+		}
+		set_country_flag = KAM_power_strugglee_zhukov
+		KAM_power_struggle_pulsee = yes                                            
+	        PEZ = { country_event = { id = pez.7 } }
+
+               }
+     }
+
+
+   country_event = { #KAM_budghet
+	id =  pez.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event kamish.1" }
+	title =  pez.6.t
+	desc = pez.6.desc
+	picture = GFX_report_event_spr_republican_soldiers
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name =  pez.6.a
+		ai_chance = { factor = 1 }
+		add_ideas = LIP_voeni_sovet
+               
+              
+	}
+}
