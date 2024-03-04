@@ -1,0 +1,1292 @@
+focus_tree = {
+	id = PEZ_Kupr_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PEZ
+		}
+	}
+	default = no
+        continuous_focus_position = { x = 900 y = 3500 }
+
+	focus = {
+		id = PEZ_srok_kupr
+		icon = GFX_support_democracy
+		x = 5
+		y = 0
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 30
+                        add_stability = 0.03
+		}
+	}
+
+        focus = {
+		id = Kupr_selh_ref
+		icon = GFX_AUS_agriculture
+
+                relative_position_id = PEZ_srok_kupr
+		x = -3
+		y = 1
+              
+                prerequisite = {
+		focus = PEZ_srok_kupr
+
+	        }
+		cost = 4
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = PEZ_farmers_relief
+		}
+	}
+
+
+         focus = {
+		id = Kupr_nez_rab
+		icon = GFX_goal_generic_production2
+
+                relative_position_id = Kupr_selh_ref
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = Kupr_selh_ref
+
+	        }
+		cost = 4
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = PEZ_uluch_usl
+		}
+	}
+
+
+         focus = {
+		id = Kupr_ukrep_pvar
+		icon = GFX_UKR_Hryvnia
+
+                relative_position_id = PEZ_srok_kupr
+		x = 1
+		y = 1
+              
+                prerequisite = {
+		focus = PEZ_srok_kupr
+
+	        }
+		cost = 4
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 40
+                        add_stability = 0.06
+		}
+	}
+
+         focus = {
+		id = Kupr_prod_obr
+		icon = GFX_UKR_Silskprosvita
+
+                relative_position_id = Kupr_ukrep_pvar
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = Kupr_ukrep_pvar
+
+	        }
+		cost = 4
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas =  PEZ_prosv
+		}
+	}
+
+         focus = {
+		id = Kupr_army_osmr
+		icon = GFX_focus_chi_army_reform
+
+                relative_position_id = PEZ_srok_kupr
+		x = 3
+		y = 1
+              
+                prerequisite = {
+		focus = PEZ_srok_kupr
+
+	        }
+		cost = 4
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+
+         focus = {
+		id = Kupr_pomosh_slave
+		icon = GFX_focus_prc_infiltration
+
+                relative_position_id = Kupr_army_osmr
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = Kupr_army_osmr
+	        }
+		cost = 4
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			GAC = {
+			add_manpower = -2500
+                                }
+
+			}
+		}
+
+
+              focus = {
+		id = PEZ_glav_vrag
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = {
+			focus =  Kupr_prod_obr
+                }
+	     prerequisite = {
+			focus = Kupr_pomosh_slave
+                }
+	     prerequisite = {
+                        focus = Kupr_nez_rab
+		}
+		cost = 5
+		relative_position_id = Kupr_prod_obr
+		x = 2
+		y = 1
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GEO_dam"
+			hidden_effect = {
+				activate_mission = GEO_Damm_mission
+                                add_political_power = 10
+			}
+		}
+	}    
+
+
+        focus = {
+		id = Kupr_oni_trollat
+		icon = GFX_BBR_crush_ultraradicals
+
+                relative_position_id = PEZ_glav_vrag
+		x = 3
+		y = 1
+              
+                prerequisite = {
+		focus = PEZ_glav_vrag
+
+	        }
+		cost = 3
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas =  PEZ_Anti_troll
+		}
+	}
+        
+         
+        focus = {
+		id = PEZ_ukrep_gran
+		icon = GFX_goal_generic_construct_military
+                relative_position_id = PEZ_glav_vrag
+		x = -2
+		y = 1
+              
+                prerequisite = {
+		focus = PEZ_glav_vrag
+
+	        }
+		cost = 3
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			 250 = {
+		        add_building_construction = {
+					type = bunker
+					province = 6394
+					level = 2
+					instant_build = yes
+			}
+			add_building_construction = {
+					type = bunker
+					province = 6226
+					level = 2
+					instant_build = yes
+                        }
+			add_building_construction = {
+					type = bunker
+					province = 6302
+					level = 2
+					instant_build = yes
+
+                         }
+			add_building_construction = {
+					type = bunker
+					province = 9338
+					level = 2
+					instant_build = yes
+
+                         }
+			add_building_construction = {
+					type = bunker
+					province = 392
+					level = 2
+					instant_build = yes
+
+
+                                  }
+			}
+		}
+	}               
+
+                        
+        focus = {
+		id = PEZ_ukrep_penz
+		icon = GFX_goal_generic_construct_military
+                relative_position_id = PEZ_ukrep_gran
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = PEZ_ukrep_gran
+
+	        }
+		cost = 3
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			 255 = {
+		        add_building_construction = {
+					type = bunker
+					province = 9256
+					level = 2
+					instant_build = yes
+			}
+			add_building_construction = {
+					type = bunker
+					province = 11269
+					level = 2
+					instant_build = yes
+                        }
+			add_building_construction = {
+					type = bunker
+					province = 9286
+					level = 2
+					instant_build = yes
+
+                         }
+			add_building_construction = {
+					type = bunker
+					province = 6248
+					level = 2
+					instant_build = yes
+
+                         }
+			add_building_construction = {
+					type = bunker
+					province = 9409
+					level = 2
+					instant_build = yes
+
+
+                                  }
+			}
+		}
+	}  
+
+
+
+           focus = {
+		id = PEZ_ukrep_yg
+		icon = GFX_goal_generic_construct_military
+                relative_position_id = PEZ_ukrep_penz
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = PEZ_ukrep_penz
+
+	        }
+		cost = 3
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			 255 = {
+		        add_building_construction = {
+					type = bunker
+					province = 380
+					level = 2
+					instant_build = yes
+			}
+			add_building_construction = {
+					type = bunker
+					province = 208
+					level = 2
+					instant_build = yes
+                        }
+			add_building_construction = {
+					type = bunker
+					province = 11364
+					level = 2
+					instant_build = yes
+
+                         }
+			add_building_construction = {
+					type = bunker
+					province = 11335
+					level = 2
+					instant_build = yes
+
+                         }
+			add_building_construction = {
+					type = bunker
+					province = 9380
+					level = 2
+					instant_build = yes
+
+                          }
+			add_building_construction = {
+					type = bunker
+					province = 6382
+					level = 2
+					instant_build = yes
+
+                          }
+			add_building_construction = {
+					type = bunker
+					province = 6353
+					level = 2
+					instant_build = yes
+
+
+                                  }
+			}
+		}
+	}                            
+           
+
+        focus = {
+		id = Kupr_demon_vrag
+		icon = GFX_goal_generic_secret_weapon
+
+                relative_position_id = Kupr_oni_trollat
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = Kupr_oni_trollat
+	        }
+		cost = 3
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			swap_ideas = {
+				       remove_idea = PEZ_Anti_troll
+					add_idea = PEZ_Anti_troll_1
+
+                                   
+                            }
+		}
+	}
+
+        focus = {
+		id = Kupr_uskr_podg
+		icon = GFX_focus_secret_rearmament
+
+                relative_position_id = Kupr_demon_vrag
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = Kupr_demon_vrag
+	        }
+		cost = 4
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas =  PEZ_militia_organization_act
+		}
+	}
+
+
+         
+         focus = {
+		id = Kupr_razver_oplul
+		icon = GFX_focus_secret_rearmament
+
+                relative_position_id = Kupr_uskr_podg
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = Kupr_uskr_podg
+
+	        }
+		cost = 4
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			         load_oob = "PEZ_Tro_1"
+			}
+		}
+
+
+                
+           focus = {
+		id = Kupr_razver_opolpez
+		icon = GFX_focus_secret_rearmament
+
+                relative_position_id = Kupr_razver_oplul
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = Kupr_razver_oplul
+
+	        }
+		cost = 4
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			         load_oob = "PEZ_Tro_2"
+			}
+		}
+
+
+                focus = {
+		id = PEZ_robatai_radpob
+		icon = GFX_production
+
+                relative_position_id = Kupr_razver_opolpez
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = Kupr_razver_opolpez
+
+	        }
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			        add_ideas =  WRL_pobed_proiz
+			}
+		}
+
+
+                focus = {
+		id = PEZ_voprosik_kamish
+		icon = GFX_production
+                mutually_exclusive = { focus = PEZ_voprosik_lipec }
+
+                relative_position_id = PEZ_robatai_radpob
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = PEZ_robatai_radpob
+
+	        }
+		cost = 2
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			        KAM = { country_event = { id = pez.1 } }
+			}
+		}
+
+
+               
+                focus = {
+		id = PEZ_voprosik_lipec
+		icon = GFX_production
+                mutually_exclusive = { focus = PEZ_voprosik_kamish }
+
+                relative_position_id = PEZ_robatai_radpob
+		x = -2
+		y = 1
+              
+                prerequisite = {
+		focus = PEZ_robatai_radpob
+
+	        }
+		cost = 2
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			        LIP = { country_event = { id = pez.5 } }
+			}
+		}
+
+
+                focus = {
+		id = PEZ_pvo_gac
+		icon = GFX_anti_air_towed
+
+                relative_position_id = PEZ_voprosik_lipec
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = PEZ_voprosik_lipec
+                focus = PEZ_voprosik_kamish
+
+	        }
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+		completion_reward = {
+                         250 = { add_building_construction = {
+				type = anti_air_building
+				level = 1
+				instant_build = yes
+                           }
+                           255 = { add_building_construction = {
+				type = anti_air_building
+				level = 1
+				instant_build = yes
+                          }
+		}
+	}
+}
+}
+
+
+        focus = {
+		id = PEZ_last_bastion_of_volg_democr
+		icon = GFX_goal_LEP_kmt_encirclement
+		x = 16
+		y = 0
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+                           has_war_with = GAC
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			army_experience = 1
+		}
+	}
+
+	focus = {
+		id = PEZ_second_nra
+		icon = GFX_goal_PEZ_form_2nd_NRA
+		cost = 3
+
+		relative_position_id = PEZ_last_bastion_of_volg_democr
+		x = -1
+		y = 1
+
+		ai_will_do = { base = 100 }
+		prerequisite = { focus = PEZ_last_bastion_of_volg_democr }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PEZ_second_nra"
+			custom_effect_tooltip = PEZ_insurgent_army_tt
+			add_war_support = 0.05
+			activate_targeted_decision = { decision = china_attack_decision target = SQI }
+			swap_ideas = {
+				remove_idea = PEZ_insurgent_army_idea_1
+				add_idea = PEZ_insurgent_army_idea_2
+			}
+			custom_effect_tooltip = PEZ_will_create_one_insurgent_tt
+			hidden_effect = {
+				255 = { #Tingzhang
+					create_unit = {
+						division = "division_template = \"Opolcheniye\" start_experience_factor = 0.1"
+						prioritize_location = 9258
+						owner = PEZ
+					}
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+
+	focus = {
+		id = PEZ_fortify_insurgency
+		icon = GFX_goal_generic_barricades
+		cost = 3
+
+		relative_position_id = PEZ_last_bastion_of_volg_democr
+		x = 1
+		y = 1
+		ai_will_do = { base = 100 }
+		prerequisite = { focus = PEZ_last_bastion_of_volg_democr }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PEZ_fortify_insurgency"
+			add_command_power = 25
+			255 = { #Tingzhang
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 9258
+				}
+			}
+			250 = { #Jian'an
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 392
+				}
+			}
+
+			add_equipment_to_stockpile = { type = support_equipment amount = 500 producer = PEZ }
+			PEZ_PAC_small_effect = yes
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+
+	focus = {
+		id = PEZ_rally_the_militias
+		icon = GFX_goal_integrate_the_militia
+		cost = 4
+
+		relative_position_id = PEZ_fortify_insurgency
+		x = 1
+		y = 1
+		prerequisite = { focus = PEZ_fortify_insurgency }
+		ai_will_do = { base = 100 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PEZ_rally_the_militias"
+			add_command_power = 25
+			custom_effect_tooltip = PEZ_will_create_one_insurgent_tt
+			hidden_effect = {
+				255 = { #Tingzhang
+					create_unit = {
+						division = "division_template = \"Opolcheniye\" start_experience_factor = 0.1"
+						prioritize_location = 9258
+						owner = PEZ
+					}
+				}
+			}
+			add_war_support = 0.05
+			PEZ_PAC_small_effect = yes
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+
+	focus = {
+		id = PEZ_revolutionary_brigad
+		icon = GFX_goal_PEZ_tigress_battalions
+		cost = 5
+
+		relative_position_id = PEZ_rally_the_militias
+		x = 0
+		y = 2
+		prerequisite = { focus = PEZ_rally_the_militias }
+		ai_will_do = { base = 100 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PEZ_revolutionary_sisters"
+			custom_effect_tooltip = PEZ_will_create_one_insurgent_tt
+			hidden_effect = {
+				if = {
+					limit = { NOT = { has_template = "Hongse Niangzi Jun" } }
+					division_template = {
+						name = "Inter Brigada" #Red Detachment of Women
+						division_names_group = PEZ_MIL_01
+						regiments = {
+							irregular_infantry = { x = 0 y = 0 }
+							irregular_infantry = { x = 0 y = 1 }
+							irregular_infantry = { x = 1 y = 0 }
+							irregular_infantry = { x = 1 y = 1 }
+						}
+					}
+				}
+				255 = { #Tingzhang
+					create_unit = {
+						division = "name = \"Interbrigada imeni massarica\"division_template = \"Inter Brigada\" start_experience_factor = 0.75"
+						prioritize_location = 9258
+						owner = PEZ
+					}
+				}
+			}
+			custom_effect_tooltip = tooltip_white_line
+			country_event = { id = PEZ.earlygame.100 days = 10 } #Revolutionary Times, Revolutionary Women
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+
+	focus = {
+		id = PEZ_enforce_disclipine
+		icon = GFX_goal_NFA_Discipline_Police
+		cost = 4
+
+		relative_position_id = PEZ_second_nra
+		x = -1
+		y = 1		
+		prerequisite = { focus = PEZ_second_nra }
+		ai_will_do = { base = 100 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PEZ_enforce_disclipine"
+			add_stability = -0.1
+			add_timed_idea = {
+				idea = PEZ_army_discipline_idea
+				days = 80
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+
+	focus = {
+		id = PEZ_wage_protracted_war
+		icon = GFX_focus_prc_infiltration
+		cost = 5
+
+		relative_position_id = PEZ_enforce_disclipine
+		x = 0
+		y = 2		
+		prerequisite = { focus = PEZ_enforce_disclipine }
+		ai_will_do = { base = 100 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PEZ_wage_protracted_war"
+			PEZ_protracted_war_effect = yes
+			PEZ_PAC_small_effect = yes
+			army_experience = 35
+		}
+
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+
+	focus = {
+		id = PEZ_aid_from_int
+		icon = GFX_goal_FRA_international_insurrection
+		cost = 4
+
+		relative_position_id = PEZ_fortify_insurgency
+		x = -1
+		y = 1
+		prerequisite = { focus = PEZ_fortify_insurgency focus = PEZ_second_nra }
+		available = {
+			owns_state = 255 #Xiamen
+		}
+		ai_will_do = { base = 100 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PEZ_aid_from_int"
+			PEZ_LCS_medium_effect = yes
+			custom_effect_tooltip = PEZ_seek_aid_from_int_tt
+			every_country = {
+				limit = {
+					is_in_europe = yes
+					has_socialist_government = yes
+					is_subject = no
+					has_war = no
+				}
+				country_event = PEZ.earlygame.102
+			}
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = PEZ_if_they_accept_apply_the_effect_tt
+			effect_tooltip = {
+				PEZ_send_advisors_only_effect = yes
+				custom_effect_tooltip = PEZ_chance_to_get_infantry_equipment_tt
+				PEZ_send_advisors_and_guns_effect = yes
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+
+	focus = {
+		id = PEZ_hundred_workshops
+		icon = GFX_goal_CAN_New_Munitions_Plants
+		cost = 5
+
+		relative_position_id = PEZ_aid_from_int
+		x = -1
+		y = 1
+		prerequisite = { focus = PEZ_aid_from_int }
+		ai_will_do = { base = 100 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PEZ_hundred_workshops"
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+
+	focus = {
+		id = PEZ_our_connections_overseas
+		icon = GFX_goal_ANQ_convince_intellectuals
+		cost = 5
+
+		relative_position_id = PEZ_aid_from_int
+		x = 1
+		y = 1
+		prerequisite = { focus = PEZ_aid_from_int }
+		ai_will_do = { base = 100 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PEZ_our_connections_overseas"
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+			subtract_from_variable = {
+				var = PEZ_foreign_offmap_civs_var
+				value = 1
+			}
+			country_event = { id = PEZ.earlygame.101 days = 10 } #Hawaii's Ambivalence
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+
+	focus = {
+		id = PEZ_rally_the_masses
+		icon = GFX_goal_PEZ_peoples_army
+		cost = 5
+
+		relative_position_id = PEZ_aid_from_int
+		x = 0
+		y = 2
+		prerequisite = { focus = PEZ_aid_from_int }
+		ai_will_do = { base = 100 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PEZ_rally_the_masses"
+			add_manpower = 10000
+			add_stability = 0.05
+			add_war_support = 0.10
+			add_command_power = 50
+			PEZ_RCA_medium_effect = yes
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+
+	focus = {
+		id = PEZ_all_for_nation
+		icon = GFX_goal_SKM_Revolutionary_Zeal
+		cost = 4
+
+		relative_position_id = PEZ_rally_the_masses
+		x = 0
+		y = 1
+		prerequisite = { focus = PEZ_rally_the_masses }
+		prerequisite = { focus = PEZ_wage_protracted_war }
+		prerequisite = { focus = PEZ_revolutionary_sisters }
+		ai_will_do = { base = 100 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PEZ_all_for_nation"
+			custom_effect_tooltip = PEZ_all_for_nation_tt
+			add_timed_idea = {
+				idea = PEZ_last_stand_of_kmt_idea
+				days = 80
+			}
+			PEZ_CRS_medium_effect = yes
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}

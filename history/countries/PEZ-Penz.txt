@@ -42,7 +42,7 @@ recruit_character = PEZ_Alez_Kuprin
 
 
 set_country_flag = monroe_doctrine
-set_war_support = 0.1
+set_war_support = 0.2
 set_convoys = 20
 
 1939.1.1 = {
@@ -106,15 +106,10 @@ set_popularities = {
 }
 
 
-}
+add_ideas = {
+extensive_conscription
+PEZ_kupr_dem
+PEZ_sokol
 
-create_country_leader = {
-	name = "Anton Denikin"
-	desc = ""
-	picture = gfx/leaders/CHN/portrait_leonid_dobichin.dds
-	expire = "1953.3.1"
-	ideology = conservatism
-	traits = {
-		
-	}
+
 }
