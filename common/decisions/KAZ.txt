@@ -1,0 +1,120 @@
+KAZ_liu_menggeng_plan_category = {
+	KAZ_liu_plan_mission = {
+		available = { #goal
+			NOT = {
+				has_country_flag = liumenggeng1_incomplete
+				has_country_flag = liumenggeng2_incomplete
+				has_country_flag = liumenggeng3_incomplete
+			}
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+
+		fire_only_once = yes
+		days_mission_timeout = 130
+
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout KAZ_liu_plan_mission"
+			add_ideas = KAZ_unprepared_military
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision KAZ_liu_plan_mission"
+			add_ideas = KAZ_liu_menggeng_plan_success
+		}
+	}
+	KAZ_liu_menggeng_phase_1 = { #invest in health care
+		icon = generic_prepare_civil_war
+
+		fire_only_once = yes
+		cost = 40
+		ai_will_do = { factor = 100 }
+
+		days_remove = 60
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove KAZ_liu_menggeng_phase_1"
+			if = {
+				limit = {
+					NOT = {
+						has_tech = tech_field_hospital
+					}
+				}
+				set_technology = {
+					tech_field_hospital = 1
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = KAZ_liu_menggeng_phase_1
+					bonus = 1
+					uses = 1
+					technology = tech_field_hospital2
+				}
+			}
+			clr_country_flag = liumenggeng1_incomplete
+		}
+	}
+	KAZ_liu_menggeng_phase_2 = { #invest in logistics
+		icon = generic_prepare_civil_war
+
+		fire_only_once = yes
+		cost = 40
+		ai_will_do = { factor = 100 }
+
+		days_remove = 60
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove KAZ_liu_menggeng_phase_2"
+			if = {
+				limit = {
+					NOT = {
+						has_tech = tech_engineers
+					}
+				}
+				set_technology = {
+					tech_engineers = 1
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = KAZ_liu_menggeng_phase_2
+					bonus = 1
+					uses = 1
+					technology = tech_engineers2
+				}
+			}
+			clr_country_flag = liumenggeng2_incomplete
+		}
+	}
+	KAZ_liu_menggeng_phase_3 = { #build some interior railroads
+		icon = generic_prepare_civil_war
+
+		fire_only_once = yes
+		cost = 25
+		ai_will_do = { factor = 100 }
+
+		days_remove = 60
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove KAZ_liu_menggeng_phase_3"
+			407 = { 
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			406 = { 
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			clr_country_flag = liumenggeng3_incomplete
+		}
+	}
+}
