@@ -2315,8 +2315,21 @@ spriteTypes = {
         }
 	
 	spriteType = { 
+		name = "GFX_rezna"
+		texturefile = "gfx/event_pictures/rezna.dds"
+
+         }
+	
+	spriteType = { 
+		name = "GFX_dostavc"
+		texturefile = "gfx/event_pictures/dostavc.dds"
+
+         }
+	
+	spriteType = { 
 		name = "GFX_patrul"
 		texturefile = "gfx/event_pictures/patrul.dds"
+
 
 	}
 	
