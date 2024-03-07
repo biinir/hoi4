@@ -264,6 +264,16 @@ set_politics = {
 
 }
 
+create_country_leader = {
+	name = "Shashlik Ayanami"
+	desc = ""
+	picture = "gfx/leaders/KAM/Portrait_KAM_aianami_rey.dds"
+	expire = "1953.3.1"
+	ideology = corporatocracy_subtype
+	traits = {
+		
+	}
+
 
 set_popularities = {
 	fascism = 10
@@ -277,7 +287,7 @@ add_ideas = {
     CHI_army_corruption_1
     CAM_weak_government
     CAM_ubit_vseh
-    KAM_dobr_military
+
 
 
 }
