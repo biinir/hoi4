@@ -196,6 +196,221 @@ focus_tree = {
                         }
 			add_political_power = 5
 
+                  }
+	}
+
+       focus = {
+		id = KAZ_reorg_arm
+		icon = GFX_focus_generic_military_academy
+
+                relative_position_id = KAZ_2
+		x = 0
+		y = 1              
+		prerequisite = {
+		focus =  KAZ_2
+
+                }
+                prerequisite = {               
+                focus =  KAZ_3
+
+                }
+                prerequisite = {
+                focus =  KAZ_4
+	        }
+		cost = 4
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = KAZ_reorgr_army
+		}
+	}
+
+         
+        focus = {
+		id = KAZ_dat_im_kart
+		icon = GFX_Voen_sovet
+		x = 17
+		y = 0
+
+		cost = 4
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+                           has_idea = CAM_voeni_sovet
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CAM_voeni_sovet
+				add_idea =  CAM_voeni_sovet_1
+                      
+			}
+		}
+	}
+
+        focus = {
+		id = KAZ_plan_stal
+		icon = GFX_focus_fra_loyalty_stalin
+                relative_position_id = KAZ_dat_im_kart
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = KAZ_dat_im_kart
+
+	        }
+		cost = 3
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			 add_manpower = 35
+                         custom_effect_tooltip = KAZ_liu_menggeng_plan_tooltip
+			set_country_flag = liumenggeng1_incomplete
+			set_country_flag = liumenggeng2_incomplete
+			set_country_flag = liumenggeng3_incomplete
+			activate_mission = KAZ_liu_plan_mission
+               }
+	}
+
+
+          focus = {
+		id = KAZ_voen_sud
+		icon = GFX_LIP_mob
+                relative_position_id =  KAZ_plan_stal
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus =  KAZ_plan_stal
+
+	        }
+		cost = 3
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                                  add_ideas = KAZ_voen_sud
+                         hidden_effect = {
+                                KAM = { country_event = { id = kaz.1 } }
+
+                      }
+		}
+	}
+   
+        focus = {
+		id = KAZ_uchest_oshibk
+		icon = GFX_UKR_Equip_Sich_Riflemen
+                relative_position_id = KAZ_reorg_arm
+		x = 2
+		y = 1
+              
+                prerequisite = {
+		focus = KAZ_reorg_arm
+	        }
+		cost = 4
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                          swap_ideas = {
+				remove_idea = KAZ_reorgr_army
+				add_idea = KAZ_reorg_army_1
+                      
 			}
 		}
 	}
