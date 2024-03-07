@@ -146,11 +146,11 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
-                army_org_factor = 0.02
+                                army_org_factor = 0.02
 				planning_speed = 0.1
 				command_power_gain = 0.5
 				training_time_army_factor = -0.1
-                army_attack_factor = 0.1
+                                army_attack_factor = 0.1
 				army_defence_factor = 0.1
                                
 			       }
@@ -375,4 +375,29 @@ ideas = {
                                 army_attack_factor = 0.03
 				army_defence_factor = 0.03
 			}
+		}
+
+
+                KAM_aro = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GEO_farmers_relief"}
+			picture = GEO_farmers_relief
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.06
+		                
+
+                           }
+
+		}
+
+                 KAM_aro_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GEO_farmers_relief"}
+			picture = GEO_farmers_relief
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.08
+		                
+
+                           }
+
 		}

@@ -1,0 +1,88 @@
+ideas = {
+	country = {
+		KAZ_reorgr_army = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
+			picture = SAR_militia_based_army
+			modifier = {
+				experience_gain_army = 0.1
+				training_time_factor = -0.02
+				supply_consumption_factor = -0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				planning_speed = 0.1
+				max_planning_factor = 0.1
+	
+			}
+		}
+
+                CAM_voeni_sovet_1 = {
+
+			picture = idea_CAM_voeni_sovet
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+                                army_org_factor = 0.03
+				planning_speed = 0.2
+				command_power_gain = 0.5
+				training_time_army_factor = -0.12
+                                army_attack_factor = 0.12
+				army_defence_factor = 0.13
+                               
+			       }
+
+                        }
+
+                        KAZ_liu_menggeng_plan_success = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea QIE_liu_menggeng_plan_success"}
+			allowed = { always = no }
+			picture = big_entente_idea
+			modifier = {
+				army_org_factor = 0.15
+				land_reinforce_rate = 0.025
+			}
+		}
+
+                KAZ_unprepared_military = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea QIE_unprepared_military"}
+			allowed = { always = no }
+			picture = great_depression
+			modifier = {
+				planning_speed = -0.05
+				army_org_Factor  = -0.05
+				army_morale_factor = -0.05
+			}
+		}
+
+
+                  KAZ_voen_sud = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea QIE_liu_menggeng_plan_success"}
+			allowed = { always = no }
+			picture = DKB_Martial_Law
+			modifier = {
+				army_org_factor = 0.05
+			}
+		}
+
+                KAZ_reorgr_army_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
+			picture = SAR_militia_based_army
+			modifier = {
+				experience_gain_army = 0.11
+				training_time_factor = -0.02
+				supply_consumption_factor = -0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.13
+				planning_speed = 0.12
+				max_planning_factor = 0.12
+	
+			}
+		}
