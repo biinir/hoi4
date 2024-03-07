@@ -1,0 +1,55 @@
+add_namespace = kaz
+
+
+country_event = { #explain power struggle
+	id =  kaz.1
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event  kamish.8"
+		hidden_effect = {
+			random_list = {
+				1 = {
+					set_country_flag = KAM_appeaseehh
+				}
+				4 = { }
+			}
+		}
+	}
+	title =  kaz.1.t
+	desc =  kaz.1.d
+	picture = GFX_rezna
+
+	is_triggered_only = yes
+
+	option = {#TUKHA
+		name =  kaz.1.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1
+				OR = {
+
+
+				}
+			}
+		}
+		set_country_flag = KAM_power_strugglee_tukhaa
+		KAM_power_strugglee_pulse = yes          
+               
+                
+            } 
+	
+	option = {#ZHUKOV
+		name =  kaz.1.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+
+			}
+		}
+		set_country_flag = KAM_power_strugglee_zhukovv
+		KAM_power_struggle_pulsee = yes                                            
+	        PEZ = { country_event = { id = pez.3 } }
+
+               }
+     }
