@@ -1100,7 +1100,7 @@ country_event = { #Sholokhov
 		218 = {
 			is_owned_by = ROOT 
 		}
-		date > 1940.1.1
+		date > 1937.1.1
 	}
 	mean_time_to_happen = {
 		days = 220
