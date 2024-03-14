@@ -1,0 +1,69 @@
+ideas = {
+
+	country = {
+		VMI_narvik_dog = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
+			picture = generic_solid_navy_naval_force
+			modifier = {
+				political_power_cost = 0.3
+				stability_factor = -0.05
+	
+			}
+		}
+
+                VMI_krut_port = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
+			picture = RUS_port_of_magadan
+			modifier = {
+				industrial_capacity_factory = 0.12
+                                production_speed_dockyard_factor = 0.10
+				production_speed_naval_base_factor = 0.10
+	
+			}
+		}
+               
+                 VMI_sev_bank = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
+			picture = GER_safe_seas
+			modifier = {
+				consumer_goods_factor = -0.1
+				conscription_factor = 0.6
+				join_faction_tension = 0.2
+				local_resources_factor = 0.25
+				stability_factor = 0.03
+				industrial_capacity_factory = 0.25
+				industrial_capacity_dockyard = 0.25
+	
+			}
+		}
+
+                VMI_ahu_1911 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
+			picture = ANG_High_Prisoner_Liberation
+			modifier = {
+				stability_factor = -0.05
+                                conscription = -0.005
+
+	
+			}
+		}
+
+
+                VMI_velk_army = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
+			picture = FGB_volunteer_army
+			modifier = {
+				army_org_factor = 0.2
+				army_morale_factor = 0.2
+				land_doctrine_cost_factor = -0.15
+				army_attack_factor = 0.1
+				max_command_power_mult = 0.1
+				army_speed_factor = 0.15
+				army_core_attack_factor = 0.15
+				war_support_factor = 0.05
+				military_leader_cost_factor = 0.50
+
+	
+			}
+		}
+
