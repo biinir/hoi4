@@ -1971,6 +1971,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_john_brown_company"
 		texturefile = "gfx/interface/ideas/idea_john_brown_company.dds"
+
+        }
+	spriteType = {
+		name = "GFX_idea_ANG_High_Prisoner_Liberation"
+		texturefile = "gfx/interface/ideas/idea_ANG_High_Prisoner_Liberation.dds"
+
+        }
+	spriteType = {
+		name = "GFX_idea_FGB_volunteer_army"
+		texturefile = "gfx/interface/ideas/idea_FGB_volunteer_army.dds"
+
+
 	}
 	spriteType = {
 		name = "GFX_idea_supermarine"
@@ -4840,6 +4852,26 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_tur_kazim_karabekir"
 		texturefile = "gfx/interface/ideas/idea_tur_kazim_karabekir.dds"
+
+        }
+
+	spriteType = {
+		name = "GFX_idea_RUS_port_of_magadan"
+		texturefile = "gfx/interface/ideas/idea_RUS_port_of_magadan.dds"
+
+       }
+
+       spriteType = {
+		name = "GFX_idea_GER_safe_seas"
+		texturefile = "gfx/interface/ideas/idea_GER_safe_seas.dds" 
+ 
+      }
+
+       spriteType = {
+		name = "GFX_idea_generic_solid_navy_naval_force"
+		texturefile = "gfx/interface/ideas/idea_generic_solid_navy_naval_force.dds" 
+       
+
 	}
 
 	spriteType = {
