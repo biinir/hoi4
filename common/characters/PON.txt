@@ -1,0 +1,12 @@
+characters={
+	PAN_alec_fish={
+		name="Alexey Fishev"
+		portraits={
+			civilian={
+				large=gfx/leaders/PAN/Portrait_PAN_alec_fish.dds
+			}
+		}
+		country_leader={
+			ideology= anarchist_communism
+			expire="1965.1.1.1"
+			id=-1

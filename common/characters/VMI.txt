@@ -1,0 +1,14 @@
+characters={
+	VMI_aianami_rey={
+		name="Shashlyk Russkiy"
+		portraits={
+			civilian={
+				large=gfx/leaders/VMI/Shaslic.dds
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
