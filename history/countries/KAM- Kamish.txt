@@ -273,7 +273,7 @@ create_country_leader = {
 	traits = {
 		
 	}
-
+}
 
 set_popularities = {
 	fascism = 10
