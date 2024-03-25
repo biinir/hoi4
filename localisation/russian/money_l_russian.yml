@@ -25,8 +25,8 @@
  YEN_TOOLTIP:0 "У вас [?dx] миллионов йен\n\nВы получаете §G[?nmn]§! миллионов йен в неделю \n §GДоходы§! \nНалоги [?tax] миллионов в неделю\nДоход от гражданских заводов [?cfff] миллионов в неделю\nТорговля(Экспорт) [?resourceincome] миллионов в неделю\n Экспорт Резины [?rubber_export] миллионов в неделю\n Экспорт Хрома [?chromium_export] миллионов в неделю\n Экспорт Вольфрама [?tungsten_export] миллионов в неделю\n Экспорт Алюминия [?aluminum_export] миллионов в неделю\n Экспорт Нефти [?oil_export] миллионов в неделю\n Экспорт Стали [?steel_export] миллионов в неделю  \n §RРасходы§! \nВоенные Расходы -[?ms] миллионов в неделю\nСодержание Военных Заводов -[?nf] миллионов в неделю\nСодержание Верфей -[?navf] миллионов в неделю\nНалог Хозяину -[?tax_to_overlord] миллионов в неделю\nВеликая Депрессия -[?depression] миллионов в неделю\nСодержание Регионов -[?nc] миллионов в неделю\nТорговля(Импорт) -[?resourceexpenses] миллионов в неделю\n Импорт Резины -[?rubber_import] миллионов в неделю\n Импорт Хрома -[?chromium_import] миллионов в неделю\n Импорт Вольфрама -[?tungsten_import] миллионов в неделю\n Импорт Алюминия -[?aluminum_import] миллионов в неделю\n Импорт Нефти -[?oil_import] миллионов в неделю\n Импорт Стали -[?steel_import] миллионов в неделю\nЭкономическая Нестабильность -[?nerfeco] миллионов в неделю\nРасходы на Оккупацию -[?no] миллионов в неделю\nРасходы на Госдолг -[?debtexp] миллионов в неделю\n\nГосдолг [?debttotal] миллионов"
 
  #Loan Decision Options#    (перевод в ожидании)
- economic_decision:0            "Варианты кредитования!"
- economic_decision_desc:0       "Текущий бюджет $[?dx]. \nМы можем запросить местные или международные займы, чтобы помочь в развитии нашей страны, но нам нужно быть осторожными, некоторые решения сделают нас зависимыми от других стран. Вынудят нас выбрать сторону. Мы можем стать простой марионеткой."
+ economic_decision:0            "Варианты кредитования"
+ economic_decision_desc:0       "Текущий бюджет  $[?dx]. \nМы можем запросить местные или международные займы, чтобы помочь в развитии нашей страны, но нам нужно быть осторожными, некоторые решения сделают нас зависимыми от других стран. Вынудят нас выбрать сторону. Мы можем стать простой марионеткой."
  humanitary_assistance:0        "Взять кредит у Лиги Наций."
  humanitary_assistance_desc:0   "Мы можем запросить кредит в размере 100 миллионов долларов через Лигу Наций один раз с целью улучшения нашей экономики."
  league_ass1:0              "Взять кредит у Лиги Наций.(10% ставка)"
@@ -64,188 +64,188 @@
  
  
  #Political Invesment Decisions#
- political_option:0         "Political Investment"
- political_option_desc:0    "We can use our political influence to force some foreign investment. It can be used to develop the nation."
- buy_research_slot:0        "Buy Reseach Slot"
- buy_militar_slot:0         "Buy Military Factory"
- buy_civil_slot:0           "Buy Civilian Factory"
- buy_dockyard_slot:0        "Buy Dockyard"
- buy_militaryexp:0          "Buy 50 Army Experience"
- buy_airexp:0               "Buy 50 Airforce Experience"
- buy_navyexp:0              "Buy 50 Navy Experience"
- buy_steel2:0               "Buy 2 of Steel Production"
- buy_oil5:0                 "Buy 5 of Oil Production"
+ political_option:0         "Политические инвестиции"
+ political_option_desc:0    "Мы можем использовать наше политическое влияние, чтобы привлечь некоторые иностранные инвестиции. Это может быть использовано для развития страны."
+ buy_research_slot:0        "Купить ячейку исследований"
+ buy_militar_slot:0         "Купить военный завод"
+ buy_civil_slot:0           "Купить фабрику"
+ buy_dockyard_slot:0        "Купить верфь"
+ buy_militaryexp:0          "Купить 50 опыта армии"
+ buy_airexp:0               "Купить 50 опыта авиации"
+ buy_navyexp:0              "Купить 50 опыта флота"
+ buy_steel2:0               "Купить 2 стали"
+ buy_oil5:0                 "Купить 5 стали"
  
  #Old Bonus Menu(not used)#
- political_menu:0       "Political Menu!"
- polpower:0             "§HBuy temporary And Permanent Bonus§"
+ political_menu:0       "Политическое меню!"
+ polpower:0             "§HПокупайте временные и Постоянные Бонусы§"
  Politics_Store:0       "Politics Store!"
- Bonus_Menu:0           "Bonus Menu"
- buyreserachslot:       "Buy A Research Slot! 500PP!"
+ Bonus_Menu:0           "Меню бонусов"
+ buyreserachslot:       "Купить ячейку исследований! 500PP!"
  rs_value:              "500!"
- buy_army_factory:      "Buy An Army Factory! 100PP!"
+ buy_army_factory:      "Купить военный завод 100PP!"
  af_value:              "100!"
- buy_civ_factory:       "Buy An Industrial Factory! 100PP!"
+ buy_civ_factory:       "Купить фабрику! 100PP!"
  if_value:              "100!"
- buy_nav_factory:       "Buy A Dockyard! 50PP!"
+ buy_nav_factory:       "Купить верфь! 50PP!"
  xp_value:              "50!"
- buy_army_experience:   "Buy 50 of Army Experience! 50PP!"
- buy_navy_experience:   "Buy 50 of Navy Experience! 50PP!"
- buy_air_experience:    "Buy 50 of Air Experience! 50PP!"
- buy_oil:               "Buy 2 Oil Prod.! 50PP!"
- buy_steel:             "Buy 2 Steel Prod.! 20PP!"
- slot.1.t:              "Building Slot Full!"
+ buy_army_experience:   "Купить 50 опыта авиации! 50PP!"
+ buy_navy_experience:   "Купить 50 опыта флота! 50PP!"
+ buy_air_experience:    "Купить 50 опыта авиации! 50PP!"
+ buy_oil:               "Купить 2 нефти! 50PP!"
+ buy_steel:             "Купить 2 стали! 20PP!"
+ slot.1.t:              "Слоты для построек заполнены!"
  
  #Currency Reserves Bonus#
- normal_money:0          "Currency Reserves"
- normal_money_desc:0     "Our budget is positive. we should keep an eye on it and seek economic oportunities"
- low_money:0             "We have a small debt"
- low_money_desc:0        "Our nation is getting afected for this small crisis. we should start working on it before get worse"
- bad_money:0             "We have a medium debt"
- bad_money_desc:0        "Our debt is growing and its effects are started to get notice. we should make new economic policies"
- very_low_money:0        "We have a high debt"
- very_low_money_desc:0   "Our nation is deeply affected by this debt. We must do something before a revolution takes place"
+ normal_money:0          "Валютные резервы"
+ normal_money_desc:0     "Наш бюджет положительный"
+ low_money:0             "У нас есть небольшой долг"
+ low_money_desc:0        "Наш народ страдает из-за этого небольшого кризиса. мы должны начать работать над этим, пока не стало хуже"
+ bad_money:0             "У нас серьёзный долг"
+ bad_money_desc:0        "Наш долг растет, и его последствия начинают проявляться. мы должны разработать новую экономическую политику"
+ very_low_money:0        "У нас большой долг!"
+ very_low_money_desc:0   "Этот долг сильно влияет на жизнь нашего народа. Мы должны что-то сделать, прежде чем произойдет революция!"
  
  
  #Currency Reserves Bonus(not used)#
- boost_money:0          "No Debt"
- boost_money_desc:0     "We have no debt"
- very_high_money:0       "High Currency Reserves"
- very_high_money_desc:0  "We have a great amount of currency in our reserves"
- medium_money:0          "Medium Currency Reserves"
- medium_money_desc:0     "Our Reserves are good and helpful"
+ boost_money:0          "Никаких долгов"
+ boost_money_desc:0     "Мы не имеет долгов"
+ very_high_money:0       "Хорошие валютные резервы"
+ very_high_money_desc:0  "У нас в резервах большое количество валюты"
+ medium_money:0          "Средние валютные резервы"
+ medium_money_desc:0     "В нашем резерве достаточно денег"
 
  
  #Ideas Bonus#
- CB_15:0        "Medium subsidy on Construction Industry"
- CB_15_desc:0   "We did a medium investment in our construction area to speed up our projects"
+ CB_15:0        "Субсидирование строительной отрасли"
+ CB_15_desc:0   "Мы вложили небольшие средства в нашу строительную сферу, чтобы ускорить реализацию наших проектов"
  
- CB_30:0        "Heavy Subsidy on Construction Industry"
- CB_30_desc:0   "We did a big investment in construction industry to accelarate our projects"
+ CB_30:0        "Значительные субсидии строительной отрасли"
+ CB_30_desc:0   "Мы вложили крупные инвестиции в строительную отрасль, чтобы ускорить реализацию наших проектов"
  
- IB_10:0        "Researchers Salary Increased"
- IB_10_desc:0   "We increased the salary of our researchers. they should be more motivated to work"
+ IB_10:0        "Поощрять учёных"
+ IB_10_desc:0   "Мы повысили зарплату нашим учёным. они должны быть более мотивированы к работе"
  
- CB_20:0        "Heavy Investment on Research Centers"
- CB_20_desc:0   "We have invested in a better equipment to improve the efficiency of researchers"
+ CB_20:0        "Значительные инвестиции в исследовательские центры"
+ CB_20_desc:0   "Мы инвестировуем в более совершенное оборудование, чтобы повысить эффективность работы учёных"
  
- MB_3:0         "Medium Draft"
- MB_3_desc:0    "We succesfully implemented a draft system to increase our manpower"
+ MB_3:0         "Система призыва"
+ MB_3_desc:0    "Мы успешно внедрили новую систему призыва для увеличения нашей армии"
  
- MB_7:0         "Heavy Draft"
- MB_7_desc:0    "We expanded our automatic draft system to maximize our manpower"
+ MB_7:0         "Усилинная система призыва"
+ MB_7_desc:0    "Мы расширили нашу автоматическую систему призыва, чтобы максимально увеличить количество наших солдат"
  
- GB_3:0         "Small Investment in Consumer Goods"
- GB_3_desc:0    "We Subsidy a small part of civilian items.consumer goods factories are good"
+ GB_3:0         "Небольшие инвестиции в потребительские товары"
+ GB_3_desc:0    "Мы субсидируем небольшую часть товаров гражданского назначения. Фабрики потребительских товаров хороши"
  
- GB_5:0         "Medium Invesment in Consumer Goods"
- GB_5_desc:0    "We Subsidy a consider part of civilian equipment.consumer goods factories are grateful"
+ GB_5:0         "Средние инвестиции в потребительские товары"
+ GB_5_desc:0    "Мы субсидируем значительную часть гражданского оборудования. Фабрики потребительских товаров благодарны"
  
- MB_10:0        "Small Investment in Mining Production"
- MB_10_desc:0   "We Subsidy a small part of our mining industry. we need resources"
+ MB_10:0        "Небольшие инвестиции в горнодобывающее производство"
+ MB_10_desc:0   "Мы субсидируем нашу горнодобывающей промышленности. Нам нужны ресурсы"
  
- MB_20:0        "Medium Invesment in Mining Production"
- MB_20_desc:0   "We Subsidy a big part of our mining industry.We need resource as soon as possible. the economy need it!"
+ MB_20:0        "Средние инвестиции в горнодобывающее производство"
+ MB_20_desc:0   "Мы вложим крупные деньги в нашу горнодобывающую промышленность. Нам нужны ресурсы как можно скорее. они нужны экономике!"
  
- JFB_25:0       "Fast Justification War"
- JFB_25_desc:0  "We have accelarated our policy and now we can declare war faster"
+ JFB_25:0       "Ускорение оправдание войны"
+ JFB_25_desc:0  "Мы ускорили нашу политику, и теперь мы можем быстрее объявить войну"
  
- JFB_60:0       "Faster Justification War"
- JFB_60_desc:0  "We have removed temporary any all who can stop us to declare war and now we can do it really fast"
+ JFB_60:0       "Быстрое оправдание войны"
+ JFB_60_desc:0  "Мы подавили всех, кто может помешать нам объявить войну, и теперь мы можем сделать это действительно быстро"
  
  #Ideas On Menu#
- CB15_200_200:0 "Buy 15% Construction Bonus for 200 days for $200M!" 
+ CB15_200_200:0 "15% бонус к строительству на 200 дней за $200M!" 
  
- CB30_400_350:0 "Buy 30% Construction Bonus for 400 days for $350M!"
+ CB30_400_350:0 "30% бонус к строительству на 400 дней за $350!"
  
- IB10_200_200:0 "Buy 10% Investigation Bonus for 200 days for $200M!"
+ IB10_200_200:0 "10% бонус к исследованиям на 200 дней за $200!"
  
- IB20_400_350:0 "Buy 20% Investigation Bonus for 400 days for $350M!"
+ IB20_400_350:0 "20% бонус к исследованиям на 400 дней за $350!"
  
- MB3_200_150:0 "Buy 3% Manpower Bonus for 200 days for $150M!"
+ MB3_200_150:0 "3% бонус к призыву на 200 дней за $150M!"
  
- MB7_400_250:0 "Buy 7% Manpower Bonus for 400 days for $250M!"
+ MB7_400_250:0 "7% бонус к призыву на 400 дней за $250!"
  
- GB3_200_200:0 "Buy -3% Consumer Goods Bonus for 200 days for $200M!"
+ GB3_200_200:0 "-3% к потребительским товарам на 200 дней за $200M!"
  
- GB5_400_300:0 "Buy -5% Consumer Goods Bonus for 400 days for $300M!"
+ GB5_400_300:0 "-5% к потребительским товарам на 400 дней за $300!"
  
- MB10_200_200:0 "Buy 10% Mining Bonus for 500 days for $200M!"
+ MB10_200_200:0 "10% бонус к добыче ресурсов на 500 дней за $200M!"
  
- MB20_400_350:0 "Buy 20% Mining Bonus for 1000 days for $350M!"
+ MB20_400_350:0 "20% бонус к добыче ресурсов на 1000 дней за $350!"
  
- JFB_25_1:0 "Buy -25% War Goal Justification for 200 days for $150M!"
+ JFB_25_1:0 "-25% к скорости оправдания войны на 200 за $150M!"
  
- JFB_60_1:0 "Buy -60% War Goal Justification for 400 days for $300M!"
+ JFB_60_1:0 "-60% к скорости оправдания войны на 400 за $300!"
  
  
  
  #Militar Menu Composition#
- money_headline_0:0 "Equipment And Investment Menu"
- current_money:0    "Current Money"
+ money_headline_0:0 "Меню снаряжения и инвестиций"
+ current_money:0    "Текущий бюджет"
 
- infantry_h_0:0  "10000 Infantry Equipment   Stock : [?global.infantrystock]" 
+ infantry_h_0:0  "10000 пехотного снаряжения   Запас : [?global.infantrystock]" 
  infantry_h_1:0  "$200M"
  infantry_h_2:0  "$70M"
  
 
- support_h_0:0   "1000 Support Equipment    Stock : [?global.supportstock]"
+ support_h_0:0   "1000 доп. оснащения    Запас : [?global.supportstock]"
  support_h_1:0   "$160M"
  support_h_2:0   "$50M"
  
- artillery_h_0:0 "1000 Artillery Equipment  Stock : [?global.artillerystock]"
+ artillery_h_0:0 "1000 артиллерии  Запас : [?global.artillerystock]"
  artillery_h_1:0 "$140M"
  artillery_h_2:0 "$50M"
  
- motorized_h_0:0 "1000 Motorized Equipment  Stock : [?global.motorizedstock]"
+ motorized_h_0:0 "1000 грузовиков  Запас : [?global.motorizedstock]"
  motorized_h_1:0 "$200M"
  motorized_h_2:0 "$70M"
  
- anti_tank_h_0:0 "1000 Anti Tank Equipment  Stock : [?global.antitankstock]"
+ anti_tank_h_0:0 "1000 ПТО  Запас : [?global.antitankstock]"
  anti_tank_h_1:0 "$160M"
  anti_tank_h_2:0 "$56M"
  
- anti_air_h_0:0 "1000 Anti Air Equipment    Stock : [?global.antiairstock]"
+ anti_air_h_0:0 "1000 ПВО    Запас : [?global.antiairstock]"
  anti_air_h_1:0 "$160M"
  anti_air_h_2:0 "$56M"
  
- light_tank_headline0:0  "500 Light Tank For $200M   Stock : [?global.lighttankstock]"
+ light_tank_headline0:0  "500 лёгких танков за $200M   Запас : [?global.lighttankstock]"
  
- medium_tank_headline0:0 "500 Medium Tank For $340M Stock : [?global.mediumtankstock]"
+ medium_tank_headline0:0 "500 средних танков за $340M Запас : [?global.mediumtankstock]"
  
- heavy_tank_headline0:0  "500 Heavy Tank For $500M   Stock : [?global.heavytankstock]"
+ heavy_tank_headline0:0  "500 тяжёлых танков за $500M   Запас : [?global.heavytankstock]"
  
- convoy_headline0:0      "50 Convoys For $150M       Stock : [?global.convoystock]"
+ convoy_headline0:0      "50 конвоев за $150M       Запас : [?global.convoystock]"
 
- civil_factory1:0       "Buy Civilian Factory For $50M"
+ civil_factory1:0       "Купить фабрику за $50M"
  
- military_factory1:0    "Buy Military Factory For $100M"
+ military_factory1:0    "Купить военный завод за $100M"
  
- steel_factory:0        "Buy 8 Of Steel For $50M"
+ steel_factory:0        "Купить 8 стали за $50M"
  
- tungsten_factory:0     "Buy 8 of Tungsten for $50M"
+ tungsten_factory:0     "Купить 8 вольфрама за $50M"
  
  oil_pump:0             "Купить 8 нефти за $75M"
  
- aluminium_factory:0    "Buy 8 of aluminium for $50M"
+ aluminium_factory:0    "Купить 8 аллюминия за $50M"
  
- rubber_pump:0          "Buy 8 of rubber for 75M"
+ rubber_pump:0          "Купить 8 резины за 75M"
  
- chromium_factory:0     "Buy 8 of Chromium for $75M"
+ chromium_factory:0     "Купить 8 хрома за $75M"
  
- Buy:0      "Buy"
- Sell:0     "Sell"
+ Buy:0      "Купить"
+ Sell:0     "Продать"
  
  ##########Diplomatic action(send money)###########(traduction pending)
  
- MONEY_DIPLOMATIC_ACTION_TITLE:0 "Sent $300M(30% rate)"
- MONEY_DIPLOMATIC_ACTION_ACTION_DESC:0 "We can loan money to this nation so it can be used to develop them but the rate is high"
- MONEY_DIPLO_ACTION_LOC:0 "We are going to send them some money\n so they can develop quickly.\n $210M will be deliver."
- MONEY_DIPLO_ACTION_RECIEVER_LOC:0 "$210M will be sent to this nation so it can be used to develop that nation."
- MONEY_DIPLO_ACTION_ACCEPTED_TITLE:0 "They accepted our loan"
- MONEY_DIPLO_ACTION_ACCEPTED_DESC:0 "They received $210M"
- MONEY_DIPLO_ACTION_REJECTED_TITLE:0 "They rejected our loan"
- MONEY_DIPLO_ACTION_REJECTED_DESC:0 "Our money was sent back"
+ MONEY_DIPLOMATIC_ACTION_TITLE:0 "Одолжить $300M(30% ставка)"
+ MONEY_DIPLOMATIC_ACTION_ACTION_DESC:0 "Мы можем одолжить деньги этой стране с высокой ставкой."
+ MONEY_DIPLO_ACTION_LOC:0 "Мы собираемся отправить им немного денег, чтобы они могли быстро развиваться.\n $210M будут доставлены."
+ MONEY_DIPLO_ACTION_RECIEVER_LOC:0 "210 миллионов долларов будут отправлены этой стране."
+ MONEY_DIPLO_ACTION_ACCEPTED_TITLE:0 "Они приняли наш заем"
+ MONEY_DIPLO_ACTION_ACCEPTED_DESC:0 "Они получили 210 миллионов долларов"
+ MONEY_DIPLO_ACTION_REJECTED_TITLE:0 "Они отказали нам в кредите"
+ MONEY_DIPLO_ACTION_REJECTED_DESC:0 "Наши деньги были отправлены обратно"
  base_desire:0 "Base Desire"
  
    ###################decisions open gui##########
