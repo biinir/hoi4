@@ -1,0 +1,40 @@
+add_namespace = fin    
+
+country_event = {
+	id = fin.1
+        immediate = { log = "[GetDateText]: [Root.GetName]: event kamish.1" }
+	title = fin.1.t
+	desc = fin.1.d
+	picture = GFX_news_event_GAC_river
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = fin.1.a		
+		set_politics = {
+		ruling_party = democratic
+                elections_allowed = no		
+		}
+		}
+	option = {
+	name = fin.1.b 
+	hidden_effect = {
+	country_event = { id = fin.2 days = 1 }
+	}
+	}
+country_event = {
+	id = fin.2
+        immediate = { log = "[GetDateText]: [Root.GetName]: event kamish.1" }
+	title = fin.2.t
+	desc = fin.2.d
+	picture = GFX_news_event_GAC_river
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = fin.2.a		
+		add_political_power = 45
+		}
+	}
