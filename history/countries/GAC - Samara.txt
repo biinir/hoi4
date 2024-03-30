@@ -206,6 +206,7 @@ add_ideas = {
 	population_controlled
 	women_workers
 	navy_production_no
+	penal_slavery
 }
 add_manpower = 111540
 
