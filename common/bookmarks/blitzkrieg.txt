@@ -111,34 +111,34 @@ bookmarks = {
 				KAM_sozvat_sovet
 			}
 		}
-		"ITA"={
-			history = "ITA_GATHERING_STORM_DESC"
-			ideology = fascism
+		"GAC"={
+			history = "GAC_GATHERING_STORM_DESC"
+			ideology = gachism
 			available = { has_dlc = "By Blood Alone" }
 			ideas = {
-				vittorio_emanuele
-				ITA_iri_fake_ns
-				ITA_re_fake_ns
+				GAC_gachi_system
+				GAC_gachi_army
+				GAC_triumvirate_masters
 			}	
 			focuses = {
-				ITA_comandante_diavolo
-				ITA_il_sol_dell_avvenire
-				ITA_a_colonial_empire
+				GAC_volga_masters
+				gachi_army
+				Billy_master
 			}		
 		}
-		"ITA"={
-			history = "ITA_GATHERING_STORM_DESC"
-			ideology = fascism
+		"GAC"={
+			history = "GAC_GATHERING_STORM_DESC"
+			ideology = gachism
 			available = { NOT = { has_dlc = "By Blood Alone" } }
 			ideas = {
-				vittorio_emanuele
-				ITA_iri_fake_ns
-				ITA_re_fake_ns
+				GAC_gachi_system
+				GAC_gachi_army
+				GAC_triumvirate_masters
 			}	
 			focuses = {
-				ITA_comandante_diavolo
-				ITA_to_live_as_a_lion
-				ITA_a_colonial_empire
+				GAC_volga_masters
+				gachi_army
+				Billy_master
 			}		
 		}
 		"JAP"={
