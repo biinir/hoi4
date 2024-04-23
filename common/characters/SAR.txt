@@ -9,6 +9,14 @@ characters={
 		country_leader={
 			ideology= fascism_ideology
 			expire="1965.1.1.1"
-			id=-1
+			id=27899
 		}
+				corps_commander = {
+			traits = { infantry_officer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 5
+ }
 	}

@@ -266,6 +266,13 @@ shared_focus = {
 	relative_position_id = Billy_plane
 	x = 0
 	y = 4
+		select_effect = {
+			                  hidden_effect = {
+			KAM = { country_event = {id = kamish.makim days = 1 } }
+
+                      
+                       }
+		}
 	completion_reward = {
 		239 = {add_core_of = GAC}
 		add_political_power = 50

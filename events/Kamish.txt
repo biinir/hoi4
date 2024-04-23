@@ -1112,3 +1112,67 @@ country_event = { #Sholokhov
 		
 	}
 }                                     
+
+country_event = { #makim
+	id =  kamish.makim
+
+	title =  kamish.makim.t
+	desc =  kamish.makim.d
+	picture = GFX_report_event_RUS_letter
+
+	is_triggered_only = yes
+
+	option = {#yes
+		name =  kamish.makim.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+
+
+				}
+			}
+		}
+ recruit_character = KAM_Makim_Vorobiev
+division_template = {
+	name = "Makim Division"		# Motor Rifle Division
+	division_names_group = KAM_ROFL_01
+											# Note: only represents Moscow Proletariat Division in 1936; after 1938-40, Motor Rifle Divisions had +1 mot regiment (3 bns) 
+	regiments = {
+		artillery_brigade = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+		artillery_brigade = { x = 0 y = 2 }
+		artillery_brigade = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 0 y = 3 }
+	}
+	support = {
+		#recon = { x = 0 y = 0 } 		# Recon bn had 16x L tanks, 45 ACs #Eng and recon removed and they seem rather OP. Could revisit if balance changes 
+		#engineer = { x = 0 y = 1 } 	# (mot) Engineer bn
+	}
+}
+
+								location = 544 
+				create_unit = {
+                    division = "name = \"1 Makim Dision\" division_template = \"Makim Division\" start_experience_factor = 0.7 start_equipment_factor = 1.0"
+                    owner = KAM
+	            }
+            
+			
+	}
+	option = {#no
+		name =  kamish.8.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+			
+			}
+		}
+		add_political_power = 75
+		set_country_flag = KAM_makin_no
+	}
+}

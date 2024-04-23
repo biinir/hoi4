@@ -100,6 +100,22 @@ characters={
         }
 
     }
+		KAM_Makim_Vorobiev={
+		name="Maxim Vorobyov"
+		portraits={
+			civilian={
+				large=gfx/leaders/SAR/Portrait_Makim_Vorobiev.dds
+			}
+		}
+				corps_commander = {
+			traits = { infantry_officer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 5
+ }
+	}
     KAM_grechko={
 		name=KAM_grechko
 		portraits={
