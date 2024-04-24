@@ -97,3 +97,84 @@ focus = {
 			}
 		}
 	}
+	
+focus = {
+		id = DAG_infra
+		icon = GFX_SAR_Electrifying_Guangdong
+                relative_position_id = DAG_elect_mach
+                
+		x = 0
+		y = 1
+
+                prerequisite = {
+		focus = DAG_elect_mach
+	        }
+
+		cost = 5
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
+232 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+
+                                 }
+
+		}
+	}
+	
+focus = {
+		id = DAG_neft_tech
+		icon = GFX_SAR_Electrifying_Guangdong
+                relative_position_id = DAG_infra
+                
+		x = 0
+		y = 1
+
+                prerequisite = {
+		focus = DAG_infra
+	        }
+
+		cost = 5
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+
+add_tech_bonus = {
+				name = GER_coal_liquidization
+				bonus = 2.0
+				uses = 3
+				category = synth_resources
+			}
+
+		}
+	}
