@@ -178,3 +178,42 @@ add_tech_bonus = {
 
 		}
 	}
+	
+focus = {
+		id = DAG_pizda
+		icon = GFX_SAR_Electrifying_Guangdong
+                relative_position_id = DAG_infra
+                
+		x = 0
+		y = 1
+
+                prerequisite = {
+		focus = DAG_infra
+	        }
+
+		cost = 5
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+			select_effect = {
+			                  hidden_effect = {
+			country_event = {id = dagi.1 days = 10 }
+			country_event = {id = dagi.2 days = 36 }
+                      
+                       }
+		}
+		completion_reward = {
+
+		}
+	}

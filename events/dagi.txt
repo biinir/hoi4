@@ -1,0 +1,42 @@
+add_namespace = dagi
+
+country_event = {
+	id = dagi.1
+	title = dagi.1.t
+	desc = dagi.1.d
+	picture = GFX_news_event_GAC_kirkorov
+
+
+	is_triggered_only = yes
+
+	option = {
+		add_political_power = -50
+		name = dagi.7.a		#join
+		mark_focus_tree_layout_dirty = yes
+		set_country_flag = GAC_assassination_failed
+	}
+
+
+
+}
+
+country_event = {
+	id = dagi.2
+	title = dagi.2.t
+	desc = dagi.2.d
+	picture = GFX_report_event_GAC_epilogue_saratov
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = dagi.8.a		#join
+		hidden_effect = {
+		add_political_power = 30
+			load_focus_tree = { tree = gach_focuss = no }
+			}
+	}
+
+
+
+}
