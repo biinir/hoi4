@@ -1118,7 +1118,7 @@ country_event = { #makim
 
 	title =  kamish.makim.t
 	desc =  kamish.makim.d
-	picture = GFX_report_event_RUS_letter
+	picture = GFX_report_event_KAM_Makim
 
 	is_triggered_only = yes
 
@@ -1155,16 +1155,16 @@ division_template = {
 	}
 }
 
-								location = 544 
+								265 = {
 				create_unit = {
                     division = "name = \"1 Makim Dision\" division_template = \"Makim Division\" start_experience_factor = 0.7 start_equipment_factor = 1.0"
                     owner = KAM
 	            }
-            
+            }
 			
 	}
 	option = {#no
-		name =  kamish.8.b
+		name =  kamish.makim.b
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -1172,7 +1172,7 @@ division_template = {
 			
 			}
 		}
-		add_political_power = 75
+		add_political_power = 100
 		set_country_flag = KAM_makin_no
 	}
 }

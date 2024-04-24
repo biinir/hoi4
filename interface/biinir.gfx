@@ -293,8 +293,17 @@ spriteType = {
 		texturefile = "gfx/event_pictures/kirkorov0.dds"
 	}
 
+spriteType = {
+		name = "GFX_report_event_KAM_Makim"
+		texturefile = "gfx/event_pictures/report_event_KAM_Makim.dds"
+	}
 
-
-
-
+spriteType = {
+		name = "GFX_report_event_GAC_epilogue_saratov"
+		texturefile = "gfx/event_pictures/report_event_GAC_epilogue_saratov.dds"
+	}
+spriteType = {
+		name = "GFX_tolboev"
+		texturefile = "gfx/leaders/DAG/Portrait_tolboev.dds"
+	}
 }

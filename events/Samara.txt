@@ -138,7 +138,7 @@ country_event = {
 	id = samara.8
 	title = samara.8.t
 	desc = samara.8.d
-	picture = GFX_news_event_GAC_kirkorov
+	picture = GFX_report_event_GAC_epilogue_saratov
 
 
 	is_triggered_only = yes
@@ -146,6 +146,7 @@ country_event = {
 	option = {
 		name = samara.8.a		#join
 		hidden_effect = {
+		add_political_power = 30
 			load_focus_tree = { tree = gach_focuss = no }
 			}
 	}

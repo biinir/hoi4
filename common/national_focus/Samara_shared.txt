@@ -244,6 +244,14 @@ shared_focus = {
 	y = 3
 	completion_reward = {
 		declare_war_on = { target = SAR type = annex_everything }
+		401 = {
+		add_building_construction = {
+					type = supply_node
+					level = 2
+					province = 6502
+					instant_build = yes
+				}
+				}
 	}
 }
 
@@ -277,6 +285,9 @@ shared_focus = {
 		239 = {add_core_of = GAC}
 		add_political_power = 50
 		country_event = { id = samara.8 }
+		build_railway = {
+				path = { 6502 11421 3477 483 3578 }
+			}
 	}
 }
 # 

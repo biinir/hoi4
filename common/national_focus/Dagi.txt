@@ -1,0 +1,99 @@
+focus_tree = {
+	id = SAR_Makim_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = DAG
+		}
+	}
+	default = no
+         focus = {
+		id = DAG_prom_mach
+		icon = GFX_RUS_Industrial_Expansion
+		x = 8
+		y = 0
+
+		cost = 3.5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+focus = {
+		id = DAG_elect_mach
+		icon = GFX_SAR_Electrifying_Guangdong
+                relative_position_id = DAG_prom_mach
+                
+		x = 0
+		y = 1
+
+                prerequisite = {
+		focus = DAG_prom_mach
+	        }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			232 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+
+                                 }
+				add_extra_state_shared_building_slots = 1
+
+                                 }
+
+				add_tech_bonus = {
+				name = POL_the_four_year_plan
+				bonus = 1.0
+				uses = 2
+				category = construction_tech
+			}
+		}
+	}
