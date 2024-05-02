@@ -1,0 +1,15 @@
+characters={
+	VIZ_artem_vizivalovo={
+		name="Artem Vizivalovo"
+		portraits={
+			civilian={
+				large=gfx/leaders/VIZ/Portrait_Artem_Vizivalovo.dds
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+				}
+		}
+}
