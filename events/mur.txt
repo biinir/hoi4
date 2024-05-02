@@ -1,0 +1,77 @@
+add_namespace = vmi
+
+country_event = { #KAM_budghet
+	id = vmi.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event kamish.1" }
+	title = vmi.1.t
+	desc = vmi.1.d
+	picture = GFX_murman
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = vmi.1.a
+		ai_chance = { factor = 1 }
+		add_political_power = 40
+	}
+}
+
+
+country_event = { #KAM_budghet
+	id = vmi.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event kamish.1" }
+	title = vmi.2.t
+	desc = vmi.2.d
+	picture = GFX_gorn
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = vmi.2.a
+		ai_chance = { factor = 1 }
+		army_experience = 5
+	}
+}
+
+
+
+country_event = { #KAM_budghet
+	id = vmi.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event kamish.1" }
+	title = vmi.3.t
+	desc = vmi.3.d
+	picture = GFX_ubi
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = vmi.3.a
+		ai_chance = { factor = 1 }
+		add_political_power = -10
+               add_stability = -0.03
+	}
+}
+
+
+
+country_event = { #KAM_budghet
+	id = vmi.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event kamish.1" }
+	title = vmi.4.t
+	desc = vmi.4.d
+	picture = GFX_ubi
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = vmi.4.a
+		ai_chance = { factor = 1 }
+		add_timed_idea = {
+			idea = VMI_zac_mes
+			days = 350         
+	}
+}
