@@ -9022,6 +9022,14 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_JAP_Blood_Iron_and_Representative_Democracy"
 		texturefile = "gfx/interface/goals/JAP_Blood_Iron_and_Representative_Democracy.dds"
+
+
+        }
+
+	SpriteType = {
+		name = "GFX_LEC_police"
+		texturefile = "gfx/interface/goals/LEC_police.dds"
+
 	}
 
 	SpriteType = {
@@ -11539,6 +11547,13 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_Reach_out_to_Douglas"
 		texturefile = "gfx/interface/goals/Reach_out_to_Douglas.dds"
+
+        }
+
+	SpriteType = {
+		name = "GFX_CAN_Explore_North"
+		texturefile = "gfx/interface/goals/CAN_Explore_North.dds"
+
 	}
 
 	SpriteType = {
@@ -17505,6 +17520,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_OMS_a_quiet_war"
 		texturefile = "gfx/interface/goals/OMS_a_quiet_war.dds"
+        }
+	SpriteType = {
+		name = "GFX_ALA_fishing"
+		texturefile = "gfx/interface/goals/ALA_fishing.dds"
+
 	}
 	SpriteType = {
 		name = "GFX_OMS_breaking_the_cliques"
@@ -18515,6 +18535,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_KEM_With_the_Will_of_the_People"
 		texturefile = "gfx/interface/goals/KEM_With_the_Will_of_the_People.dds"
+        }
+	SpriteType = {
+		name = "GFX_VMI_American_Guns"
+		texturefile = "gfx/interface/goals/VMI_American_Guns.dds"
+
 	}
 	SpriteType = {
 		name = "GFX_KEM_Your_Life_for_the_King"
@@ -18841,6 +18866,12 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_PRM_the_hooked_cross_advances"
 		texturefile = "gfx/interface/goals/PRM_the_hooked_cross_advances.dds"
+
+        }
+	SpriteType = {
+		name = "GFX_VMI_Limited_Reform"
+		texturefile = "gfx/interface/goals/VMI_Limited_Reform.dds"
+
 	}
 	SpriteType = {
 		name = "GFX_PRM_An_Aryan_Arsenal"

@@ -2892,6 +2892,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_generic_head_of_intelligence_asian_2d"
 		texturefile = "gfx/interface/ideas/idea_generic_democratic_asia.dds"
+        }
+	spriteType = {
+		name = "GFX_idea_VMI_zac_mes"
+		texturefile = "gfx/interface/ideas/idea_VMI_zac_mes.dds"
+   
 	}
 	spriteType = {
 		name = "GFX_idea_generic_fascist_demagogue_asian_2d"

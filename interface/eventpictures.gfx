@@ -13,6 +13,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_news_event_polish_army"
 		texturefile = "gfx/event_pictures/news_event_polish_army.dds"
+
+        }
+
+	spriteType = {
+		name = "GFX_gorn"
+		texturefile = "gfx/event_pictures/gorn.dds"
+
 	}
 
 	spriteType = {
@@ -855,6 +862,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_stalin_propaganda"
 		texturefile = "gfx/event_pictures/report_event_stalin_propaganda.dds"
+
+        }
+
+	spriteType = {
+		name = "GFX_ubi"
+		texturefile = "gfx/event_pictures/ubi.dds"
+
 	}
 
 	spriteType = {
@@ -1908,6 +1922,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_generic_train"
 		texturefile = "gfx/event_pictures/report_event_generic_train.dds"
+        }
+	
+	spriteType = {
+		name = "GFX_murman"
+		texturefile = "gfx/event_pictures/murman.dds"
+
 	}
 	
 	spriteType = {
