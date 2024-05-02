@@ -1,0 +1,228 @@
+focus_tree = {
+	id = VMI_norm_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = VMI
+		}
+	}
+	default = no
+        continuous_focus_position = { x = 900 y = 3500 }
+
+        focus = {
+		id = VMI_sever_stran
+		icon = GFX_VMI_Limited_Reform
+		x = 5
+		y = 0
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.01
+		}
+	}
+
+
+        focus = {
+		id = VMI_garand
+		icon = GFX_VMI_American_Guns
+
+                relative_position_id = VMI_sever_stran
+		x = 2
+		y = 1
+              
+                prerequisite = {
+		focus = VMI_sever_stran
+	        }
+		cost = 4
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = USA
+			}
+			hidden_effect = {
+				country_event = {
+					id =  arizona.11
+					days = 25
+				}
+			}
+		}
+	}
+
+
+         focus = {
+		id = VMI_fish
+		icon = GFX_ALA_fishing
+
+                relative_position_id = VMI_garand
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = VMI_garand
+	        }
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+
+        
+         focus = {
+		id = VMI_ment
+		icon = GFX_LEC_police
+
+                relative_position_id = VMI_sever_stran
+		x = -2
+		y = 1
+              
+                prerequisite = {
+		focus = VMI_sever_stran
+	        }
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+
+         
+        focus = {
+		id = VMI_exsp
+		icon = GFX_CAN_Explore_North
+
+                relative_position_id = VMI_ment
+		x = 0
+		y = 1
+              
+                prerequisite = {
+		focus = VMI_ment
+	        }
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+                        add_political_power = 20
+                        add_stability = 0.02
+			custom_effect_tooltip = KAM_seek_balkan_cooperation_decisions_tt
+                                     }
+			}
+
+		}
