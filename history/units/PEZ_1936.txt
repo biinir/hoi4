@@ -35,6 +35,26 @@ division_template = {
 }
 
 
+division_template = {
+	name = "Opolcheniye"			# Rifle Division
+	division_names_group = LIP_INF_01
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 2 y = 0 }
+	}
+	support = {
+		#recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+		#engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
+		recon = { x = 0 y = 0 } 	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+
+	}
+}
+
+
 units = {
 	##### Severno-Zapadnoe TVD (North West Theatre) -- Archangelsk #####				
 	# "1ya myltik divisionse" 			
@@ -77,7 +97,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 54
 		}
-		location = 11237
+		location = 11373
 		division_template = "Kavaleriyskaya Divizia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -90,5 +110,17 @@ units = {
 		}
 		location = 11262
 		division_template = "Kavaleriyskaya Divizia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+
+
+         }			
+	division= {	# "4ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 54
+		}
+		location = 11240
+		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
