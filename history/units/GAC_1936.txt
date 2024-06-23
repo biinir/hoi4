@@ -22,7 +22,7 @@
 units = {
 
 		division= {			
-		name = "1 гачи дивизия"		
+		name = "1 Billy division"		
 		location = 11225
 		division_template = "Gachi Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
@@ -30,7 +30,7 @@ units = {
 		}
 		
 		division= {			
-		name = "2 гачи дивизия"		
+		name = "2 DarkHolme division"		
 		location = 6275
 		division_template = "Gachi Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
@@ -38,7 +38,7 @@ units = {
 		}
 		
 		division= {			
-		name = "3 гачи дивизия"		
+		name = "3 gaybarovskaya"		
 		location = 9243
 		division_template = "Gachi Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
@@ -46,7 +46,7 @@ units = {
 		}
 		
 		division= {			
-		name = "4 гачи дивизия"		
+		name = "4 kabachok division"		
 		location = 6502
 		division_template = "Gachi Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
@@ -54,7 +54,7 @@ units = {
 		}
 		
 		division= {			
-		name = "5 гачи дивизия"		
+		name = "5 fisitng division"		
 		location = 6502
 		division_template = "Gachi Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
@@ -62,7 +62,7 @@ units = {
 		}
 		
 		division= {			
-		name = "6 гачи дивизия"		
+		name = "6 penetration division"		
 		location = 452
 		division_template = "Gachi Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
@@ -70,7 +70,7 @@ units = {
 		}
 		
 		division= {			
-		name = "7 гачи дивизия"		
+		name = "7 Harrington division"		
 		location = 452
 		division_template = "Gachi Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
@@ -78,7 +78,7 @@ units = {
 		}
 		
 		division= {			
-		name = "8 гачи дивизия"		
+		name = "8 GYMovskaya"		
 		location = 9473
 		division_template = "Gachi Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
@@ -86,7 +86,7 @@ units = {
 		}
 		
 		division= {			
-		name = "9 гачи дивизия"		
+		name = "9 RealManovskaya"		
 		location = 9473
 		division_template = "Gachi Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
@@ -94,7 +94,7 @@ units = {
 		}
 		
 		division= {			
-		name = "10 гачи дивизия"		
+		name = "10 gachi division"		
 		location = 6574
 		division_template = "Gachi Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
@@ -102,7 +102,7 @@ units = {
 		}
 		
 		division= {			
-		name = "11 гачи дивизия"		
+		name = "11 FatCocks division"		
 		location = 6574
 		division_template = "Gachi Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GAC" } }
