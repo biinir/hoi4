@@ -2,14 +2,14 @@
 state={
 	id=245
 	name="STATE_245" # Millerovo
-	manpower = 761769
+	manpower = 1761769
 	
-	state_category = rural
+	state_category = large_city
 
 	history={
 		owner = KAM
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 4 #was: 5
                         arms_factory = 2
 			air_base = 5
                         industrial_complex = 3
@@ -17,7 +17,7 @@ state={
 		}
 		add_core_of = KAM
 		victory_points = {
-			11476 1
+			11476 10
 		}
 	}
 

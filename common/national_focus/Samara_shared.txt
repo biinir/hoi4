@@ -88,7 +88,7 @@ shared_focus = {
 shared_focus = {
 	id = GAC_slaves_hunters
 	icon = GFX_GAC_focus_slaves_hunters
-	cost = 10
+	cost = 4
 	allow_branch = {
 		has_country_flag = GAC_assassination_failed
 		NOT = {
@@ -105,8 +105,8 @@ shared_focus = {
 	select_effect = {
 			                  hidden_effect = {
 			country_event = {id = samara.5 days = 2 }
-			country_event = {id = samara.6 days = 35 }
-			country_event = {id = samara.7 days = 70 }
+			country_event = {id = samara.6 days = 10 }
+			country_event = {id = samara.7 days = 28 }
                       
                        }
 		}
@@ -148,7 +148,7 @@ shared_focus = {
 shared_focus = {
 	id = GAC_nico_douga
 	icon = GFX_GAC_focus_nico_douga
-	cost = 10
+	cost = 3
 	allow_branch = {
 		has_country_flag = GAC_assassination_failed
 		NOT = {
@@ -174,7 +174,7 @@ shared_focus = {
 shared_focus = {
 	id = GAC_logo
 	icon = GFX_GAC_focus_logo
-	cost = 2.9
+	cost = 3
 	allow_branch = {
 		has_country_flag = GAC_assassination_failed
 		NOT = {
@@ -202,7 +202,7 @@ shared_focus = {
 shared_focus = {
 	id = GFX_GAC_army_plus
 	icon = GFX_GAC_army_plus
-	cost = 7.2
+	cost = 3
 	allow_branch = {
 		has_country_flag = GAC_assassination_failed
 		NOT = {
@@ -227,7 +227,7 @@ shared_focus = {
 shared_focus = {
 	id = GAC_Saratov_War
 	icon = GFX_GAC_borba_saratov_shine
-	cost = 5.8
+	cost = 4
 	allow_branch = {
 		has_country_flag = GAC_assassination_failed
 		NOT = {
@@ -258,7 +258,7 @@ shared_focus = {
 shared_focus = {
 	id = GAC_Saratov_porjadok
 	icon = GFX_GAC_saratov_poradok
-	cost = 6.5
+	cost = 3
 	allow_branch = {
 		has_country_flag = GAC_assassination_failed
 		NOT = {

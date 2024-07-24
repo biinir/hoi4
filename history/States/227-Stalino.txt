@@ -2,19 +2,19 @@
 state={
 	id=227
 	name="STATE_227"
-	manpower = 3767336
+	manpower = 4867336
 	
-	state_category = city
+	state_category = megalopolis
 
 	history={
 		owner = KAM
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 5 #was: 5
                         arms_factory = 5
 			industrial_complex = 6
 		}
 		victory_points = {
-			6474 10
+			6474 25
 		}
 		add_core_of = KAM
 		add_core_of = UKR

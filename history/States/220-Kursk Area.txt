@@ -3,12 +3,12 @@ state={
 	id=220
 	name="STATE_220"
 	manpower = 1680086
-	state_category = city
+	state_category = large_city
 
 	history={
 		owner = KUS
 		victory_points = {
-			3580 5
+			3580 10
 		}
 		buildings = {
 			infrastructure = 4 #was: 5

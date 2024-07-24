@@ -8,8 +8,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = -0.1		
-				conscription_factor = -0.55
-				send_volunteer_divisions_required = -0.75
+				conscription_factor = -0.65
 				}
 			rule = {
 				can_create_factions = yes
