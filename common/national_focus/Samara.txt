@@ -8,6 +8,8 @@ focus_tree = {
 		}
 	}
 	default = no
+	      continuous_focus_position = { x = 900 y = 3500 }
+
 	shared_focus = GAC_volga_masters
 
 }
@@ -18,9 +20,11 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 20
-			tag = SAM
+			tag = GAC
 		}
 	}
 	default = no
-	shared_focus = GAC_tests
+	      continuous_focus_position = { x = 900 y = 3500 }
+
+	shared_focus = GAC_saratov_hunters
 }

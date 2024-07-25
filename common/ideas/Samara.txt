@@ -37,6 +37,14 @@ ideas = {
 			}
 		}
 		
+		GAC_gachi_slaves_run2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
+			picture = GAC_gachi_slaves_run
+			modifier = {
+				conscription_factor = -0.05
+			}
+		}
+		
 		GAC_gachi_army = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
 			picture = GAC_gachi_army
@@ -51,6 +59,7 @@ ideas = {
 				army_core_attack_factor = 0.15
 				war_support_factor = 0.05
 				military_leader_cost_factor = 0.50
+				experience_loss_factor = -0.25
 
 			}
 		}
@@ -96,10 +105,18 @@ ideas = {
 			picture = gac_nico_douga
 			modifier = {
 				stability_weekly = 0.0020
-				fascism_drift = 0.05
+				fascism_drift = 0.15
 				conscription_factor = 0.1
 			}
 		}
-		
+	GAC_tilovie_gachisti = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HOL_busy_ports"}
+			picture = GAC_tilovie_gachisti
+			modifier = {
+				no_supply_grace = 48
+				org_loss_when_moving = -0.15
+				resistance_damage_to_garrison = -0.5
+			}
+		}	
 }
 }

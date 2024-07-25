@@ -13,7 +13,7 @@ country_event = {
 		add_political_power = -50
 		name = dagi.7.a		#join
 		mark_focus_tree_layout_dirty = yes
-		set_country_flag = GAC_assassination_failed
+
 	}
 
 
@@ -33,7 +33,7 @@ country_event = {
 		name = dagi.8.a		#join
 		hidden_effect = {
 		add_political_power = 30
-			load_focus_tree = { tree = gach_focuss = no }
+
 			}
 	}
 

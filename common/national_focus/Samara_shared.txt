@@ -168,6 +168,7 @@ shared_focus = {
 	GAC_Nico_Douga
 	mass_media_propaganda
 	}
+	set_country_flag = GAC_NICO_NICO
 	}
 }
 
@@ -247,7 +248,7 @@ shared_focus = {
 		401 = {
 		add_building_construction = {
 					type = supply_node
-					level = 2
+					level = 1
 					province = 6502
 					instant_build = yes
 				}
@@ -292,11 +293,122 @@ shared_focus = {
 }
 # 
 shared_focus = {
-	id = GAC_tests
+	id = GAC_saratov_hunters
 	icon = GFX_CHI_Modern_Construction_Equipment
-	cost = 4
+	cost = 3
 	x = 12
 	y = 0
 	completion_reward = {
+	swap_ideas = {
+				remove_idea = GAC_gachi_slaves_run1
+				add_idea = GAC_gachi_slaves_run2
+			}
+random_owned_controlled_state = {
+				create_unit = {
+                    division = "name = \"3 Slaves Hunter Division\" division_template = \"Slaves Hunter Division\" start_experience_factor = 0.8 start_equipment_factor = 1.0"
+                    owner = GAC
+	            }
+				create_unit = {
+                    division = "name = \"4 Slaves Hunter Division\" division_template = \"Slaves Hunter Division\" start_experience_factor = 0.8 start_equipment_factor = 1.0"
+                    owner = GAC
+	            }	
+				create_unit = {
+                    division = "name = \"5 Slaves Hunter Division\" division_template = \"Slaves Hunter Division\" start_experience_factor = 0.8 start_equipment_factor = 1.0"
+                    owner = GAC
+	            }
+				create_unit = {
+                    division = "name = \"6 Slaves Hunter Division\" division_template = \"Slaves Hunter Division\" start_experience_factor = 0.8 start_equipment_factor = 1.0"
+                    owner = GAC
+	            }
+				create_unit = {
+                    division = "name = \"7 Slaves Hunter Division\" division_template = \"Slaves Hunter Division\" start_experience_factor = 0.8 start_equipment_factor = 1.0"
+                    owner = GAC
+	            }
+			
+}
+}
+}
 
+shared_focus = {
+	id = GFX_GAC_flex_airbase
+	icon = GFX_GAC_army_plus
+	cost = 3
+
+	prerequisite = {
+		focus = GAC_saratov_hunters
+	}
+	dynamic = yes
+	relative_position_id = GAC_saratov_hunters
+	x = 2
+	y = 1
+	completion_reward = {
+	239 = {add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
+	401 = {add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
+	}
+}
+}
+}
+
+shared_focus = {
+	id = GAC_tilovie_myziki
+	icon = GFX_GAC_tilovie_myziki
+	cost = 3
+
+	prerequisite = {
+		focus = GAC_saratov_hunters
+	}
+	dynamic = yes
+	relative_position_id = GAC_saratov_hunters
+	x = -2
+	y = 1
+	completion_reward = {
+	add_ideas = {
+	GAC_tilovie_gachisti
+	}
+}
+}
+
+shared_focus = {
+	id = GAC_kazah_reid
+	icon = GFX_GAC_kazah_reid
+	cost = 2
+	
+	prerequisite = {focus = GAC_tilovie_myziki}
+	prerequisite = {focus = GFX_GAC_flex_airbase}
+
+	dynamic = yes
+	relative_position_id = GAC_saratov_hunters
+	x = 0
+	y = 2
+
+	completion_reward = {
+		add_political_power = 15
+		country_event = { id = samara.9 }
+		KAZ = { country_event = {id = samara.9_1 } }
+
+	}
+}
+
+shared_focus = {
+	id = GAC_Penza_War
+	icon = GFX_GAC_borba_Penza
+	cost = 3
+	prerequisite = {focus = GAC_kazah_reid}
+
+	dynamic = yes
+	relative_position_id = GAC_kazah_reid
+	x = 0
+	y = 1
+	completion_reward = {
+		declare_war_on = { target = PEZ type = annex_everything }
+
+	}
 }

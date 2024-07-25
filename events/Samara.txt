@@ -154,3 +154,24 @@ country_event = {
 
 
 }
+
+country_event = {
+	id = samara.9
+	title = samara.9.t
+	desc = samara.9.d
+	picture = GFX_report_event_GAC_epilogue_saratov
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = samara.9.a		#join
+		hidden_effect = {
+		add_manpower = 30
+
+			}
+	}
+
+
+
+}

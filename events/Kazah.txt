@@ -53,3 +53,23 @@ country_event = { #explain power struggle
 
                }
      }
+	 
+country_event = {
+	id = samara.9_1
+	title = samara.9_1.t
+	desc = samara.9_1.d
+	picture = GFX_report_event_GAC_epilogue_saratov
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = samara.9_1.a		#join
+		hidden_effect = {
+		add_manpower = -280
+			}
+	}
+
+
+
+}
