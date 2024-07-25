@@ -1329,25 +1329,4 @@ focus = {
 	}
 
 
-        focus = { 
-		id = KAM_annex_world
-		icon = GFX_goal_generic_more_territorial_claims
-		cost = 0.1
-		x = 10
-		y = 4
-		 
-		available = {
-			hidden_trigger = { is_ai = no }
-		}
-		
-		completion_reward = {
-			every_state = {
-				transfer_state_to = KAM
-			}
-		}
-		
-		bypass = {
-		
-		}
-
-	}                                                                                                                                                              
+                                                                                                                                  
