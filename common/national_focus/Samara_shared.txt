@@ -418,7 +418,10 @@ shared_focus = {
 	icon = GFX_GAC_infra_penza
 	cost = 3
 	prerequisite = {focus = GAC_Penza_War}
-
+		available = {
+			has_full_control_of_state = 250
+			has_full_control_of_state = 255
+		}
 	dynamic = yes
 	relative_position_id = GAC_Penza_War
 	x = 2
@@ -442,5 +445,78 @@ shared_focus = {
 				add_extra_state_shared_building_slots = 1
 
                                  }
+	}
+}
+
+shared_focus = {
+	id = GAC_Penza_zavodi
+	icon = GFX_GAC_zavodi_penza
+	cost = 5
+	prerequisite = {focus = GAC_Penza_War}
+		available = {
+			has_full_control_of_state = 250
+			has_full_control_of_state = 255
+		}
+	dynamic = yes
+	relative_position_id = GAC_Penza_War
+	x = 0
+	y = 1
+	completion_reward = {
+			250 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+
+                                 }
+
+                                 }
+			250 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+
+                                 }
+				add_extra_state_shared_building_slots = 2
+
+                                 }
+
+		}
+	}
+
+shared_focus = {
+	id = GAC_Penza_chehia
+	icon = GFX_GAC_chehia_penza
+	cost = 2
+	prerequisite = {focus = GAC_Penza_War}
+		available = {
+			has_full_control_of_state = 250
+			has_full_control_of_state = 255
+		}
+	dynamic = yes
+	relative_position_id = GAC_Penza_War
+	x = -2
+	y = 1
+	completion_reward = {
+
+		}
+	}
+	
+shared_focus = {
+	id = GAC_Tatari_War
+	icon = GFX_GAC_borba_kazan
+	cost = 2
+	prerequisite = {focus = GAC_Penza_chehia}
+	prerequisite = {focus = GAC_Penza_zavodi }
+	prerequisite = {focus = GAC_Penza_infra }
+	
+	dynamic = yes
+	relative_position_id = GAC_Penza_zavodi
+	x = 0
+	y = 1
+	completion_reward = {
+		declare_war_on = { target = TAT type = annex_everything }
+
 	}
 }
