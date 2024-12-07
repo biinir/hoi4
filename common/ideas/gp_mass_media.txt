@@ -5,7 +5,9 @@ ideas = {
 		law = yes
 		
 		mass_media_propaganda = {
-			
+					    available = {
+                    has_country_flag = ne_trogat     
+			}
 
 			
 			modifier = {

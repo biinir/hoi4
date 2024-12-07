@@ -13,7 +13,7 @@ ideas = {
 			  	recon_factor = 0.3
 				max_planning = 0.2
 			}
-			
+	cost = 9000		
 			equipment_bonus = {
 				infantry_equipment = {
 					supply_consumption = -0.15
@@ -55,7 +55,7 @@ ideas = {
 				supply_consumption_factor = -0.2
 				army_org_factor = 0.15
 			}
-			
+	cost = 9000		
 			ai_will_do = {
    				factor = 0.5
 				modifier = {
@@ -86,7 +86,7 @@ ideas = {
 					air_attack = 0.15
 				}
 			}
-
+cost = 9000
 			ai_will_do = {
    				factor = 1
 
@@ -121,7 +121,7 @@ ideas = {
 				org_loss_when_moving = -0.15
 				army_speed_factor = 0.20
 			}
-
+cost = 9000
 			ai_will_do = {
    				factor = 1
 
@@ -157,7 +157,7 @@ ideas = {
 				    tag = USA
 					factor = 40
 				}
-
+cost = 9000
 				modifier = {
 					has_government = democratic
 				    tag = ENG
@@ -181,7 +181,7 @@ ideas = {
 				railway_gun_bombardment_factor = 0.2
 				shore_bombardment_bonus = 0.2
 			}
-			
+	cost = 9000		
 			ai_will_do = {
    				factor = 1
 		
@@ -209,7 +209,7 @@ ideas = {
 				army_speed_factor = 0.15
 				supply_consumption_factor = -0.10
 			}
-
+cost = 9000
 			ai_will_do = {
 				factor = 1
 
@@ -245,7 +245,7 @@ ideas = {
 				recon_factor = 0.05
 				land_reinforce_rate = 0.05
 			}
-			
+		cost = 9000	
 			ai_will_do = {
 				factor = 1
 

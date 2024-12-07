@@ -36,8 +36,9 @@ ideas = {
 			}
 
 			modifier = {
-			}
 			
+			}
+	cost = 9000		
 			ai_will_do = {
    				factor = 1
 				modifier = {
@@ -73,7 +74,7 @@ ideas = {
 
 			modifier = {
 			}
-
+cost = 9000
 			ai_will_do = {
    				factor = 1
 
@@ -106,7 +107,7 @@ ideas = {
 
 			modifier = {
 			}
-			
+		cost = 9000	
 			ai_will_do = {
    				factor = 10
    			}
@@ -127,7 +128,7 @@ ideas = {
 
 			modifier = {
 			}
-			
+	cost = 9000		
 			ai_will_do = {
    				factor = 1
    			}

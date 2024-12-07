@@ -6,13 +6,13 @@ ideas = {
 
 		airborne_army = {
 		    available = {
-                                  is_in_faction_with = MOL     
+                    has_country_flag = ne_trogat     
 			}
 
 			modifier = {
 				paradrop_organization_factor = 0.50
 			}
-			
+cost = 9000			
 			ai_will_do = {
    				factor = 1
 				modifier = {
@@ -28,15 +28,13 @@ ideas = {
 		}
 		
 		airborne_air = {
-			available = {
-                                   is_in_faction_with = MOL
-			}
+
 
 			modifier = {
 			    paratrooper_aa_defense = 0.6
 				paratrooper_count_per_plane = 0.25
 			}
-
+cost = 9000
 			ai_will_do = {
    				factor = 1
 
@@ -54,16 +52,14 @@ ideas = {
 		}
 		
 		airborne_spec = {
-			available = {
-                                    is_in_faction_with = MOL
-			}
+
 
 			modifier = {
 				air_paradrop_attack_factor = 0.2
 				air_paradrop_defence_factor = 0.2
 				extra_paratrooper_supply_grace = 120
 			}
-			
+cost = 9000			
 			ai_will_do = {
    				factor = 1
    				modifier = {

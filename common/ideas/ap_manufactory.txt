@@ -5,14 +5,11 @@ ideas = {
 		law = yes
 		
 		manufactory_light_tanks = {
-		    available = {
-                                 is_in_faction_with = MOL
-			}
 			
 			modifier = {
 
 			}
-
+cost = 9000
 			equipment_bonus = {
 				light_tank_chassis = {
 					instant = yes
@@ -28,14 +25,12 @@ ideas = {
 		}
 
 		manufactory_medium_tanks = {
-		    available = {
-                                 is_in_faction_with = MOL
-			}
+
 			
 			modifier = {
 
 			}
-
+cost = 9000
 			equipment_bonus = {
 				medium_tank_chassis = {
 					instant = yes
@@ -55,14 +50,12 @@ ideas = {
 		}
 
 		manufactory_heavy_tanks = {
-		    available = {
-                                 is_in_faction_with = MOL
-			}
+	
 			
 			modifier = {
 
 			}
-
+cost = 9000
 			equipment_bonus = {
 				heavy_tank_chassis = {
 					instant = yes
@@ -78,14 +71,12 @@ ideas = {
 		}
 
 		manufactory_super_heavy_tanks = {
-		    available = {
-                                 is_in_faction_with = MOL
-			}
+
 			
 			modifier = {
 
 			}
-
+cost = 9000
 			equipment_bonus = {
 				super_heavy_tank_chassis = {
 					instant = yes
@@ -101,14 +92,12 @@ ideas = {
 		}
 
 		manufactory_amphibious_tanks = {
-		    available = {
-                                 is_in_faction_with = MOL
-			}
+
 			
 			modifier = {
 
 			}
-
+cost = 9000
 			equipment_bonus = {
 				amphibious_tank_chassis = {
 					instant = yes
@@ -124,14 +113,12 @@ ideas = {
 		}
 
 		manufactory_railway_guns = {
-		    available = {
-                                 is_in_faction_with = MOL
-			}
+
 			
 			modifier = {
 
 			}
-
+cost = 9000
 			equipment_bonus = {
 				railway_gun_equipment = {
 					instant = yes
@@ -147,14 +134,12 @@ ideas = {
 		}
 
 		manufactory_support_vehicles = {
-		    available = {
-                                 is_in_faction_with = MOL
-			}
+
 			
 			modifier = {
 
 			}
-
+cost = 9000
 			equipment_bonus = {
 				armored_car_equipment = {
 					instant = yes

@@ -5,16 +5,13 @@ ideas = {
 		law = yes
 
 		training_everyone_ace = {
-		    available = {
-                               is_in_faction_with = MOL
-				
-			}
+
 
 			modifier = {
 				air_ace_bonuses_factor = -0.3
 				air_ace_generation_chance_factor = 0.3
 			}
-			
+cost = 9000			
 			ai_will_do = {
    				factor = 1
 				modifier = {
@@ -27,16 +24,13 @@ ideas = {
 		}
 
 		training_standard_ace = {
-		    available = {
-                                is_in_faction_with = MOL
-				
-			}
+
 
 			modifier = {
 				air_ace_bonuses_factor = 0.1
 				air_ace_generation_chance_factor = 0.1
 			}
-			
+cost = 9000			
 			ai_will_do = {
    				factor = 40
 				modifier = {
@@ -49,15 +43,12 @@ ideas = {
 		}
 		
 		training_elite_ace = {
-			available = {
-                                   is_in_faction_with = MOL
-		       
-			}
+
 			modifier = {
 			    air_ace_bonuses_factor = 0.3
 				air_ace_generation_chance_factor = -0.3
 			}
-			
+cost = 9000			
 			ai_will_do = {
    				factor = 1
 
