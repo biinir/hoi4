@@ -169,6 +169,7 @@ shared_focus = {
 	mass_media_propaganda
 	}
 	set_country_flag = GAC_NICO_NICO
+	set_global_flag = mass_media_law
 	}
 }
 

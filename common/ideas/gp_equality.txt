@@ -137,5 +137,24 @@ ideas = {
 
 			cancel_if_invalid = yes
 		}
+		
+		g_gachi_system = {
+		visible = {
+				has_country_flag = g_gachi_system
+			}
+		picture = GAC_gachi_system
+		 	available = {
+	has_country_flag = g_gachi_system     
+		}
+			
+			modifier = {
+				stability_factor = -0.1		
+				conscription_factor = -0.65
+				resistance_damage_to_garrison = -0.5
+				}
+			removal_cost = -1
+			cancel_if_invalid = no
+		}
+
 	}
 }

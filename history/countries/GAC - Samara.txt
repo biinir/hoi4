@@ -202,12 +202,13 @@ add_ideas = {
 	GAC_slaves_work
 	GAC_gachi_army
 	GAC_gachi_slaves_run
-	GAC_gachi_system
+	g_gachi_system
 	population_controlled
 	women_workers
 	navy_production_no
 	penal_slavery
 }
+set_country_flag = g_gachi_system
 add_manpower = 111540
 
 recruit_character = GAC_billy_herrington

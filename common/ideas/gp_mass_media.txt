@@ -5,9 +5,9 @@ ideas = {
 		law = yes
 		
 		mass_media_propaganda = {
-					    available = {
-                    has_country_flag = ne_trogat     
-			}
+		available = {
+	has_global_flag = mass_media_law     
+		}
 
 			
 			modifier = {
@@ -16,7 +16,6 @@ ideas = {
 				stability_factor = 0.1
 				drift_defence_factor = 0.5
 			}
-cost = 3000
 			ai_will_do = {
    				factor = 1
 				modifier = {
@@ -33,9 +32,9 @@ cost = 3000
 		
 		mass_media_censorship = {
 
-			available = {
-                                    is_in_faction_with = MOL
-			}
+		available = {
+	has_global_flag = mass_media_censorship_law     
+		}
 
 			modifier = {
 				political_power_factor = -0.05
@@ -63,14 +62,8 @@ cost = 3000
 		mass_media_free = {
 		
 			available = {
-				NOT = {
-				    OR = {
-					has_government = communism
-					has_government = fascism
-                                        is_in_faction_with = MOL
-				    }
-				}
-			}
+	has_global_flag = mass_media_free_law     
+		}
 			
 			modifier = {
 				war_support_factor = -0.05
@@ -94,16 +87,8 @@ cost = 3000
 		mass_media_control = {
 		
 			available = {
-				AND = {
-					has_war_support > 0.4
-					has_stability > 0.5
-                                        is_in_faction_with = MOL
-				}
-				IF = {
-					num_subjects > 0
-                                        is_in_faction_with = MOL
-				}
-			}
+	has_global_flag = mass_media_control_law     
+		}
 			
 			modifier = {
 				subjects_autonomy_gain = -0.3
@@ -120,16 +105,8 @@ cost = 3000
 		mass_media_liberty = {
 		
 			available = {
-				AND = {
-					has_war_support > 0.5
-					has_stability > 0.6
-                                        is_in_faction_with = MOL
-				}
-				IF = {
-					is_subject = yes
-                                        is_in_faction_with = MOL
-				}
-			}
+	has_global_flag = mass_media_libertyl_law     
+		}
 			
 			modifier = {
 				autonomy_gain = 0.3
